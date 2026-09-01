@@ -35,7 +35,7 @@ The Bridge + background Host architecture offloads independent plug-in-chain wor
 ### 下载 / Download
 
 - [QQ Host 0.8.3 Release 页面 / Release page](https://github.com/Ziqing-Gu/QQHost-Release/releases/tag/v0.8.3)
-- 公开资产 / Public asset: `QQ Host 0.8.3.zip`
+- 公开资产 / Public asset: `QQ.Host.0.8.3.zip`
 - 大小 / Size: `44,305,999 bytes`
 - SHA-256: `44D57185CBD435229869B18D98FCA72706866663DE696461355A2D882B47B023`
 
@@ -63,7 +63,7 @@ The Bridge + background Host architecture offloads independent plug-in-chain wor
 ## 安装与基本使用 / Installation and basic use
 
 1. 完全退出 DAW 与插件扫描器。 / Fully quit the DAW and plug-in scanners.
-2. 解压 `QQ Host 0.8.3.zip`，进入 `Win` 或 `Mac` 选择对应平台包。 / Extract the archive and select the appropriate package under `Win` or `Mac`.
+2. 解压 `QQ.Host.0.8.3.zip`，进入 `Win` 或 `Mac` 选择对应平台包。 / Extract the archive and select the appropriate package under `Win` or `Mac`.
 3. 按随包 0.8.3 安装说明删除旧版并复制新版；不要混用不同版本的 Bridge 与后台 Host。 / Follow the bundled 0.8.3 guide; never mix Bridge and Host versions.
 4. 在 DAW 中重新扫描插件。 / Rescan plug-ins in the DAW.
 5. 在轨道 Insert 中加载 `QQ Host Bridge`，再在 Bridge Rack 中加载第三方 VST3 效果器。 / Insert `QQ Host Bridge`, then load VST3 effects in its Rack.
