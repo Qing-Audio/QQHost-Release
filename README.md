@@ -28,16 +28,17 @@ The Bridge + background Host architecture offloads independent plug-in-chain wor
 
 - 产品 / Product: **QQ Host**
 - 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **0.8.3**
+- 版本 / Version: **0.8.4**
 - 发布日期 / Release date: **2026-09-01**
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
 ### 下载 / Download
 
-- [QQ Host 0.8.3 Release 页面 / Release page](https://github.com/Ziqing-Gu/QQHost-Release/releases/tag/v0.8.3)
-- 公开资产 / Public asset: `QQ.Host.0.8.3.zip`
-- 大小 / Size: `44,305,999 bytes`
-- SHA-256: `44D57185CBD435229869B18D98FCA72706866663DE696461355A2D882B47B023`
+- [QQ Host 0.8.4 Release 页面 / Release page](https://github.com/Ziqing-Gu/QQHost-Release/releases/tag/v0.8.4)
+- [直接下载 / Direct download: `QQ.Host.0.8.4.zip`](https://github.com/Ziqing-Gu/QQHost-Release/releases/download/v0.8.4/QQ.Host.0.8.4.zip)
+- 公开资产 / Public asset: `QQ.Host.0.8.4.zip`
+- 大小 / Size: `44,866,824 bytes`
+- SHA-256: `B214AFF29543E79BE89BA7B8E91ED3891CA6E80AEC130CACE45D25F78BAE83EF`
 
 总包包含 / The package contains:
 
@@ -45,67 +46,74 @@ The Bridge + background Host architecture offloads independent plug-in-chain wor
 - macOS 11+ Apple Silicon VST3 (`arm64`)
 - macOS 11+ Intel VST3 (`x86_64`)
 - macOS 11+ Universal 2 AU (`arm64 + x86_64`)
-- 0.8.3 中英文安装说明 / 0.8.3 Chinese and English installation guides
-- 0.8.1 中英文用户手册 / 0.8.1 Chinese and English user manuals
+- 0.8.4 中英文安装说明 / 0.8.4 Chinese and English installation guides
+- 0.8.4 中英文用户手册 / 0.8.4 Chinese and English user manuals
 
-> 随包用户手册为 0.8.1 版，适用于基础工作流，但不包含 0.8.2/0.8.3 的最新自动化修复说明；安装时请以 0.8.3 安装说明为准。
+> 0.8.4 手册与安装说明包含 VST2/VST3 区分、LIVE/OFFLOAD 模式、独立 Hosted Editor、FL Studio 固定缓冲区要求，以及 macOS 安装与安全提示。
 >
-> The bundled user manuals are version 0.8.1 and cover the core workflow, but they do not document the latest 0.8.2/0.8.3 automation fixes. Follow the 0.8.3 installation guides when installing.
+> The 0.8.4 manuals and installation guides cover VST2/VST3 identification, LIVE/OFFLOAD modes, independent Hosted Editors, FL Studio fixed-buffer requirements, and macOS installation/security notes.
 
 ## 支持范围 / Compatibility
 
 - Windows 10/11 x64: VST3 Bridge + background `QQ Host.exe`
 - macOS 11 or later: Apple Silicon VST3, Intel x86_64 VST3, Universal 2 AU
-- Hosted plug-ins: VST3 audio effects only; instruments are excluded from scanning.
-- VST2 and 32-bit plug-ins are not supported.
+- Hosted plug-ins: licensed native 64-bit VST2 and VST3 audio effects; the browser labels each format and excludes instruments.
+- 32-bit VST2 plug-ins are not supported. Cubase `.fxchainpreset` and standard `.vstpreset` operations remain VST3-only.
 - macOS packages are not Apple Developer ID notarized.
 
 ## 安装与基本使用 / Installation and basic use
 
 1. 完全退出 DAW 与插件扫描器。 / Fully quit the DAW and plug-in scanners.
-2. 解压 `QQ.Host.0.8.3.zip`，进入 `Win` 或 `Mac` 选择对应平台包。 / Extract the archive and select the appropriate package under `Win` or `Mac`.
-3. 按随包 0.8.3 安装说明删除旧版并复制新版；不要混用不同版本的 Bridge 与后台 Host。 / Follow the bundled 0.8.3 guide; never mix Bridge and Host versions.
+2. 解压 `QQ.Host.0.8.4.zip`，进入 `Win` 或 `Mac` 选择对应平台包。 / Extract the archive and select the appropriate package under `Win` or `Mac`.
+3. 按随包 0.8.4 安装说明删除旧版并复制新版；不要混用不同版本的 Bridge 与后台 Host。 / Follow the bundled 0.8.4 guide; never mix Bridge and Host versions.
 4. 在 DAW 中重新扫描插件。 / Rescan plug-ins in the DAW.
-5. 在轨道 Insert 中加载 `QQ Host Bridge`，再在 Bridge Rack 中加载第三方 VST3 效果器。 / Insert `QQ Host Bridge`, then load VST3 effects in its Rack.
+5. 在轨道 Insert 中加载 `QQ Host Bridge`，再在 Bridge Rack 中加载第三方 VST2/VST3 效果器。 / Insert `QQ Host Bridge`, then load VST2/VST3 effects in its Rack.
+6. FL Studio 用户必须在插件 Wrapper 的 Troubleshooting 中启用 `Process maximum size buffers` 和 `Use maximum buffer size from host`。 / FL Studio users must enable `Process maximum size buffers` and `Use maximum buffer size from host` in the plug-in Wrapper's Troubleshooting page.
 
 ## 主要功能 / Main features
 
 - 保留 DAW Insert 工作流的 Bridge + 后台 Host 架构 / Bridge + background Host architecture preserving the DAW Insert workflow
-- 多 Bridge、多 Slot VST3 效果器 Rack / Multi-Bridge, multi-Slot VST3 effect Rack
-- OFFLOAD 与 LOW LATENCY / OFFLOAD and LOW LATENCY modes
+- 多 Bridge、多 Slot VST2/VST3 效果器 Rack / Multi-Bridge, multi-Slot VST2/VST3 effect Rack
+- OFFLOAD 与 LIVE / OFFLOAD and LIVE modes
 - Internal PDC、Per-Slot PlayHead 与 Latency Rescue
 - Sidechain、BYPASS ALL、Power、Fader、Pan、Polarity 与 Meter
 - 隔离扫描并只收录效果器 / Isolated scanning restricted to audio effects
 - Cubase FX Chain 载入/保存、自动参数镜像、Undo/Redo
 - 工程恢复、Hosted Editor 与运行时故障隔离 / Project restore, Hosted Editor, and runtime fault isolation
 
-## 0.8.3 更新摘要 / 0.8.3 summary
+## 0.8.4 更新摘要 / 0.8.4 summary
 
-- 安全归一化旧 JUCE 通用 VST3 标识与精确 CID；只有路径哈希和稳定 UID 同时匹配时才重绑定。
-- 新增显式 `Reset Missing Automation...`：只删除 Missing/Inactive 映射，保留 Active 映射。
-- 新映射从当前 Hosted 数值初始化，避免旧 Missing 数值跳入新插件。
-- 保留 0.8.2 的自动化回声抑制、16-Slot FX Chain 与通道条 Undo/Redo 修复。
+- 支持已获授权的原生 64-bit VST2 效果器；扫描结果明确标记 VST2/VST3，并继续排除乐器与 32-bit VST2。
+- 将原 `LOW LATENCY` 工作流明确为 `LIVE`：适合实时监听和录音，不宣称提供 OFFLOAD 的确定性多核卸载收益。
+- Bridge 与 Hosted Editor 可独立关闭；操作插件时 Bridge 保持可见，除非用户主动关闭。
+- 修复无效 Slot 重新加载、首次窗口闪跳，以及空格等 DAW 快捷键转发回归。
+- 保留 0.8.3 自动化恢复，以及既有 PDC、Rescue、Sidechain、FX Chain、Divider、Undo/Redo 与故障隔离行为。
 
-- Safely canonicalises legacy JUCE generic VST3 identities to exact CIDs only when package-path hash and stable UID agree.
-- Adds explicit `Reset Missing Automation...`, removing only Missing/Inactive mappings while preserving Active mappings.
-- Seeds new mappings from current Hosted values to prevent stale Missing values from jumping into a new plug-in.
-- Preserves the 0.8.2 automation-echo, 16-Slot FX Chain, and channel-strip Undo/Redo corrections.
+- Hosts licensed native 64-bit VST2 effects, labels VST2/VST3 scan results, and continues to exclude instruments and 32-bit VST2 plug-ins.
+- Clarifies the former `LOW LATENCY` workflow as `LIVE`, intended for real-time monitoring and recording without claiming OFFLOAD's deterministic multi-core offload benefit.
+- Allows Bridge and Hosted Editor windows to close independently; the Bridge remains visible while a hosted plug-in is operated unless the user closes it.
+- Fixes invalid-Slot reload, first-show window jumping, and the regression affecting Space and other DAW shortcut forwarding.
+- Preserves the 0.8.3 automation recovery and the established PDC, Rescue, Sidechain, FX Chain, Divider, Undo/Redo, and fault-isolation behavior.
 
 ## 已知问题与升级注意 / Known issues and upgrade notes
 
 - QQ Host 是实验性外部宿主；性能收益与延迟依赖 DAW、插件、缓冲区、IPC 开销与系统配置。
-- 仅支持 VST3 效果器；不支持乐器、VST2 或 32 位插件。
+- 仅支持已获授权的原生 64-bit VST2 与 VST3 效果器；不支持乐器或 32-bit VST2。
 - macOS 包未经 Apple Developer ID 公证，系统可能要求可信来源确认与 quarantine 处理。
 - 旧工程若出现 Missing 自动化，只在确认后手动执行 `Reset Missing Automation...`，并检查 `Control NNN` 自动化轨道。
-- 升级顺序：关闭 DAW -> 删除旧文件 -> 复制 0.8.3 -> 重新扫描。
-- 随包用户手册为 0.8.1；最新安装与自动化行为以本页和 0.8.3 安装说明为准。
+- Cubase `.fxchainpreset` 与标准 `.vstpreset` 操作仍为 VST3-only。
+- FL Studio 必须启用两个最大固定缓冲区选项，否则 Bridge 可能不工作。
+- 升级顺序：关闭 DAW -> 删除旧文件 -> 复制 0.8.4 -> 重新扫描。
+- 以随包 0.8.4 手册和安装说明为准。
 
 - QQ Host is experimental; performance and latency depend on the DAW, plug-ins, buffers, IPC overhead, and system configuration.
-- Only VST3 effects are supported; instruments, VST2, and 32-bit plug-ins are unsupported.
+- Only licensed native 64-bit VST2 and VST3 effects are supported; instruments and 32-bit VST2 plug-ins are unsupported.
 - macOS packages are not Apple Developer ID notarized and may require trusted-source confirmation and quarantine handling.
 - Run `Reset Missing Automation...` only after confirmation and review `Control NNN` automation lanes.
-- Upgrade order: quit DAW -> remove old files -> copy 0.8.3 -> rescan.
-- The bundled manuals are 0.8.1; use this page and the 0.8.3 guides for current installation and automation behavior.
+- Cubase `.fxchainpreset` and standard `.vstpreset` operations remain VST3-only.
+- FL Studio requires both maximum fixed-buffer options; otherwise the Bridge may not process correctly.
+- Upgrade order: quit DAW -> remove old files -> copy 0.8.4 -> rescan.
+- Follow the bundled 0.8.4 manuals and installation guides.
 
 ## 灵感与独立性声明 / Inspiration and independence
 
@@ -115,9 +123,9 @@ The concept was inspired by the external-host and processing-offload workflow of
 
 ## 完整版本记录 / Complete version history
 
-这是首个公开 README，因此下表完整覆盖从 0.0.1 到 0.8.3 的全部 62 个真实版本。遗漏版本：无。
+本 README 保留从 0.0.1 到 0.8.3 的既有完整历史，并追加 0.8.4；共覆盖 63 个真实版本。遗漏版本：无。
 
-This is the first public README, so the table covers all 62 real versions from 0.0.1 through 0.8.3. Omitted versions: none.
+This README preserves the complete existing history from 0.0.1 through 0.8.3 and adds 0.8.4, covering 63 real versions in total. Omitted versions: none.
 
 | 版本 / Version | 中文摘要 | English summary | 状态 / Status |
 |---|---|---|---|
@@ -182,7 +190,8 @@ This is the first public README, so the table covers all 62 real versions from 0
 | 0.8.0 | 加入 50 ms Crossfade 的 BYPASS ALL、明确的 Power UI 与 VST2 链加载保护；用户提升为稳定基线。 | Added 50 ms-crossfaded BYPASS ALL, explicit Power UI, and VST2 chain-load protection; user-promoted to Stable. | 2026-08-31 · 历史稳定基线 / Historical stable baseline |
 | 0.8.1 | 将 Bypass 统一为醒目的 `B` 控件，并恢复“初始匿名、可选命名”的 Divider 工作流；不改变受保护的音频与状态行为。 | Unified Bypass as a prominent `B` control and restored the “anonymous by default, optionally nameable” Divider workflow without changing protected audio or state behavior. | 2026-08-31 · 正式回滚基线 / Formal rollback baseline |
 | 0.8.2 | 修复 Hosted 自动化回声与抖动、16-Slot FX Chain 写入、旧 FX Chain 自动化关联，以及 Fader/Pan/相位 Undo/Redo。 | Corrected Hosted automation echo/jitter, 16-Slot FX Chain export, automation association for older FX Chains, and Fader/Pan/polarity Undo/Redo. | 2026-09-01 · 已验证候选 / Validated candidate |
-| 0.8.3 | 安全归一化旧通用 VST3 标识与精确 CID，并加入只清理 Missing、保留 Active 的显式自动化恢复。 | Safely canonicalised legacy generic VST3 identities to exact CIDs and added explicit recovery that removes only Missing mappings while preserving Active mappings. | 2026-09-01 · **当前稳定基线 / Current stable baseline** |
+| 0.8.3 | 安全归一化旧通用 VST3 标识与精确 CID，并加入只清理 Missing、保留 Active 的显式自动化恢复。 | Safely canonicalised legacy generic VST3 identities to exact CIDs and added explicit recovery that removes only Missing mappings while preserving Active mappings. | 2026-09-01 · 历史稳定基线 / Historical stable baseline |
+| 0.8.4 | 支持已授权的 64-bit VST2 效果器并标记 VST2/VST3；将低延迟模式明确为 LIVE；修复独立编辑器、无效 Slot 重载、首次窗口闪跳和 DAW 快捷键转发。 | Added licensed 64-bit VST2 effect hosting with VST2/VST3 labels; clarified low-latency operation as LIVE; fixed independent editors, invalid-Slot reload, first-show jumping, and DAW shortcut forwarding. | 2026-09-01 · **当前稳定基线 / Current stable baseline** |
 ## 源码与公开边界 / Source and publication boundary
 
 QQ Host 为闭源软件，源码仓库保持私有。本仓库不包含源码、构建缓存、内部日志、私有路径或开发凭据，只提供公开说明与用户批准的二进制 Release。
