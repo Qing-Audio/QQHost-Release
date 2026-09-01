@@ -6,24 +6,25 @@
 >
 > QQ Host is closed-source software. This public repository provides only approved binary releases, installation information, and public version history; the source repository remains private.
 
-## 项目简介 / Overview
+## QQ Host 是做什么的 / What QQ Host does
 
-**QQ Host 是专门针对 DAW 混音插件链设计的外部宿主。**
+**QQ Host 是一款高性能插件桥接机架，把 DAW 中 CPU 占用高的插件处理链转移到后台运行，分担单核压力并提高多核 CPU 利用率。**
 
-与传统外部 Host 把音频送往独立 Mixer 再返回不同，QQ Host 保留 DAW 原本的 Insert 工作流：在轨道上插入 `QQ Host Bridge`，在 Bridge 中加载第三方效果器，然后继续像普通 DAW 插件链一样工作。
+工程总 CPU 占用并不高，但只要某条轨道插件多、处理链 CPU 占用高，DAW 的实时性能就可能先到极限，出现 ASIO 峰值、卡顿或爆音。QQ Host 就是为这种情况设计的。
 
-QQ Host 通过 Bridge + 后台 Host 的组合，把原本可能集中在 DAW 实时音频线程或单个 CPU 核心上的多个独立插件链，卸载到 DAW 外部进程并调度到更多 CPU 核心，以降低实时线程压力、改善 CPU/ASIO 峰值并提高多核 CPU 利用效率。
+使用方法仍然像普通 Insert：在 DAW 轨道上插入 QQ Host Bridge，在 Bridge 的 Rack 里加载 VST2/VST3 效果器，后台 QQ Host 会自动接管处理。你不需要把音频送进另一个独立 Mixer，也不用离开熟悉的 DAW 工作流。
 
-**QQ Host is an external host purpose-built for DAW mixing plug-in chains.**
+**QQ Host is a high-performance plug-in bridge rack that moves CPU-intensive DAW processing chains into the background, reducing single-core pressure and improving multi-core CPU utilization.**
 
-Unlike traditional external hosts that route audio through a separate mixer, QQ Host preserves the DAW's native Insert workflow: insert `QQ Host Bridge` on a track, load third-party effects inside the Bridge, and continue mixing as with a normal DAW plug-in chain.
+A session may still show moderate total CPU use, yet one track with many plug-ins and a CPU-intensive processing chain can reach the DAW's real-time limit first, causing ASIO peaks, glitches, or dropouts. QQ Host is designed for exactly this situation.
 
-The Bridge + background Host architecture offloads independent plug-in-chain workloads from the DAW process and allows them to be scheduled across more CPU cores. This can reduce real-time-thread pressure, improve CPU/ASIO peak behavior, and use multi-core CPUs more effectively.
+The workflow still feels like a normal Insert: add QQ Host Bridge to a DAW track, load VST2/VST3 effects in its Rack, and let the background QQ Host handle the processing. There is no separate mixer and no need to leave the DAW workflow you already know.
 
-“将单核处理转化为多核处理”指进程级、实例级和插件链级的卸载与调度，不表示把第三方插件内部的单线程 DSP 自动改写为并行算法。实际收益取决于 DAW 路由、Bridge 数量、缓冲区、插件行为、IPC 开销和计算机配置。
+### 能力边界 / What it does not claim
 
-“Turning single-core processing into multi-core processing” refers to process-, instance-, and plug-in-chain-level offloading and scheduling. It does not rewrite a third-party plug-in's internally single-threaded DSP algorithm. Results depend on DAW routing, Bridge count, buffer size, plug-in behavior, IPC overhead, and the host computer.
+QQ Host 的作用是改变插件托管和处理调度方式，帮助工程更充分地利用多核 CPU；它不会把某个第三方插件内部的单线程 DSP 自动改写成多线程算法。实际效果取决于插件、Buffer Size、DAW 路由、Bridge 数量、IPC 开销和电脑配置。
 
+QQ Host changes how plug-ins are hosted and scheduled so the session can use a multi-core CPU more effectively. It does not rewrite a third-party plug-in's internally single-threaded DSP as a parallel algorithm. Results depend on the plug-ins, buffer size, DAW routing, Bridge count, IPC overhead, and the computer.
 ## 当前公开版本 / Current public release
 
 - 产品 / Product: **QQ Host**
