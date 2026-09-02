@@ -2,74 +2,105 @@
 
 **中文 | English**
 
+**QQ Host｜性能桥接机架，一个可以将 DAW 内的单核处理分散成多核处理的效果器。**
+
+**QQ Host | A performance bridge rack that moves CPU-heavy processing away from the DAW's single real-time thread so the work can be spread across more CPU cores.**
+
 > QQ Host 是闭源软件。本公开仓库只提供经过确认的二进制 Release、安装信息与公开版本记录；源码仓库保持私有。
 >
 > QQ Host is closed-source software. This public repository provides only approved binary releases, installation information, and public version history; the source repository remains private.
 
 ## QQ Host 是做什么的 / What QQ Host does
 
-**QQ Host 是一款高性能插件桥接机架，把 DAW 中 CPU 占用高的插件处理链转移到后台运行，分担单核压力并提高多核 CPU 利用率。**
-
 工程总 CPU 占用并不高，但只要某条轨道插件多、处理链 CPU 占用高，DAW 的实时性能就可能先到极限，出现 ASIO 峰值、卡顿或爆音。QQ Host 就是为这种情况设计的。
 
-使用方法仍然像普通 Insert：在 DAW 轨道上插入 QQ Host Bridge，在 Bridge 的 Rack 里加载 VST2/VST3 效果器，后台 QQ Host 会自动接管处理。你不需要把音频送进另一个独立 Mixer，也不用离开熟悉的 DAW 工作流。
-
-**QQ Host is a high-performance plug-in bridge rack that moves CPU-intensive DAW processing chains into the background, reducing single-core pressure and improving multi-core CPU utilization.**
+QQ Host 专门针对 DAW 混音插件链设计。使用方法仍然像普通 Insert：在 DAW 轨道上插入 QQ Host Bridge，在 Bridge 的 Rack 里加载 VST2/VST3 效果器，后台 QQ Host 自动接管处理。你不需要把音频送进另一个独立 Mixer，也不用离开熟悉的 DAW 工作流。
 
 A session may still show moderate total CPU use, yet one track with many plug-ins and a CPU-intensive processing chain can reach the DAW's real-time limit first, causing ASIO peaks, glitches, or dropouts. QQ Host is designed for exactly this situation.
 
-The workflow still feels like a normal Insert: add QQ Host Bridge to a DAW track, load VST2/VST3 effects in its Rack, and let the background QQ Host handle the processing. There is no separate mixer and no need to leave the DAW workflow you already know.
+QQ Host is designed specifically for DAW mixing plug-in chains. The workflow still feels like a normal Insert: add QQ Host Bridge to a track, load VST2/VST3 effects in its Rack, and let the background QQ Host handle the processing. There is no separate mixer and no need to leave the DAW workflow you already know.
+
+## 工作方式一眼看懂 / See how it works
+
+| DAW 内的高占用处理链 / CPU-heavy chain in the DAW | 转移到 QQ Host 后台 / Offloaded through QQ Host |
+|---|---|
+| ![CPU-heavy plug-in chain running in the DAW](assets/qq-host-performance-daw-chain.jpg) | ![The same workflow offloaded through QQ Host](assets/qq-host-performance-offload.jpg) |
+
+QQ Host Bridge 留在轨道 Insert 中，第三方插件由后台 Host 承载。你仍然在 DAW 工程里工作，但高占用插件链不再全部挤在同一个实时处理线程上。
+
+QQ Host Bridge stays in the track Insert while third-party plug-ins are hosted by the background app. You keep working inside the DAW, while CPU-heavy chains no longer have to remain on the same real-time processing thread.
+
+### Bridge、浏览器与插件窗口 / Bridge, browser, and hosted editor
+
+![QQ Host 0.9.2 Bridge rack](assets/qq-host-0.9.2-bridge-rack.png)
+
+插件浏览器会明确标记 VST2 与 VST3，并只收录音频效果器，不把乐器扫进效果器列表。
+
+The plug-in browser clearly labels VST2 and VST3 entries and keeps instruments out of the audio-effects list.
+
+![QQ Host plug-in browser with VST2 and VST3 labels](assets/qq-host-0.9.2-plugin-browser.jpg)
+
+第三方插件编辑器独立打开；操作插件时 Bridge 继续留在 DAW 中，只有用户主动关闭 Bridge 时才会隐藏。
+
+Hosted plug-in editors open independently. The Bridge remains visible in the DAW while you operate a plug-in unless you explicitly close it.
+
+![A third-party plug-in hosted by QQ Host while the Bridge remains visible](assets/qq-host-0.9.2-hosted-plugin.jpg)
+
+### 0.9.2 侧链效果器 / Sidechain FX in 0.9.2
+
+侧链端最多可插入两个效果器。SC 按钮可折叠整个模块，耳机按钮用于单独监听处理后的侧链信号；主链各 Slot 按已声明延迟取得时间对齐的侧链输入。
+
+The sidechain path can host up to two effects. Use SC to collapse the entire module and the headphone button to monitor the processed sidechain signal. Each Main Rack slot receives a sidechain input aligned from declared plug-in latency.
+
+![QQ Host 0.9.2 Sidechain FX rack](assets/qq-host-0.9.2-sidechain-fx.png)
 
 ### 能力边界 / What it does not claim
 
 QQ Host 的作用是改变插件托管和处理调度方式，帮助工程更充分地利用多核 CPU；它不会把某个第三方插件内部的单线程 DSP 自动改写成多线程算法。实际效果取决于插件、Buffer Size、DAW 路由、Bridge 数量、IPC 开销和电脑配置。
 
 QQ Host changes how plug-ins are hosted and scheduled so the session can use a multi-core CPU more effectively. It does not rewrite a third-party plug-in's internally single-threaded DSP as a parallel algorithm. Results depend on the plug-ins, buffer size, DAW routing, Bridge count, IPC overhead, and the computer.
+
 ## 当前公开版本 / Current public release
 
 - 产品 / Product: **QQ Host**
 - 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **0.8.4**
-- 发布日期 / Release date: **2026-09-01**
+- 版本 / Version: **0.9.2**
+- 发布日期 / Release date: **2026-09-02**
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
 ### 下载 / Download
 
-- [QQ Host 0.8.4 Release 页面 / Release page](https://github.com/Ziqing-Gu/QQHost-Release/releases/tag/v0.8.4)
-- [直接下载 / Direct download: `QQ.Host.0.8.4.zip`](https://github.com/Ziqing-Gu/QQHost-Release/releases/download/v0.8.4/QQ.Host.0.8.4.zip)
-- 公开资产 / Public asset: `QQ.Host.0.8.4.zip`
-- 大小 / Size: `44,866,824 bytes`
-- SHA-256: `B214AFF29543E79BE89BA7B8E91ED3891CA6E80AEC130CACE45D25F78BAE83EF`
+- [QQ Host 0.9.2 Release 页面 / Release page](https://github.com/Ziqing-Gu/QQHost-Release/releases/tag/v0.9.2)
+- [直接下载 / Direct download: QQ.Host.0.9.2.zip](https://github.com/Ziqing-Gu/QQHost-Release/releases/download/v0.9.2/QQ.Host.0.9.2.zip)
+- 公开资产 / Public asset: **QQ.Host.0.9.2.zip**
+- 大小 / Size: **45,226,672 bytes**
+- SHA-256: **0595D5682B1E29C45DC6BD61FBA1C8216E2C301DA3BAC80CC8EC96F91683326C**
 
 总包包含 / The package contains:
 
 - Windows 10/11 x64 VST3
-- macOS 11+ Apple Silicon VST3 (`arm64`)
-- macOS 11+ Intel VST3 (`x86_64`)
-- macOS 11+ Universal 2 AU (`arm64 + x86_64`)
-- 0.8.4 中英文安装说明 / 0.8.4 Chinese and English installation guides
-- 0.8.4 中英文用户手册 / 0.8.4 Chinese and English user manuals
-
-> 0.8.4 手册与安装说明包含 VST2/VST3 区分、LIVE/OFFLOAD 模式、独立 Hosted Editor、FL Studio 固定缓冲区要求，以及 macOS 安装与安全提示。
->
-> The 0.8.4 manuals and installation guides cover VST2/VST3 identification, LIVE/OFFLOAD modes, independent Hosted Editors, FL Studio fixed-buffer requirements, and macOS installation/security notes.
+- macOS 11+ Apple Silicon VST3 (arm64)
+- macOS 11+ Intel VST3 (x86_64)
+- macOS 11+ Universal 2 AU (arm64 + x86_64)
+- 0.9.2 中英文安装说明 / 0.9.2 Chinese and English installation guides
+- 0.9.2 中英文用户手册 / 0.9.2 Chinese and English user manuals
 
 ## 支持范围 / Compatibility
 
-- Windows 10/11 x64: VST3 Bridge + background `QQ Host.exe`
+- Windows 10/11 x64: VST3 Bridge + background QQ Host.exe
 - macOS 11 or later: Apple Silicon VST3, Intel x86_64 VST3, Universal 2 AU
 - Hosted plug-ins: licensed native 64-bit VST2 and VST3 audio effects; the browser labels each format and excludes instruments.
-- 32-bit VST2 plug-ins are not supported. Cubase `.fxchainpreset` and standard `.vstpreset` operations remain VST3-only.
+- 32-bit VST2 plug-ins are not supported. Cubase .fxchainpreset and standard .vstpreset operations remain VST3-only.
 - macOS packages are not Apple Developer ID notarized.
 
 ## 安装与基本使用 / Installation and basic use
 
 1. 完全退出 DAW 与插件扫描器。 / Fully quit the DAW and plug-in scanners.
-2. 解压 `QQ.Host.0.8.4.zip`，进入 `Win` 或 `Mac` 选择对应平台包。 / Extract the archive and select the appropriate package under `Win` or `Mac`.
-3. 按随包 0.8.4 安装说明删除旧版并复制新版；不要混用不同版本的 Bridge 与后台 Host。 / Follow the bundled 0.8.4 guide; never mix Bridge and Host versions.
+2. 解压 QQ.Host.0.9.2.zip，进入 Win 或 Mac 选择对应平台包。 / Extract the archive and select the appropriate package under Win or Mac.
+3. 按随包 0.9.2 安装说明删除旧版并复制新版；不要混用不同版本的 Bridge 与后台 Host。 / Follow the bundled 0.9.2 guide; never mix Bridge and Host versions.
 4. 在 DAW 中重新扫描插件。 / Rescan plug-ins in the DAW.
-5. 在轨道 Insert 中加载 `QQ Host Bridge`，再在 Bridge Rack 中加载第三方 VST2/VST3 效果器。 / Insert `QQ Host Bridge`, then load VST2/VST3 effects in its Rack.
-6. FL Studio 用户必须在插件 Wrapper 的 Troubleshooting 中启用 `Process maximum size buffers` 和 `Use maximum buffer size from host`。 / FL Studio users must enable `Process maximum size buffers` and `Use maximum buffer size from host` in the plug-in Wrapper's Troubleshooting page.
+5. 在轨道 Insert 中加载 QQ Host Bridge，再在 Bridge Rack 中加载第三方 VST2/VST3 效果器。 / Insert QQ Host Bridge, then load VST2/VST3 effects in its Rack.
+6. FL Studio 用户必须在插件 Wrapper 的 Troubleshooting 中启用 Process maximum size buffers 和 Use maximum buffer size from host。 / FL Studio users must enable Process maximum size buffers and Use maximum buffer size from host in the plug-in Wrapper's Troubleshooting page.
 
 ## 主要功能 / Main features
 
@@ -77,44 +108,47 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 - 多 Bridge、多 Slot VST2/VST3 效果器 Rack / Multi-Bridge, multi-Slot VST2/VST3 effect Rack
 - OFFLOAD 与 LIVE / OFFLOAD and LIVE modes
 - Internal PDC、Per-Slot PlayHead 与 Latency Rescue
-- Sidechain、BYPASS ALL、Power、Fader、Pan、Polarity 与 Meter
+- 最多两个效果器的 Sidechain FX Rack、可折叠 SC 面板与独立监听 / Two-slot Sidechain FX Rack, collapsible SC panel, and solo monitoring
+- BYPASS ALL、Power、Fader、Pan、Polarity 与 Meter
 - 隔离扫描并只收录效果器 / Isolated scanning restricted to audio effects
 - Cubase FX Chain 载入/保存、自动参数镜像、Undo/Redo
-- 工程恢复、Hosted Editor 与运行时故障隔离 / Project restore, Hosted Editor, and runtime fault isolation
+- 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
-## 0.8.4 更新摘要 / 0.8.4 summary
+## 0.9.2 更新摘要 / 0.9.2 summary
 
-- 支持已获授权的原生 64-bit VST2 效果器；扫描结果明确标记 VST2/VST3，并继续排除乐器与 32-bit VST2。
-- 将原 `LOW LATENCY` 工作流明确为 `LIVE`：适合实时监听和录音，不宣称提供 OFFLOAD 的确定性多核卸载收益。
-- Bridge 与 Hosted Editor 可独立关闭；操作插件时 Bridge 保持可见，除非用户主动关闭。
-- 修复无效 Slot 重新加载、首次窗口闪跳，以及空格等 DAW 快捷键转发回归。
-- 保留 0.8.3 自动化恢复，以及既有 PDC、Rescue、Sidechain、FX Chain、Divider、Undo/Redo 与故障隔离行为。
+- 新增最多两个效果器的 Sidechain FX Rack，不挤占主链 16 个 Slot。
+- 侧链经处理后，按各主链 Slot 的累计已声明延迟分别对齐，不是为所有插件只提供同一个时间点。
+- 新增可折叠 SC 模块与紧凑耳机监听按钮；收起后不占用机架空间。
+- 修复仅有侧链效果器运行时的播放卡顿，以及双 Slot 侧链布局重叠。
+- 加入确定性的样本索引对齐测试，覆盖主链与侧链插件延迟组合。
+- 延续 0.8.4 的 VST2/VST3 标记、LIVE/OFFLOAD、独立编辑器、DAW 快捷键与工程恢复行为。
 
-- Hosts licensed native 64-bit VST2 effects, labels VST2/VST3 scan results, and continues to exclude instruments and 32-bit VST2 plug-ins.
-- Clarifies the former `LOW LATENCY` workflow as `LIVE`, intended for real-time monitoring and recording without claiming OFFLOAD's deterministic multi-core offload benefit.
-- Allows Bridge and Hosted Editor windows to close independently; the Bridge remains visible while a hosted plug-in is operated unless the user closes it.
-- Fixes invalid-Slot reload, first-show window jumping, and the regression affecting Space and other DAW shortcut forwarding.
-- Preserves the 0.8.3 automation recovery and the established PDC, Rescue, Sidechain, FX Chain, Divider, Undo/Redo, and fault-isolation behavior.
+- Adds a two-slot Sidechain FX Rack without consuming any of the 16 Main Rack slots.
+- Aligns the processed sidechain independently for each Main Rack slot from cumulative declared latency, rather than delivering one shared timing point to every plug-in.
+- Adds a collapsible SC module and a compact headphone monitor button.
+- Fixes playback stutter with sidechain-only processing and the overlapping two-slot sidechain layout.
+- Adds deterministic sample-index alignment tests across main-chain and sidechain latency combinations.
+- Carries forward VST2/VST3 labels, LIVE/OFFLOAD, independent editors, DAW shortcut forwarding, and project restore behavior from 0.8.4.
 
 ## 已知问题与升级注意 / Known issues and upgrade notes
 
 - QQ Host 是实验性外部宿主；性能收益与延迟依赖 DAW、插件、缓冲区、IPC 开销与系统配置。
+- 侧链时间对齐依赖第三方插件正确上报延迟；误报或动态改变但不通知宿主的延迟无法被完全补偿。
 - 仅支持已获授权的原生 64-bit VST2 与 VST3 效果器；不支持乐器或 32-bit VST2。
 - macOS 包未经 Apple Developer ID 公证，系统可能要求可信来源确认与 quarantine 处理。
-- 旧工程若出现 Missing 自动化，只在确认后手动执行 `Reset Missing Automation...`，并检查 `Control NNN` 自动化轨道。
-- Cubase `.fxchainpreset` 与标准 `.vstpreset` 操作仍为 VST3-only。
+- Cubase .fxchainpreset 与标准 .vstpreset 操作仍为 VST3-only。
 - FL Studio 必须启用两个最大固定缓冲区选项，否则 Bridge 可能不工作。
-- 升级顺序：关闭 DAW -> 删除旧文件 -> 复制 0.8.4 -> 重新扫描。
-- 以随包 0.8.4 手册和安装说明为准。
+- 升级顺序：关闭 DAW -> 删除旧文件 -> 复制 0.9.2 -> 重新扫描。
+- 以随包 0.9.2 手册和安装说明为准。
 
 - QQ Host is experimental; performance and latency depend on the DAW, plug-ins, buffers, IPC overhead, and system configuration.
+- Sidechain timing depends on third-party plug-ins reporting latency correctly. Misreported or unannounced dynamic latency cannot be fully compensated.
 - Only licensed native 64-bit VST2 and VST3 effects are supported; instruments and 32-bit VST2 plug-ins are unsupported.
 - macOS packages are not Apple Developer ID notarized and may require trusted-source confirmation and quarantine handling.
-- Run `Reset Missing Automation...` only after confirmation and review `Control NNN` automation lanes.
-- Cubase `.fxchainpreset` and standard `.vstpreset` operations remain VST3-only.
+- Cubase .fxchainpreset and standard .vstpreset operations remain VST3-only.
 - FL Studio requires both maximum fixed-buffer options; otherwise the Bridge may not process correctly.
-- Upgrade order: quit DAW -> remove old files -> copy 0.8.4 -> rescan.
-- Follow the bundled 0.8.4 manuals and installation guides.
+- Upgrade order: quit DAW -> remove old files -> copy 0.9.2 -> rescan.
+- Follow the bundled 0.9.2 manuals and installation guides.
 
 ## 灵感与独立性声明 / Inspiration and independence
 
@@ -124,9 +158,9 @@ The concept was inspired by the external-host and processing-offload workflow of
 
 ## 完整版本记录 / Complete version history
 
-本 README 保留从 0.0.1 到 0.8.3 的既有完整历史，并追加 0.8.4；共覆盖 63 个真实版本。遗漏版本：无。
+本 README 保留从 0.0.1 到 0.9.2 的完整历史，共覆盖 66 个真实版本。遗漏版本：无。
 
-This README preserves the complete existing history from 0.0.1 through 0.8.3 and adds 0.8.4, covering 63 real versions in total. Omitted versions: none.
+This README preserves the complete history from 0.0.1 through 0.9.2, covering 66 real versions in total. Omitted versions: none.
 
 | 版本 / Version | 中文摘要 | English summary | 状态 / Status |
 |---|---|---|---|
@@ -192,9 +226,13 @@ This README preserves the complete existing history from 0.0.1 through 0.8.3 and
 | 0.8.1 | 将 Bypass 统一为醒目的 `B` 控件，并恢复“初始匿名、可选命名”的 Divider 工作流；不改变受保护的音频与状态行为。 | Unified Bypass as a prominent `B` control and restored the “anonymous by default, optionally nameable” Divider workflow without changing protected audio or state behavior. | 2026-08-31 · 正式回滚基线 / Formal rollback baseline |
 | 0.8.2 | 修复 Hosted 自动化回声与抖动、16-Slot FX Chain 写入、旧 FX Chain 自动化关联，以及 Fader/Pan/相位 Undo/Redo。 | Corrected Hosted automation echo/jitter, 16-Slot FX Chain export, automation association for older FX Chains, and Fader/Pan/polarity Undo/Redo. | 2026-09-01 · 已验证候选 / Validated candidate |
 | 0.8.3 | 安全归一化旧通用 VST3 标识与精确 CID，并加入只清理 Missing、保留 Active 的显式自动化恢复。 | Safely canonicalised legacy generic VST3 identities to exact CIDs and added explicit recovery that removes only Missing mappings while preserving Active mappings. | 2026-09-01 · 历史稳定基线 / Historical stable baseline |
-| 0.8.4 | 支持已授权的 64-bit VST2 效果器并标记 VST2/VST3；将低延迟模式明确为 LIVE；修复独立编辑器、无效 Slot 重载、首次窗口闪跳和 DAW 快捷键转发。 | Added licensed 64-bit VST2 effect hosting with VST2/VST3 labels; clarified low-latency operation as LIVE; fixed independent editors, invalid-Slot reload, first-show jumping, and DAW shortcut forwarding. | 2026-09-01 · **当前稳定基线 / Current stable baseline** |
+| 0.8.4 | 支持已授权的 64-bit VST2 效果器并标记 VST2/VST3；将低延迟模式明确为 LIVE；修复独立编辑器、无效 Slot 重载、首次窗口闪跳和 DAW 快捷键转发。 | Added licensed 64-bit VST2 effect hosting with VST2/VST3 labels; clarified low-latency operation as LIVE; fixed independent editors, invalid-Slot reload, first-show jumping, and DAW shortcut forwarding. | 2026-09-01 · 历史稳定基线 / Historical stable baseline |
+| 0.9.0 | 建立最多两个效果器的 Sidechain FX Rack、处理后侧链监听与按主链 Slot 对齐的基础架构。 | Added the two-slot Sidechain FX Rack, processed-sidechain monitoring, and the foundation for per-Main-Slot timing alignment. | 2026-09-01 · 历史候选 / Historical candidate |
+| 0.9.1 | 修复仅侧链处理时的播放卡顿与双 Slot 布局重叠，并稳定侧链活动状态。 | Fixed sidechain-only playback stutter and the overlapping two-slot layout, and stabilized sidechain activity state. | 2026-09-02 · 已验证候选 / Validated candidate |
+| 0.9.2 | 加入确定性侧链样本对齐验证、可折叠 SC 面板与紧凑耳机监听按钮。 | Added deterministic sidechain sample-alignment verification, a collapsible SC panel, and a compact headphone monitor button. | 2026-09-02 · **当前稳定基线 / Current stable baseline** |
+
 ## 源码与公开边界 / Source and publication boundary
 
-QQ Host 为闭源软件，源码仓库保持私有。本仓库不包含源码、构建缓存、内部日志、私有路径或开发凭据，只提供公开说明与用户批准的二进制 Release。
+QQ Host 为闭源软件，源码仓库保持私有。本仓库不包含源码、构建缓存、内部日志、私有路径或开发凭据，只提供公开说明、产品界面图片与用户批准的二进制 Release。
 
-QQ Host is closed-source software and its source repository remains private. This repository contains no source code, build cache, internal logs, private paths, or development credentials; it provides only public documentation and user-approved binary releases.
+QQ Host is closed-source software and its source repository remains private. This repository contains no source code, build cache, internal logs, private paths, or development credentials; it provides only public documentation, product screenshots, and user-approved binary releases.
