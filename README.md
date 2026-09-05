@@ -64,31 +64,31 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 - 产品 / Product: **QQ Host**
 - 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **0.9.22**
+- 版本 / Version: **1.0.0**
 - 发布日期 / Release date: **2026-09-05**
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
 ### 下载 / Download
 
-- [QQ Host 0.9.22 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v0.9.22)
-- Windows: [QQ Host 0.9.22 Windows x64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.Windows.x64.VST3.zip)
-- macOS Apple Silicon: [QQ Host 0.9.22 macOS Apple Silicon VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.macOS.Apple.Silicon.VST3.zip)
-- macOS Intel: [QQ Host 0.9.22 macOS Intel x86_64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.macOS.Intel.x86_64.VST3.zip)
-- macOS Universal 2 AU: [QQ Host 0.9.22 macOS Universal 2 AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.txt)
-- [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.15.pdf)
-- [English User Manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.15.User.Manual.English.Edition.pdf)
-- [SHA-256 校验清单 / Checksums](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/SHA256SUMS.txt)
+- [QQ Host 1.0.0 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.0)
+- Windows: [QQ Host 1.0.0 Windows x64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.Windows.x64.VST3.zip)
+- macOS Apple Silicon: [QQ Host 1.0.0 macOS Apple Silicon VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.macOS.Apple.Silicon.VST3.zip)
+- macOS Intel: [QQ Host 1.0.0 macOS Intel x86_64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.macOS.Intel.x86_64.VST3.zip)
+- macOS Universal 2 AU: [QQ Host 1.0.0 macOS Universal 2 AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.txt)
+- [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.Installation.Guide.English.txt)
+- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.pdf)
+- [English User Manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.User.Manual.English.Edition.pdf)
+- [SHA-256 校验清单 / Checksums](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/SHA256SUMS.txt)
 
 
 > GitHub 自动生成的 **Source code (zip)** 和 **Source code (tar.gz)** 只是本下载页仓库的资料快照，不是可安装的 QQ Host 插件。
 >
 > GitHub's automatically generated **Source code (zip)** and **Source code (tar.gz)** are snapshots of this download-page repository, not installable QQ Host plug-ins.
 
-请只下载与你的平台和插件格式对应的 ZIP，并同时阅读安装说明。0.9.15 用户手册继续适用于 0.9.22，因为后续版本没有新增用户操作步骤。
+请只下载与你的平台和插件格式对应的 ZIP，并同时阅读安装说明。1.0.0 用户手册已补充完整的自动化 / MIDI Remote 与 VST2 预设操作说明。
 
-Download only the ZIP matching your platform and plug-in format, and read the installation guide. The 0.9.15 user manuals remain applicable to 0.9.22 because later versions add no new user-facing operation.
+Download only the ZIP matching your platform and plug-in format, and read the installation guide. The 1.0.0 manuals add complete Automation / MIDI Remote and VST2 preset workflows.
 
 ## 支持范围 / Compatibility
 
@@ -102,11 +102,11 @@ Download only the ZIP matching your platform and plug-in format, and read the in
 ## 安装与基本使用 / Installation and basic use
 
 1. 完全退出 DAW 与插件扫描器。 / Fully quit the DAW and plug-in scanners.
-2. 下载并解压与你的平台和格式对应的 0.9.22 ZIP。 / Download and extract the 0.9.22 ZIP matching your platform and format.
+2. 下载并解压与你的平台和格式对应的 1.0.0 ZIP。 / Download and extract the 1.0.0 ZIP matching your platform and format.
 3. 按随包安装说明删除旧版并复制新版；不要混用不同版本的 Bridge 与后台 Host。 / Follow the installation guide; never mix Bridge and Host versions.
 4. 在 DAW 中重新扫描插件。 / Rescan plug-ins in the DAW.
 5. 在轨道 Insert 中加载 QQ Host Bridge，再在 Bridge Rack 中加载第三方 VST2/VST3 效果器。 / Insert QQ Host Bridge, then load VST2/VST3 effects in its Rack.
-6. FL Studio 用户必须在插件 Wrapper 的 Troubleshooting 中启用 **Process maximum size buffers** 和 **Use maximum buffer size from host**。 / FL Studio users must enable both maximum-buffer options in the Wrapper Troubleshooting page.
+6. FL Studio 用户必须在插件 Wrapper 的 Troubleshooting 中启用 **Use fixed size buffers**，并在 More 中同时启用 **Process maximum size buffers** 与 **Use maximum buffer size from host**。 / FL Studio users must enable **Use fixed size buffers**, plus both maximum-buffer options under More, in the Wrapper Troubleshooting page.
 
 ## 主要功能 / Main features
 
@@ -120,21 +120,21 @@ Download only the ZIP matching your platform and plug-in format, and read the in
 - Cubase FX Chain 载入/保存、自动参数镜像、Undo/Redo
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
-## 0.9.22 更新摘要 / 0.9.22 summary
+## 1.0.0 更新摘要 / 1.0.0 summary
 
-- 修复 DAW 原生 Bypass 时的 PDC 误报，旁路音频继续经过与 Bridge 报告延迟一致的 Dry 路径。
-- 加固 Duplicate、Move、Add、故障隔离与恢复事务，减少插件消失、错误 Power Off 和 Host 恢复异常。
-- 降低隐藏插件编辑器的后台自动化扫描与尺寸轮询。
-- 改进 Cubase FX Chain 保存/加载，支持混合 VST2/VST3 Chain，并提供 MediaBay 首次发现提示。
-- 加入 VST2 `.fxp/.fxb` 预设和侧链路由，包括单声道 DAW 轨道上的固定 4-in/2-out VST2。
-- 只在完整且播放格式稳定的 Bridge Cohort 上启用快速恢复；条件不足时自动走保守路径。
+- 首个正式稳定版，由用户实测通过的候选版直接提升而来。
+- 修复连续快速操作覆盖尚未被 Bridge 读取的命令结果。
+- 加固 DAW 保存工程时第三方插件状态 Snapshot 的请求对应关系与新鲜度检查。
+- 保持已验证的 150 ms 快速启动门控与 500 ms 保守门控，不重新引入被否决的激进启动路径。
+- 更新中英文手册，加入完整的自动化 / MIDI Remote 流程，以及 VST2 `.fxp/.fxb` 与整条 `.fxchainpreset` 的区别和操作。
+- 保留 0.9.22 已验证的 VST2/VST3、侧链、PDC、工程恢复、故障隔离和 Cubase FX Chain 能力。
 
-- Fixes DAW-native Bypass PDC mismatch by keeping bypassed audio on the latency-matched Dry path.
-- Hardens Duplicate, Move, Add, fault isolation, and restore transactions to reduce disappearing plug-ins, unintended Power Off, and recovery failures.
-- Reduces background automation scans and size polling for hidden hosted editors.
-- Improves Cubase FX Chain save/load, supports mixed VST2/VST3 chains, and provides first-save MediaBay guidance.
-- Adds VST2 `.fxp/.fxb` presets and sidechain routing, including fixed 4-in/2-out VST2 effects on mono DAW tracks.
-- Enables fast restore only for complete, playback-format-stable Bridge cohorts, with an automatic conservative fallback.
+- First formal Stable release, promoted directly from the owner-tested candidate.
+- Fixes rapid consecutive actions overwriting a command result before Bridge consumes it.
+- Strengthens request correlation and freshness checks for hosted plug-in state snapshots during DAW project saves.
+- Keeps the validated 150 ms fast startup gate and 500 ms conservative gate without restoring the rejected aggressive startup path.
+- Updates both manuals with complete Automation / MIDI Remote workflows and clear VST2 `.fxp/.fxb` versus whole-rack `.fxchainpreset` instructions.
+- Retains the validated VST2/VST3, sidechain, PDC, project restore, fault isolation, and Cubase FX Chain capabilities from 0.9.22.
 
 ## 已知问题与升级注意 / Known issues and upgrade notes
 
@@ -143,18 +143,18 @@ Download only the ZIP matching your platform and plug-in format, and read the in
 - 仅支持已获授权的原生 64-bit VST2 与 VST3 效果器；不支持乐器或 32-bit VST2。
 - 第一次保存新的 Cubase FX Chain 后，如果 MediaBay 没有立即显示，请执行 **Quick Rescan Disk**；必要时再保存一次。
 - macOS 包未经 Apple Developer ID 公证，系统可能要求可信来源确认与 quarantine 处理。
-- FL Studio 必须启用两个最大固定缓冲区选项，否则 Bridge 可能不工作。
-- 升级顺序：关闭 DAW -> 删除旧文件 -> 安装 0.9.22 -> 重新扫描。
-- 以随包 0.9.22 安装说明和 0.9.15 用户手册为准。
+- FL Studio 必须启用 **Use fixed size buffers** 及其 More 中的两个最大缓冲区选项，否则 Bridge 可能不工作。
+- 升级顺序：关闭 DAW -> 删除旧文件 -> 安装 1.0.0 -> 重新扫描。
+- 以随包 1.0.0 安装说明和 1.0.0 用户手册为准。
 
 - QQ Host is experimental; performance and latency depend on the DAW, plug-ins, buffers, IPC overhead, and system configuration.
 - Sidechain and PDC alignment depend on correct third-party latency and input-layout reporting. Misreported or unannounced dynamic changes cannot be fully compensated.
 - Only licensed native 64-bit VST2 and VST3 effects are supported; instruments and 32-bit VST2 plug-ins are unsupported.
 - If a newly saved Cubase FX Chain does not immediately appear in MediaBay, run **Quick Rescan Disk** and save once more if needed.
 - macOS packages are not Apple Developer ID notarized and may require trusted-source confirmation and quarantine handling.
-- FL Studio requires both maximum fixed-buffer options; otherwise the Bridge may not process correctly.
-- Upgrade order: quit DAW -> remove old files -> install 0.9.22 -> rescan.
-- Follow the bundled 0.9.22 installation guides and 0.9.15 user manuals.
+- FL Studio requires **Use fixed size buffers** and both maximum-buffer options under More; otherwise the Bridge may not process correctly.
+- Upgrade order: quit DAW -> remove old files -> install 1.0.0 -> rescan.
+- Follow the bundled 1.0.0 installation guides and 1.0.0 user manuals.
 
 ## 灵感与独立性声明 / Inspiration and independence
 
@@ -164,9 +164,9 @@ The concept was inspired by the external-host and processing-offload workflow of
 
 ## 完整版本记录 / Complete version history
 
-本 README 保留从 0.0.1 到 0.9.22 的完整历史，共覆盖 86 个真实版本。遗漏版本：无。
+本 README 保留从 0.0.1 到 1.0.0 的完整历史，共覆盖 87 个真实版本。0.9.23 候选版直接更名并提升为 1.0.0，没有作为独立版本发布。遗漏版本：无。
 
-This README preserves the complete history from 0.0.1 through 0.9.22, covering 86 real versions in total. Omitted versions: none.
+This README preserves the complete history from 0.0.1 through 1.0.0, covering 87 real versions in total. The 0.9.23 candidate was renamed and promoted directly to 1.0.0 rather than released separately. Omitted versions: none.
 
 | 版本 / Version | 中文摘要 | English summary | 状态 / Status |
 |---|---|---|---|
@@ -257,6 +257,7 @@ This README preserves the complete history from 0.0.1 through 0.9.22, covering 8
 | 0.9.20 | 只记录 Bridge 到达、拓扑稳定、恢复事务、首个音频块与 `HOST READY` 时序，不修改任何等待或恢复行为。 | Added startup milestone telemetry only, without changing any wait, ordering or recovery decision. | Diagnostic Candidate |
 | 0.9.21 | 尝试完整 Cohort 的条件式快速启动；真实 Cubase 测试因恢复时仍使用 fallback 格式而更慢并重现卡顿，因此否决。 | Tried a conditional cohort fast path; rejected after real Cubase testing restored with fallback format, lengthened startup and reproduced the stall. | Rejected Candidate |
 | 0.9.22 | Bridge 发布 DAW 的真实播放格式；只有完整且格式稳定的 Cohort 才快速恢复，否则自动保留 0.9.20 保守路径。三 Bridge Cubase 工程已确认一次进入 `HOST READY`。 | Publishes the real DAW playback format and enables fast restore only for a complete, format-stable cohort, otherwise retaining the conservative 0.9.20 path. Confirmed in the real three-Bridge Cubase project. | Stable |
+| 1.0.0 | 修复连续命令结果覆盖与工程保存 Snapshot 对应/新鲜度问题；保持已验证的启动门控，并补齐自动化、MIDI Remote 与 VST2 预设说明。 | Fixes consecutive-command result overwrite and project-save Snapshot correlation/freshness; keeps the validated startup gates and completes Automation, MIDI Remote, and VST2 preset documentation. | 2026-09-05 · 正式稳定版 / Formal Stable |
 
 ## 源码与公开边界 / Source and publication boundary
 
