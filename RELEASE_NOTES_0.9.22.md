@@ -107,15 +107,20 @@ Every real version between the previous public release 0.9.2 and this 0.9.22 rel
 
 ## Release 资产 / Release assets
 
-- `QQ Host 0.9.22 Windows x64 VST3.zip`
-- `QQ Host 0.9.22 macOS Apple Silicon VST3.zip`
-- `QQ Host 0.9.22 macOS Intel x86_64 VST3.zip`
-- `QQ Host 0.9.22 macOS Universal 2 AU.zip`
-- `QQ Host 0.9.22 安装说明（中文）.txt`
-- `QQ Host 0.9.22 Installation Guide (English).txt`
-- `QQ Host 0.9.15 用户手册 中文版.pdf`
-- `QQ Host 0.9.15 User Manual English Edition.pdf`
+- `QQ.Host.0.9.22.Windows.x64.VST3.zip`
+- `QQ.Host.0.9.22.macOS.Apple.Silicon.VST3.zip`
+- `QQ.Host.0.9.22.macOS.Intel.x86_64.VST3.zip`
+- `QQ.Host.0.9.22.macOS.Universal.2.AU.zip`
+- `QQ.Host.0.9.22.txt`
+- `QQ.Host.0.9.22.Installation.Guide.English.txt`
+- `QQ.Host.0.9.15.pdf`
+- `QQ.Host.0.9.15.User.Manual.English.Edition.pdf`
 - `SHA256SUMS.txt`
+
+
+GitHub 为兼容下载链接自动规范化了公开资产文件名；上面列出的就是 Release API 返回的真实名称。`QQ.Host.0.9.22.txt` 是中文安装说明，`QQ.Host.0.9.15.pdf` 是中文用户手册。
+
+GitHub automatically normalized the public asset filenames for download-link compatibility; the list above uses the exact names returned by the Release API. `QQ.Host.0.9.22.txt` is the Chinese installation guide, and `QQ.Host.0.9.15.pdf` is the Chinese user manual.
 
 0.9.15 用户手册继续适用于 0.9.22，因为 0.9.16–0.9.22 没有新增用户操作步骤。每个平台 ZIP 和文档的 SHA-256 请见 `SHA256SUMS.txt`。
 

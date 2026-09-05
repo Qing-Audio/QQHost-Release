@@ -71,15 +71,20 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 ### 下载 / Download
 
 - [QQ Host 0.9.22 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v0.9.22)
-- Windows: [QQ Host 0.9.22 Windows x64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ%20Host%200.9.22%20Windows%20x64%20VST3.zip)
-- macOS Apple Silicon: [QQ Host 0.9.22 macOS Apple Silicon VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ%20Host%200.9.22%20macOS%20Apple%20Silicon%20VST3.zip)
-- macOS Intel: [QQ Host 0.9.22 macOS Intel x86_64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ%20Host%200.9.22%20macOS%20Intel%20x86_64%20VST3.zip)
-- macOS Universal 2 AU: [QQ Host 0.9.22 macOS Universal 2 AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ%20Host%200.9.22%20macOS%20Universal%202%20AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ%20Host%200.9.22%20%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%AD%E6%96%87%EF%BC%89.txt)
-- [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ%20Host%200.9.22%20Installation%20Guide%20%28English%29.txt)
-- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ%20Host%200.9.15%20%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%20%E4%B8%AD%E6%96%87%E7%89%88.pdf)
-- [English User Manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ%20Host%200.9.15%20User%20Manual%20English%20Edition.pdf)
+- Windows: [QQ Host 0.9.22 Windows x64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.Windows.x64.VST3.zip)
+- macOS Apple Silicon: [QQ Host 0.9.22 macOS Apple Silicon VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.macOS.Apple.Silicon.VST3.zip)
+- macOS Intel: [QQ Host 0.9.22 macOS Intel x86_64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.macOS.Intel.x86_64.VST3.zip)
+- macOS Universal 2 AU: [QQ Host 0.9.22 macOS Universal 2 AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.txt)
+- [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.22.Installation.Guide.English.txt)
+- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.15.pdf)
+- [English User Manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/QQ.Host.0.9.15.User.Manual.English.Edition.pdf)
 - [SHA-256 校验清单 / Checksums](https://github.com/Qing-Audio/QQHost-Release/releases/download/v0.9.22/SHA256SUMS.txt)
+
+
+> GitHub 自动生成的 **Source code (zip)** 和 **Source code (tar.gz)** 只是本下载页仓库的资料快照，不是可安装的 QQ Host 插件。
+>
+> GitHub's automatically generated **Source code (zip)** and **Source code (tar.gz)** are snapshots of this download-page repository, not installable QQ Host plug-ins.
 
 请只下载与你的平台和插件格式对应的 ZIP，并同时阅读安装说明。0.9.15 用户手册继续适用于 0.9.22，因为后续版本没有新增用户操作步骤。
 
