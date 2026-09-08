@@ -64,46 +64,45 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 - 产品 / Product: **QQ Host**
 - 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **1.0.0**
-- 发布日期 / Release date: **2026-09-05**
+- 版本 / Version: **1.0.3 · Stable**
+- 发布日期 / Release date: **2026-09-09**
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
 ### 下载 / Download
 
-- [QQ Host 1.0.0 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.0)
-- Windows: [QQ Host 1.0.0 Windows x64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.Windows.x64.VST3.zip)
-- macOS Apple Silicon: [QQ Host 1.0.0 macOS Apple Silicon VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.macOS.Apple.Silicon.VST3.zip)
-- macOS Intel: [QQ Host 1.0.0 macOS Intel x86_64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.macOS.Intel.x86_64.VST3.zip)
-- macOS Universal 2 AU: [QQ Host 1.0.0 macOS Universal 2 AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.txt)
-- [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.pdf)
-- [English User Manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/QQ.Host.1.0.0.User.Manual.English.Edition.pdf)
-- [SHA-256 校验清单 / Checksums](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.0/SHA256SUMS.txt)
+- [QQ Host 1.0.3 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.3)
+- Windows: [QQ Host 1.0.3 Windows x64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.Windows.x64.VST3.zip)
+- macOS Apple Silicon: [QQ Host 1.0.3 macOS Apple Silicon VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.macOS.Apple.Silicon.VST3.zip)
+- macOS Intel: [QQ Host 1.0.3 macOS Intel x86_64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.macOS.Intel.x86_64.VST3.zip)
+- macOS Universal 2 AU: [QQ Host 1.0.3 macOS Universal 2 AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.Installation.Guide.Chinese.txt)
+- [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.Installation.Guide.English.txt)
+- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.User.Manual.Chinese.pdf)
+- [English User Manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.User.Manual.English.Edition.pdf)
 
 
 > GitHub 自动生成的 **Source code (zip)** 和 **Source code (tar.gz)** 只是本下载页仓库的资料快照，不是可安装的 QQ Host 插件。
 >
 > GitHub's automatically generated **Source code (zip)** and **Source code (tar.gz)** are snapshots of this download-page repository, not installable QQ Host plug-ins.
 
-请只下载与你的平台和插件格式对应的 ZIP，并同时阅读安装说明。1.0.0 用户手册已补充完整的自动化 / MIDI Remote 与 VST2 预设操作说明。
+请只下载与你的平台和插件格式对应的 ZIP，并同时阅读安装说明。1.0.3 中英文用户手册保留自动化 / MIDI Remote 等原有内容，并补充新版 VST2/VST3 预置保存与格式标签说明。
 
-Download only the ZIP matching your platform and plug-in format, and read the installation guide. The 1.0.0 manuals add complete Automation / MIDI Remote and VST2 preset workflows.
+Download only the ZIP matching your platform and plug-in format, and read the installation guide. The 1.0.3 Chinese and English manuals retain the Automation / MIDI Remote material and add the updated VST2/VST3 preset-saving workflow and format labels.
 
 ## 支持范围 / Compatibility
 
-- Windows 10/11 x64: VST3 Bridge + background QQ Host.exe
-- macOS 11 or later: Apple Silicon VST3, Intel x86_64 VST3, Universal 2 AU
-- Hosted plug-ins: licensed native 64-bit VST2 and VST3 audio effects; the browser labels each format and excludes instruments.
-- 32-bit VST2 plug-ins are not supported. VST2 presets use native `.fxp/.fxb`; standard `.vstpreset` remains VST3.
-- Cubase `.fxchainpreset` can contain mixed VST2/VST3 chains. First-time MediaBay discovery may require **Quick Rescan Disk** or another save.
-- macOS packages are not Apple Developer ID notarized.
+- Windows 10/11 x64：VST3 Bridge + 后台 QQ Host.exe。 / VST3 Bridge + background QQ Host.exe.
+- macOS 11 或更新版本：Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。 / macOS 11 or later: Apple Silicon VST3, Intel x86_64 VST3, and Universal 2 AU.
+- 可托管已获授权的原生 64-bit VST2/VST3 音频效果器；浏览器标记格式并排除乐器，不支持 32-bit VST2。 / Hosts licensed native 64-bit VST2/VST3 audio effects; the browser labels formats and excludes instruments. 32-bit VST2 is unsupported.
+- 单插件 SAVE 默认保存 `.vstpreset`；VST2 使用兼容 Cubase 的 VST2 状态容器，仍可导出原生 FXP 和导入 FXP/FXB。此容器不代表把插件转换为 VST3。 / Single-plug-in SAVE defaults to `.vstpreset`; VST2 uses a Cubase-compatible VST2 state container, while native FXP export and FXP/FXB import remain available. This container does not convert the plug-in to VST3.
+- Cubase `.fxchainpreset` 可包含混合 VST2/VST3 机架。如果新预置或 Chain 没有立即被 MediaBay 收录，可执行 **Quick Rescan Disk**。 / Cubase `.fxchainpreset` supports mixed VST2/VST3 racks. If a new preset or Chain is not immediately discovered by MediaBay, use **Quick Rescan Disk**.
+- macOS 包未经 Apple Developer ID 公证；可信来源与安全操作说明见安装指南。 / macOS packages are not Apple Developer ID notarized; see the installation guide for trusted-source and safe-installation guidance.
 
 ## 安装与基本使用 / Installation and basic use
 
 1. 完全退出 DAW 与插件扫描器。 / Fully quit the DAW and plug-in scanners.
-2. 下载并解压与你的平台和格式对应的 1.0.0 ZIP。 / Download and extract the 1.0.0 ZIP matching your platform and format.
-3. 按随包安装说明删除旧版并复制新版；不要混用不同版本的 Bridge 与后台 Host。 / Follow the installation guide; never mix Bridge and Host versions.
+2. 下载并解压与你的平台和格式对应的 1.0.3 ZIP。 / Download and extract the 1.0.3 ZIP matching your platform and format.
+3. 按随包安装说明移走旧版并复制新版；Windows 的 Bridge 与后台 Host 须同版本、同目录，macOS 分别按说明安装。 / Follow the guide to move old files out and install the new pair. On Windows, Bridge and Host must share the same version and folder; on macOS use the documented separate locations.
 4. 在 DAW 中重新扫描插件。 / Rescan plug-ins in the DAW.
 5. 在轨道 Insert 中加载 QQ Host Bridge，再在 Bridge Rack 中加载第三方 VST2/VST3 效果器。 / Insert QQ Host Bridge, then load VST2/VST3 effects in its Rack.
 6. FL Studio 用户必须在插件 Wrapper 的 Troubleshooting 中启用 **Use fixed size buffers**，并在 More 中同时启用 **Process maximum size buffers** 与 **Use maximum buffer size from host**。 / FL Studio users must enable **Use fixed size buffers**, plus both maximum-buffer options under More, in the Wrapper Troubleshooting page.
@@ -112,7 +111,7 @@ Download only the ZIP matching your platform and plug-in format, and read the in
 
 - 保留 DAW Insert 工作流的 Bridge + 后台 Host 架构 / Bridge + background Host architecture preserving the DAW Insert workflow
 - 多 Bridge、多 Slot VST2/VST3 效果器 Rack / Multi-Bridge, multi-Slot VST2/VST3 effect Rack
-- OFFLOAD 与 LIVE / OFFLOAD and LIVE modes
+- OFFLOAD 与 LIVE：OFFLOAD 通过缓冲与后台调度分担混音时的实时 CPU 压力；LIVE 减少桥接等待，但不提供同等的 CPU 卸载优势。 / OFFLOAD and LIVE: OFFLOAD uses buffering and background scheduling to reduce real-time CPU pressure when mixing; LIVE reduces bridge waiting but does not provide the same CPU-relief advantage.
 - Internal PDC、Per-Slot PlayHead 与 Latency Rescue
 - 最多两个效果器的 Sidechain FX Rack、可折叠 SC 面板与独立监听 / Two-slot Sidechain FX Rack, collapsible SC panel, and solo monitoring
 - BYPASS ALL、Power、Fader、Pan、Polarity 与 Meter
@@ -120,7 +119,49 @@ Download only the ZIP matching your platform and plug-in format, and read the in
 - Cubase FX Chain 载入/保存、自动参数镜像、Undo/Redo
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
-## 1.0.0 更新摘要 / 1.0.0 summary
+## 1.0.3 更新摘要 / 1.0.3 release summary
+
+**1.0.3 · 正式稳定版 / Stable · 2026-09-09**
+
+本次更新集中改善单个效果器的预置保存与选择体验。VST2 和 VST3 的 SAVE 都可以保存为 `.vstpreset`；VST2 使用兼容 Cubase 的包装，仍然是 VST2 预置，不是把插件转换成 VST3。列表按插件与格式识别预置，避免同名 VST2/VST3 插件的预置混在一起，并修复中文提示乱码。
+
+This update focuses on saving and selecting presets for individual hosted effects. SAVE uses `.vstpreset` for both VST2 and VST3. VST2 uses a Cubase-compatible container: the preset remains VST2, and the plug-in is not converted to VST3. The list checks plug-in and format identity to keep incompatible presets apart, and Chinese feedback now displays correctly.
+
+### 1.0.1 · 历史候选版 / Historical candidate · 2026-09-08
+
+- 改善单插件 VST2/VST3 预置保存：完整写入并校验后再发布文件，减少留下不完整文件的风险。
+- 修正原生 VST2 FXP 的长度字段，保留插件原始状态内容。
+- 在 SAVE 附近提供明确的成功或失败提示。此候选版并未解决当时反馈的 Cubase 列表可见性问题，后续由 1.0.2 和 1.0.3 继续改进。
+
+- Improved single-plug-in VST2/VST3 preset saving: files are fully written and checked before publication, reducing the risk of incomplete files.
+- Corrected the native VST2 FXP length field while preserving the plug-in's state data.
+- Added clear success or failure feedback beside SAVE. This candidate did not resolve the reported Cubase preset-list visibility issue; work continued in 1.0.2 and 1.0.3.
+
+### 1.0.2 · 历史候选版 / Historical candidate · 2026-09-08
+
+- VST3 预置补齐插件名称、厂商与效果器分类信息，帮助 Cubase MediaBay 正确识别。
+- VST2 的 SAVE 默认改为兼容 Cubase 的 `.vstpreset`；“…”菜单仍可导出原生 FXP，旧 FXP/FXB 仍可导入。
+- 旧预置不会被自动批量改写；用新版重新保存时才补齐新增信息。文件保存成功与 MediaBay 是否立即收录是两件不同的事。
+
+- Added plug-in name, vendor, and effect-category information to VST3 presets for Cubase MediaBay identification.
+- Changed VST2 SAVE to a Cubase-compatible `.vstpreset` by default. Native FXP export remains in the “…” menu, and existing FXP/FXB files can still be imported.
+- Existing presets are not rewritten in bulk; the added information is included when a preset is saved again. A successful file save and immediate MediaBay discovery are separate outcomes.
+
+### 1.0.3 · 正式稳定版 / Stable · 2026-09-09
+
+- 预置列表按文件内部的插件身份与格式筛选，避免同名 VST2/VST3 插件互相显示不兼容预置。
+- 列表清楚标注 `[VST3]`、`[VST2 / Cubase]`、`[VST2 / FXP]`、`[VST2 / FXB]`。导入前检查兼容性；加载失败时保留上一次成功选择的名称。
+- 修复中文保存、导入及错误提示乱码；沿用现有按钮布局和颜色。
+- 本轮 Cubase 测试中，VST3 与 VST2 新预置均已能直接读取。历史间歇性收录延迟的触发条件尚未确认，因此仍保留 **MediaBay > Quick Rescan Disk** 补救说明，不承诺所有环境都无需重扫。
+- 沿用已验证的音频处理、OFFLOAD/LIVE、侧链、延迟补偿、自动化与启动恢复行为。
+
+- Filters presets by their internal plug-in and format identity, preventing incompatible presets from appearing for same-named VST2/VST3 editions.
+- Clearly labels `[VST3]`, `[VST2 / Cubase]`, `[VST2 / FXP]`, and `[VST2 / FXB]`. Imports are checked for compatibility; a failed load keeps the last successfully selected name.
+- Fixes garbled Chinese save, import, and error messages while retaining the existing button layout and colors.
+- In the latest Cubase test, new VST3 and VST2 presets could both be read directly. The conditions behind earlier intermittent discovery delays remain unconfirmed, so **MediaBay > Quick Rescan Disk** remains a documented fallback; immediate discovery is not guaranteed in every environment.
+- Retains the validated audio processing, OFFLOAD/LIVE, sidechain, latency compensation, automation, and startup/restore behavior.
+
+## 1.0.0 历史更新摘要 / Historical 1.0.0 summary
 
 - 首个正式稳定版，由用户实测通过的候选版直接提升而来。
 - 修复连续快速操作覆盖尚未被 Bridge 读取的命令结果。
@@ -141,20 +182,22 @@ Download only the ZIP matching your platform and plug-in format, and read the in
 - QQ Host 是实验性外部宿主；性能收益与延迟依赖 DAW、插件、缓冲区、IPC 开销与系统配置。
 - 侧链和 PDC 对齐依赖第三方插件正确上报延迟与输入布局；误报或未通知宿主的动态变化无法被完全补偿。
 - 仅支持已获授权的原生 64-bit VST2 与 VST3 效果器；不支持乐器或 32-bit VST2。
-- 第一次保存新的 Cubase FX Chain 后，如果 MediaBay 没有立即显示，请执行 **Quick Rescan Disk**；必要时再保存一次。
+- 本轮测试中，VST2/VST3 新预置已能在 Cubase 直接读取；但历史间歇性收录延迟的触发条件尚未确认。如果新预置或 FX Chain 没有立即显示，请执行 **MediaBay > Quick Rescan Disk**，不必反复盲存。
+- 同名插件的 VST2/VST3 版不一定可以互换预置。第三方状态恢复依赖插件自身实现，重要预置加载后请核对参数。
 - macOS 包未经 Apple Developer ID 公证，系统可能要求可信来源确认与 quarantine 处理。
 - FL Studio 必须启用 **Use fixed size buffers** 及其 More 中的两个最大缓冲区选项，否则 Bridge 可能不工作。
-- 升级顺序：关闭 DAW -> 删除旧文件 -> 安装 1.0.0 -> 重新扫描。
-- 以随包 1.0.0 安装说明和 1.0.0 用户手册为准。
+- 升级顺序：关闭 DAW -> 移走旧文件 -> 成套安装 1.0.3 -> 重新扫描。
+- 以随包 1.0.3 安装说明和 1.0.3 用户手册为准；1.0.0 为上一稳定版本。
 
 - QQ Host is experimental; performance and latency depend on the DAW, plug-ins, buffers, IPC overhead, and system configuration.
 - Sidechain and PDC alignment depend on correct third-party latency and input-layout reporting. Misreported or unannounced dynamic changes cannot be fully compensated.
 - Only licensed native 64-bit VST2 and VST3 effects are supported; instruments and 32-bit VST2 plug-ins are unsupported.
-- If a newly saved Cubase FX Chain does not immediately appear in MediaBay, run **Quick Rescan Disk** and save once more if needed.
+- In the latest test, new VST2/VST3 presets could be read directly in Cubase, but the conditions behind earlier intermittent discovery delays remain unconfirmed. If a new preset or FX Chain does not appear immediately, run **MediaBay > Quick Rescan Disk** rather than repeatedly saving blindly.
+- Same-named VST2/VST3 editions may not share compatible presets. State restoration depends on the third-party plug-in's implementation; verify parameters after loading important presets.
 - macOS packages are not Apple Developer ID notarized and may require trusted-source confirmation and quarantine handling.
 - FL Studio requires **Use fixed size buffers** and both maximum-buffer options under More; otherwise the Bridge may not process correctly.
-- Upgrade order: quit DAW -> remove old files -> install 1.0.0 -> rescan.
-- Follow the bundled 1.0.0 installation guides and 1.0.0 user manuals.
+- Upgrade order: quit DAW -> move old files out -> install the matching 1.0.3 pair -> rescan.
+- Follow the bundled 1.0.3 installation guides and 1.0.3 user manuals; 1.0.0 is the previous Stable.
 
 ## 灵感与独立性声明 / Inspiration and independence
 
@@ -164,9 +207,9 @@ The concept was inspired by the external-host and processing-offload workflow of
 
 ## 完整版本记录 / Complete version history
 
-本 README 保留从 0.0.1 到 1.0.0 的完整历史，共覆盖 87 个真实版本。0.9.23 候选版直接更名并提升为 1.0.0，没有作为独立版本发布。遗漏版本：无。
+本 README 保留从 0.0.1 到 1.0.3 的完整历史，共覆盖 90 个真实版本。0.9.23 候选版直接更名并提升为 1.0.0，没有作为独立版本发布。遗漏版本：无。
 
-This README preserves the complete history from 0.0.1 through 1.0.0, covering 87 real versions in total. The 0.9.23 candidate was renamed and promoted directly to 1.0.0 rather than released separately. Omitted versions: none.
+This README preserves the complete history from 0.0.1 through 1.0.3, covering 90 real versions in total. The 0.9.23 candidate was renamed and promoted directly to 1.0.0 rather than released separately. Omitted versions: none.
 
 | 版本 / Version | 中文摘要 | English summary | 状态 / Status |
 |---|---|---|---|
@@ -236,7 +279,6 @@ This README preserves the complete history from 0.0.1 through 1.0.0, covering 87
 | 0.9.0 | 建立最多两个效果器的 Sidechain FX Rack、处理后侧链监听与按主链 Slot 对齐的基础架构。 | Added the two-slot Sidechain FX Rack, processed-sidechain monitoring, and the foundation for per-Main-Slot timing alignment. | 2026-09-01 · 历史候选 / Historical candidate |
 | 0.9.1 | 修复仅侧链处理时的播放卡顿与双 Slot 布局重叠，并稳定侧链活动状态。 | Fixed sidechain-only playback stutter and the overlapping two-slot layout, and stabilized sidechain activity state. | 2026-09-02 · 已验证候选 / Validated candidate |
 | 0.9.2 | 加入确定性侧链样本对齐验证、可折叠 SC 面板与紧凑耳机监听按钮。 | Added deterministic sidechain sample-alignment verification, a collapsible SC panel, and a compact headphone monitor button. | 2026-09-02 · 历史稳定基线 / Historical stable baseline |
-
 | 0.9.3 | 修复 DAW 原生 Bypass 时的 PDC 误报：旁路音频继续经过与 Bridge 报告延迟一致的 Dry 延迟线。 | Fixed DAW-native Bypass PDC mismatch by keeping bypassed audio on the latency-matched Dry path. | Candidate |
 | 0.9.4 | 为 Duplicate、Move 与故障隔离加入持久 Slot UUID 和恢复快照事务，避免插件消失或错误关闭链首插件。 | Added persistent Slot UUIDs and transactional recovery snapshots for Duplicate, Move and fault isolation. | Candidate |
 | 0.9.5 | 一次未完成的 Idle CPU / 结构恢复自动修改试验；自动转换未覆盖关键路径，因此从未成为可用基线。 | Incomplete automated Idle CPU/structural-recovery experiment; required paths were not fully changed, so it was never a valid baseline. | Invalid test |
@@ -258,6 +300,9 @@ This README preserves the complete history from 0.0.1 through 1.0.0, covering 87
 | 0.9.21 | 尝试完整 Cohort 的条件式快速启动；真实 Cubase 测试因恢复时仍使用 fallback 格式而更慢并重现卡顿，因此否决。 | Tried a conditional cohort fast path; rejected after real Cubase testing restored with fallback format, lengthened startup and reproduced the stall. | Rejected Candidate |
 | 0.9.22 | Bridge 发布 DAW 的真实播放格式；只有完整且格式稳定的 Cohort 才快速恢复，否则自动保留 0.9.20 保守路径。三 Bridge Cubase 工程已确认一次进入 `HOST READY`。 | Publishes the real DAW playback format and enables fast restore only for a complete, format-stable cohort, otherwise retaining the conservative 0.9.20 path. Confirmed in the real three-Bridge Cubase project. | Stable |
 | 1.0.0 | 修复连续命令结果覆盖与工程保存 Snapshot 对应/新鲜度问题；保持已验证的启动门控，并补齐自动化、MIDI Remote 与 VST2 预设说明。 | Fixes consecutive-command result overwrite and project-save Snapshot correlation/freshness; keeps the validated startup gates and completes Automation, MIDI Remote, and VST2 preset documentation. | 2026-09-05 · 正式稳定版 / Formal Stable |
+| 1.0.1 | 改善单插件预置完整写入、校验和保存反馈，修正原生 FXP 长度；当时的 Cubase 列表可见性问题尚未解决。 | Improved complete preset publication, validation and save feedback, and corrected native FXP length; the reported Cubase list-visibility issue remained unresolved. | 历史候选版 / Historical candidate |
+| 1.0.2 | 补齐 VST3 识别信息；VST2 默认保存兼容 Cubase 的 .vstpreset，保留原生 FXP 导出及 FXP/FXB 导入。 | Added VST3 identification metadata and Cubase-compatible .vstpreset saving for VST2, retaining native FXP export and FXP/FXB import. | 历史候选版 / Historical candidate |
+| 1.0.3 | 按插件身份隔离预置列表、明确格式标签、修复中文乱码；保留必要时 Quick Rescan Disk 的提示。 | Isolates preset lists by plug-in identity, adds clear format labels, and fixes Chinese text; retains Quick Rescan Disk guidance when needed. | 2026-09-09 · 正式稳定版 / Stable |
 
 ## 源码与公开边界 / Source and publication boundary
 
