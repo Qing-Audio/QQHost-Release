@@ -64,30 +64,29 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 - 产品 / Product: **QQ Host**
 - 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **1.0.3 · Stable**
+- 版本 / Version: **1.0.4 · Stable**
 - 发布日期 / Release date: **2026-09-09**
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
 ### 下载 / Download
 
-- [QQ Host 1.0.3 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.3)
-- Windows: [QQ Host 1.0.3 Windows x64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.Windows.x64.VST3.zip)
-- macOS Apple Silicon: [QQ Host 1.0.3 macOS Apple Silicon VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.macOS.Apple.Silicon.VST3.zip)
-- macOS Intel: [QQ Host 1.0.3 macOS Intel x86_64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.macOS.Intel.x86_64.VST3.zip)
-- macOS Universal 2 AU: [QQ Host 1.0.3 macOS Universal 2 AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.Installation.Guide.Chinese.txt)
-- [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.User.Manual.Chinese.pdf)
-- [English User Manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.3/QQ.Host.1.0.3.User.Manual.English.Edition.pdf)
-
+- [QQ Host 1.0.4 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.4)
+- Windows: [QQ Host 1.0.4 Windows x64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.4/QQ.Host.1.0.4.Windows.x64.VST3.zip)
+- macOS Apple Silicon: [QQ Host 1.0.4 macOS Apple Silicon VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.4/QQ.Host.1.0.4.macOS.Apple.Silicon.VST3.zip)
+- macOS Intel: [QQ Host 1.0.4 macOS Intel x86_64 VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.4/QQ.Host.1.0.4.macOS.Intel.x86_64.VST3.zip)
+- macOS Universal 2 AU: [QQ Host 1.0.4 macOS Universal 2 AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.4/QQ.Host.1.0.4.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.4/QQ.Host.1.0.4.Installation.Guide.Chinese.txt)
+- [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.4/QQ.Host.1.0.4.Installation.Guide.English.txt)
+- [沿用 1.0.3 中文用户手册 / Compatible 1.0.3 Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.4/QQ.Host.1.0.3.User.Manual.Chinese.pdf)
+- [Compatible 1.0.3 English User Manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.4/QQ.Host.1.0.3.User.Manual.English.Edition.pdf)
 
 > GitHub 自动生成的 **Source code (zip)** 和 **Source code (tar.gz)** 只是本下载页仓库的资料快照，不是可安装的 QQ Host 插件。
 >
 > GitHub's automatically generated **Source code (zip)** and **Source code (tar.gz)** are snapshots of this download-page repository, not installable QQ Host plug-ins.
 
-请只下载与你的平台和插件格式对应的 ZIP，并同时阅读安装说明。1.0.3 中英文用户手册保留自动化 / MIDI Remote 等原有内容，并补充新版 VST2/VST3 预置保存与格式标签说明。
+请只下载与你的平台和插件格式对应的 ZIP，并同时阅读安装说明。随包保留真实标为 1.0.3 的中英文手册，其功能、自动化、侧链及预置说明仍适用于 1.0.4；新增耗时悬停用法见 1.0.4 安装说明。[旧版 1.0.3](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.3) 保留供回退。
 
-Download only the ZIP matching your platform and plug-in format, and read the installation guide. The 1.0.3 Chinese and English manuals retain the Automation / MIDI Remote material and add the updated VST2/VST3 preset-saving workflow and format labels.
+Download the ZIP matching your platform and format, and read the installation guide. The original 1.0.3 manuals remain applicable to 1.0.4 and retain their true version labels. The 1.0.4 guides explain the new timing tooltip. [Release 1.0.3](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.3) remains available for rollback.
 
 ## 支持范围 / Compatibility
 
@@ -118,6 +117,22 @@ Download only the ZIP matching your platform and plug-in format, and read the in
 - 隔离扫描并只收录效果器 / Isolated scanning restricted to audio effects
 - Cubase FX Chain 载入/保存、自动参数镜像、Undo/Redo
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
+
+## 1.0.4 更新摘要 / 1.0.4 release summary
+
+**1.0.4 · 正式稳定版 / Stable · 2026-09-09**
+
+- 修复 Bridge 底部 PDC / MISS / FB / SKIP 的悬停提示。鼠标停留约 0.7 秒即可查看耗时快照，播放、停止及 MISS 为零时均可使用。
+- 鼠标停留时固定提示快照，避免频繁刷新让提示一直不出现；移开再悬停即可刷新，底部计数继续实时更新。
+- 提示随 Bridge 窗口和 DAW 缩放；没有增加独立原生窗口或点击面板。
+- 不改音频处理、线程调度、OFFLOAD/LIVE、PDC、侧链、预置、自动化或启动等待，**不宣称已修复音频 MISS**。沿用此前的 FL Studio 和 MediaBay 提示。
+
+- Restores hover diagnostics on the Bridge's PDC / MISS / FB / SKIP row. Hover for about 0.7 seconds to view a timing snapshot, during playback or while stopped, including with zero MISS.
+- Holds the snapshot while hovered so frequent updates cannot suppress the tooltip. Move away and hover again to refresh; footer counters remain live.
+- The tooltip follows Bridge/DAW scaling without a separate native window or click panel.
+- Audio processing, thread scheduling, OFFLOAD/LIVE, PDC, sidechain, presets, automation and startup waits are unchanged. **This release does not claim to fix audio deadline misses.** Existing FL Studio and MediaBay guidance remains applicable.
+
+本版包含 1.0.3 发布后的悬停提示修复，旧版仍可下载。This release includes the hover-tooltip fix made after 1.0.3; the previous release remains available.
 
 ## 1.0.3 更新摘要 / 1.0.3 release summary
 
@@ -186,8 +201,8 @@ This update focuses on saving and selecting presets for individual hosted effect
 - 同名插件的 VST2/VST3 版不一定可以互换预置。第三方状态恢复依赖插件自身实现，重要预置加载后请核对参数。
 - macOS 包未经 Apple Developer ID 公证，系统可能要求可信来源确认与 quarantine 处理。
 - FL Studio 必须启用 **Use fixed size buffers** 及其 More 中的两个最大缓冲区选项，否则 Bridge 可能不工作。
-- 升级顺序：关闭 DAW -> 移走旧文件 -> 成套安装 1.0.3 -> 重新扫描。
-- 以随包 1.0.3 安装说明和 1.0.3 用户手册为准；1.0.0 为上一稳定版本。
+- 升级顺序：关闭 DAW -> 移走旧文件 -> 成套安装 1.0.4 -> 重新扫描。
+- 以随包 1.0.4 安装说明和仍适用的 1.0.3 用户手册为准；1.0.3 为上一稳定版本。
 
 - QQ Host is experimental; performance and latency depend on the DAW, plug-ins, buffers, IPC overhead, and system configuration.
 - Sidechain and PDC alignment depend on correct third-party latency and input-layout reporting. Misreported or unannounced dynamic changes cannot be fully compensated.
@@ -196,8 +211,8 @@ This update focuses on saving and selecting presets for individual hosted effect
 - Same-named VST2/VST3 editions may not share compatible presets. State restoration depends on the third-party plug-in's implementation; verify parameters after loading important presets.
 - macOS packages are not Apple Developer ID notarized and may require trusted-source confirmation and quarantine handling.
 - FL Studio requires **Use fixed size buffers** and both maximum-buffer options under More; otherwise the Bridge may not process correctly.
-- Upgrade order: quit DAW -> move old files out -> install the matching 1.0.3 pair -> rescan.
-- Follow the bundled 1.0.3 installation guides and 1.0.3 user manuals; 1.0.0 is the previous Stable.
+- Upgrade order: quit DAW -> move old files out -> install the matching 1.0.4 pair -> rescan.
+- Follow the bundled 1.0.4 installation guides and compatible 1.0.3 user manuals; 1.0.3 is the previous Stable.
 
 ## 灵感与独立性声明 / Inspiration and independence
 
@@ -207,9 +222,9 @@ The concept was inspired by the external-host and processing-offload workflow of
 
 ## 完整版本记录 / Complete version history
 
-本 README 保留从 0.0.1 到 1.0.3 的完整历史，共覆盖 90 个真实版本。0.9.23 候选版直接更名并提升为 1.0.0，没有作为独立版本发布。遗漏版本：无。
+本 README 保留从 0.0.1 到 1.0.4 的完整历史，共覆盖 91 个真实版本。0.9.23 候选版直接更名并提升为 1.0.0，没有作为独立版本发布。遗漏版本：无。
 
-This README preserves the complete history from 0.0.1 through 1.0.3, covering 90 real versions in total. The 0.9.23 candidate was renamed and promoted directly to 1.0.0 rather than released separately. Omitted versions: none.
+This README preserves the complete history from 0.0.1 through 1.0.4, covering 91 real versions in total. The 0.9.23 candidate was renamed and promoted directly to 1.0.0 rather than released separately. Omitted versions: none.
 
 | 版本 / Version | 中文摘要 | English summary | 状态 / Status |
 |---|---|---|---|
@@ -303,6 +318,7 @@ This README preserves the complete history from 0.0.1 through 1.0.3, covering 90
 | 1.0.1 | 改善单插件预置完整写入、校验和保存反馈，修正原生 FXP 长度；当时的 Cubase 列表可见性问题尚未解决。 | Improved complete preset publication, validation and save feedback, and corrected native FXP length; the reported Cubase list-visibility issue remained unresolved. | 历史候选版 / Historical candidate |
 | 1.0.2 | 补齐 VST3 识别信息；VST2 默认保存兼容 Cubase 的 .vstpreset，保留原生 FXP 导出及 FXP/FXB 导入。 | Added VST3 identification metadata and Cubase-compatible .vstpreset saving for VST2, retaining native FXP export and FXP/FXB import. | 历史候选版 / Historical candidate |
 | 1.0.3 | 按插件身份隔离预置列表、明确格式标签、修复中文乱码；保留必要时 Quick Rescan Disk 的提示。 | Isolates preset lists by plug-in identity, adds clear format labels, and fixes Chinese text; retains Quick Rescan Disk guidance when needed. | 2026-09-09 · 正式稳定版 / Stable |
+| 1.0.4 | 修复底部耗时悬停提示与频繁刷新抑制，显示可刷新的快照；不改变音频处理或宣称修复 MISS。 | Restores timing hover diagnostics with a refreshable snapshot; leaves audio processing unchanged and does not claim to fix MISS. | 2026-09-09 · 正式稳定版 / Stable |
 
 ## 源码与公开边界 / Source and publication boundary
 
