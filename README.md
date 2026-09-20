@@ -64,27 +64,27 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 - 产品 / Product: **QQ Host**
 - 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **1.0.10 · Stable**
-- 发布日期 / Release date: **2026-09-19**
+- 版本 / Version: **1.0.11 · Stable**
+- 发布日期 / Release date: **2026-09-20**
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
-[QQ Host 1.0.10 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.10)
+[QQ Host 1.0.11 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.11)
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.10/QQ.Host.1.0.10.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.10/QQ.Host.1.0.10.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.10/QQ.Host.1.0.10.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.10/QQ.Host.1.0.10.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.10/QQ.Host.1.0.10.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.10/QQ.Host.1.0.10.Installation.Guide.English.txt)
-- [1.0.6 中文手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.10/QQ.Host.1.0.6.User.Manual.Chinese.pdf)
-- [1.0.6 English manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.10/QQ.Host.1.0.6.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.11/QQ.Host.1.0.11.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.11/QQ.Host.1.0.11.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.11/QQ.Host.1.0.11.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.11/QQ.Host.1.0.11.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.11/QQ.Host.1.0.11.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.11/QQ.Host.1.0.11.Installation.Guide.English.txt)
+- [1.0.6 中文手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.11/QQ.Host.1.0.6.User.Manual.Chinese.pdf)
+- [1.0.6 English manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.11/QQ.Host.1.0.6.User.Manual.English.Edition.pdf)
 
 
-请只下载对应平台与格式的 ZIP，并阅读安装说明。中英文 PDF 沿用真实的 1.0.6 版本名；1.0.10 安装说明补充手动刷新操作。[上一公开版 1.0.4](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.4) 保留供回退。
+请只下载对应平台与格式的 ZIP，并阅读安装说明。中英文 PDF 沿用真实的 1.0.6 版本名；1.0.11 安装说明包含成套更新与手动刷新操作。[上一公开版 1.0.10](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.10) 保留供回退。
 
-Download the ZIP matching your platform and format, and read the installation guide. The bilingual PDFs retain their actual 1.0.6 labels; the 1.0.10 guides explain manual recovery. [Previous public release 1.0.4](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.4) remains available for rollback.
+Download the ZIP matching your platform and format, and read the installation guide. The bilingual PDFs retain their actual 1.0.6 labels; the 1.0.11 guides explain paired updates and manual recovery. [Previous public release 1.0.10](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.10) remains available for rollback.
 
 > GitHub 自动生成的 Source code ZIP/TAR 只是本下载页仓库的资料快照，不是插件安装包。
 >
@@ -102,7 +102,7 @@ Download the ZIP matching your platform and format, and read the installation gu
 ## 安装与基本使用 / Installation and basic use
 
 1. 完全退出 DAW 与插件扫描器。 / Fully quit the DAW and plug-in scanners.
-2. 下载并解压与你的平台和格式对应的 1.0.10 ZIP。 / Download and extract the 1.0.10 ZIP matching your platform and format.
+2. 下载并解压与你的平台和格式对应的 1.0.11 ZIP。 / Download and extract the 1.0.11 ZIP matching your platform and format.
 3. 按随包安装说明移走旧版并复制新版；Windows 的 Bridge 与后台 Host 须同版本、同目录，macOS 分别按说明安装。 / Follow the guide to move old files out and install the new pair. On Windows, Bridge and Host must share the same version and folder; on macOS use the documented separate locations.
 4. 在 DAW 中重新扫描插件。 / Rescan plug-ins in the DAW.
 5. 在轨道 Insert 中加载 QQ Host Bridge，再在 Bridge Rack 中加载第三方 VST2/VST3 效果器。 / Insert QQ Host Bridge, then load VST2/VST3 effects in its Rack.
@@ -158,6 +158,12 @@ REFRESH restores only the current Bridge. Restart Agent (All Hosts) is a separat
 
 Fixes preparation lock ordering behind the reproduced standalone Ozone 9/11 Imager hang. Watchdog timeouts, rack-topology changes and Agent loss no longer automatically restart the Agent, repeatedly restore racks or power off plug-ins. Initial startup, normal project/preset restoration, local REFRESH and explicitly confirmed global restart remain available.
 
+
+### 1.0.11 — 后台身份与启动状态 / Agent identity and startup status
+
+修正旧后台进程记录被误认为仍在运行、阻止正常启动的问题，包括已报告的 Plugin Doctor 情形。后台不存在时不再一直误显示 HOST RESTORING；手动重启增加进程身份核验。保留 1.0.10 的手动恢复策略，不增加自动刷新。
+
+Fixes stale process records being mistaken for a running Agent and preventing startup, including the reported Plugin Doctor case. An absent Agent no longer remains mislabeled HOST RESTORING; explicit restarts verify process identity. The 1.0.10 manual-recovery policy remains unchanged, with no added automatic refresh.
 
 ## 使用变化 / How to use the changes
 
