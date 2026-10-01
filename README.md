@@ -64,26 +64,25 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 - 产品 / Product: **QQ Host**
 - 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **1.0.13 · Stable**
-- 发布日期 / Release date: **2026-09-27**
+- 版本 / Version: **1.0.14 · Stable**
+- 发布日期 / Release date: **2026-10-01**
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
-[QQ Host 1.0.13 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.13)
+[QQ Host 1.0.14 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.14)
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.User.Manual.Chinese.pdf)
-- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.User.Manual.English.Edition.pdf)
-- [SHA-256 校验清单 / SHA-256 checksums](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.13/QQ.Host.1.0.13.SHA256SUMS.txt)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.Installation.Guide.English.txt)
+- [中文用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.User.Manual.Chinese.pdf)
+- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.User.Manual.English.Edition.pdf)
 
-请只下载与你的平台、架构和格式对应的 ZIP，并阅读随附安装说明。1.0.13 的中英文用户手册已包含 OFFLOAD Buffer (manual) 的使用说明。[上一公开版 1.0.11](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.11) 保留供回退。
+请只下载与你的平台、架构和格式对应的 ZIP，并阅读随附安装说明。1.0.14 的中英文用户手册已加入两段处理与新建 Bridge 默认设置的说明。[上一公开版 1.0.13](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.13) 保留供回退。
 
-Download the ZIP matching your platform, architecture and format, and read the included installation guide. The 1.0.13 bilingual manuals include the OFFLOAD Buffer (manual) guide. [Previous public release 1.0.11](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.11) remains available for rollback.
+Download the ZIP matching your platform, architecture and format, and read the included installation guide. The 1.0.14 bilingual manuals explain two-stage processing and the defaults for new Bridges. [Previous public release 1.0.13](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.13) remains available for rollback.
 
 > GitHub 自动生成的 Source code ZIP/TAR 只是本下载页仓库的资料快照，不是插件安装包。
 >
@@ -100,7 +99,7 @@ Download the ZIP matching your platform, architecture and format, and read the i
 ## 安装与基本使用 / Installation and basic use
 
 1. 完全退出 DAW 与插件扫描器。 / Fully quit the DAW and plug-in scanners.
-2. 下载并解压与你的平台和格式对应的 1.0.13 ZIP。 / Download and extract the 1.0.13 ZIP matching your platform and format.
+2. 下载并解压与你的平台和格式对应的 1.0.14 ZIP。 / Download and extract the 1.0.14 ZIP matching your platform and format.
 3. 按随包安装说明移走旧版并复制新版；Windows 的 Bridge 与后台 Host 须同版本、同目录，macOS 分别按说明安装。 / Follow the guide to move old files out and install the new pair. On Windows, Bridge and Host must share the same version and folder; on macOS use the documented separate locations.
 4. 在 DAW 中重新扫描插件。 / Rescan plug-ins in the DAW.
 5. 在轨道 Insert 中加载 QQ Host Bridge，再在 Bridge Rack 中加载第三方 VST2/VST3 效果器。 / Insert QQ Host Bridge, then load VST2/VST3 effects in its Rack.
@@ -119,6 +118,25 @@ Download the ZIP matching your platform, architecture and format, and read the i
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
 ## 逐版本变化 / Changes by version
+
+### 1.0.14 — 两段 OFFLOAD 处理 / Two-stage OFFLOAD processing
+
+新建 Bridge 默认使用 **2 buffers**，并选中 **Optimize into 2 stages**。在右上角 **…** 菜单中，可调整 **OFFLOAD Buffer (manual)**，或在 **OFFLOAD Processing (test)** 中选择两段处理与 **Use serial processing**。旧工程与旧预置保留原有缓冲深度；没有两段设置的旧状态按串行恢复，不强制改变原有链路。
+
+New Bridges default to **2 buffers** with **Optimize into 2 stages** selected. Open **…** to adjust **OFFLOAD Buffer (manual)** or choose two-stage / **Use serial processing** under **OFFLOAD Processing (test)**. Existing projects and presets retain their saved buffer depth; older states without a two-stage setting restore as serial processing.
+
+两段模式先在播放时采样处理耗时，再在停止播放后尝试安排安全的分界点。选中该选项不等于已经启用并行：短链、不可拆分的链或兼容性限制仍可能按串行运行。增加缓冲会增加延迟，不能代替持续算力不足的处理。LIVE 不采用这套 OFFLOAD 两段调度。
+
+Two-stage mode measures processing time during playback, then attempts to select a safe boundary after playback stops. Selecting the option does not guarantee active parallel processing: short chains, unsplittable chains and compatibility constraints may remain serial. More buffering adds latency and cannot compensate for sustained insufficient processing capacity. LIVE does not use this OFFLOAD two-stage scheduler.
+
+QQ ChainScope 跨两段对齐需要相关模块均支持 Host 音频块标识扩展；不兼容的旧模块会保守地保留在同一段。本次 QQ Host 安装包不附带 ChainScope 更新，不能仅凭 ChainScope 版本号判断扩展是否可用。不同机架仍需实际验证，不承诺任意负荷下零 MISS。
+
+QQ ChainScope alignment across stages requires every relevant module to support the Host audio-block identity extension. Incompatible older modules are conservatively kept in one stage. This QQ Host package does not include a ChainScope update, and a ChainScope version number alone does not establish extension support. Verify your own rack; zero MISS under arbitrary workloads is not promised.
+
+本版配套更新中英文用户手册。版本区间为 **1.0.13 → 1.0.14**；此前功能与历史版本记录保留。
+
+The bilingual manuals are updated for this release. The version interval is **1.0.13 → 1.0.14**; earlier functionality and version history are retained.
+
 ### 1.0.13 — 手动 OFFLOAD 缓冲 / Manual OFFLOAD buffering
 
 每个 Bridge 新增独立的 **OFFLOAD Buffer (manual)** 设置，可选择 1、2、3 或 4 buffers，默认值为 1。MISS 持续增加并出现卡顿时，可逐步增加缓冲深度；菜单显示对应缓冲时间，PDC 同步更新。设置随工程 / Bridge 预置保存，LIVE 不受影响，播放与离线导出期间禁止修改。额外缓冲用于吸收偶发处理超时，不用于掩盖持续算力不足。
