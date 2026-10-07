@@ -64,46 +64,49 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 - 产品 / Product: **QQ Host**
 - 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **1.0.14 · Stable**
-- 发布日期 / Release date: **2026-10-01**
+- 版本 / Version: **1.1.0 · Stable**
+- 发布日期 / Release date: **2026-10-07**
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
-[QQ Host 1.0.14 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.14)
+[QQ Host 1.1.0 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.0)
+
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.User.Manual.Chinese.pdf)
-- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.0.14/QQ.Host.1.0.14.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.Installation.Guide.English.txt)
+- [中文用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
+- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
 
-请只下载与你的平台、架构和格式对应的 ZIP，并阅读随附安装说明。1.0.14 的中英文用户手册已加入两段处理与新建 Bridge 默认设置的说明。[上一公开版 1.0.13](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.13) 保留供回退。
+请只下载与你的平台、架构和格式对应的 ZIP，并阅读安装说明。1.1.0 中英文用户手册均已更新到当前版本。[上一公开版 1.0.14](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.14) 保留供回退。
 
-Download the ZIP matching your platform, architecture and format, and read the included installation guide. The 1.0.14 bilingual manuals explain two-stage processing and the defaults for new Bridges. [Previous public release 1.0.13](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.13) remains available for rollback.
+Download the ZIP matching your platform, architecture and format, and read the installation guide. Both 1.1.0 user manuals are updated for this release. [Previous public release 1.0.14](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.14) remains available for rollback.
 
 > GitHub 自动生成的 Source code ZIP/TAR 只是本下载页仓库的资料快照，不是插件安装包。
 >
 > GitHub's automatic Source code ZIP/TAR files are snapshots of this download-page repository, not plug-in installers.
+
 ## 支持范围 / Compatibility
 
 - Windows 10/11 x64：VST3 Bridge + 后台 QQ Host.exe。 / VST3 Bridge + background QQ Host.exe.
 - macOS 12 或更新版本：Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。 / macOS 12 or later: Apple Silicon VST3, Intel x86_64 VST3, and Universal 2 AU.
-- 可托管已获授权的原生 64-bit VST2/VST3 音频效果器；浏览器标记格式并排除乐器，不支持 32-bit VST2。 / Hosts licensed native 64-bit VST2/VST3 audio effects; the browser labels formats and excludes instruments. 32-bit VST2 is unsupported.
-- 单插件 SAVE 默认保存 `.vstpreset`；VST2 使用兼容 Cubase 的 VST2 状态容器，仍可导出原生 FXP 和导入 FXP/FXB。此容器不代表把插件转换为 VST3。 / Single-plug-in SAVE defaults to `.vstpreset`; VST2 uses a Cubase-compatible VST2 state container, while native FXP export and FXP/FXB import remain available. This container does not convert the plug-in to VST3.
-- Cubase `.fxchainpreset` 可包含混合 VST2/VST3 机架。如果未被 MediaBay 立即收录，可尝试同一文件名覆盖保存两次，必要时 **Quick Rescan Disk**。 / Cubase `.fxchainpreset` supports mixed VST2/VST3 racks. If not immediately discovered, try saving twice with the same filename and overwrite confirmation, then **Quick Rescan Disk** if needed.
+- 可托管已获授权的原生 64-bit VST2 / VST3 音频效果器；macOS 版同时支持 AUv2 / AUv3 音频效果器。浏览器标记格式并排除乐器，不支持 32-bit 插件。 / Hosts licensed native 64-bit VST2 / VST3 audio effects; the macOS edition also supports AUv2 / AUv3 audio effects. The browser labels formats and excludes instruments; 32-bit plug-ins are unsupported.
+- Cubase `.fxchainpreset` 可包含混合 VST2/VST3 机架；如果未被 MediaBay 立即收录，可按现有说明尝试覆盖保存并执行 **Quick Rescan Disk**。 / Cubase `.fxchainpreset` supports mixed VST2/VST3 racks. If MediaBay does not immediately discover a new file, follow the existing overwrite-save and **Quick Rescan Disk** guidance.
 - macOS 包未经 Apple Developer ID 公证；可信来源与安全操作说明见安装指南。 / macOS packages are not Apple Developer ID notarized; see the installation guide for trusted-source and safe-installation guidance.
 
 ## 安装与基本使用 / Installation and basic use
 
-1. 完全退出 DAW 与插件扫描器。 / Fully quit the DAW and plug-in scanners.
-2. 下载并解压与你的平台和格式对应的 1.0.14 ZIP。 / Download and extract the 1.0.14 ZIP matching your platform and format.
-3. 按随包安装说明移走旧版并复制新版；Windows 的 Bridge 与后台 Host 须同版本、同目录，macOS 分别按说明安装。 / Follow the guide to move old files out and install the new pair. On Windows, Bridge and Host must share the same version and folder; on macOS use the documented separate locations.
-4. 在 DAW 中重新扫描插件。 / Rescan plug-ins in the DAW.
-5. 在轨道 Insert 中加载 QQ Host Bridge，再在 Bridge Rack 中加载第三方 VST2/VST3 效果器。 / Insert QQ Host Bridge, then load VST2/VST3 effects in its Rack.
-6. FL Studio 用户必须在插件 Wrapper 的 Troubleshooting 中启用 **Use fixed size buffers**，并在 More 中同时启用 **Process maximum size buffers** 与 **Use maximum buffer size from host**。 / FL Studio users must enable **Use fixed size buffers**, plus both maximum-buffer options under More, in the Wrapper Troubleshooting page.
+1. 完全退出 DAW、插件扫描器和正在运行的 QQ Host。 / Fully quit the DAW, plug-in scanners and any running QQ Host process.
+2. 下载并解压与你的平台、架构和格式对应的 1.1.0 ZIP。 / Download and extract the 1.1.0 ZIP matching your platform, architecture and format.
+3. Windows：将 `QQ Host Bridge.vst3` 放入 `C:\Program Files\Common Files\VST3\`，将 `QQ Host.exe` 放入 `%LOCALAPPDATA%\Qing Audio\QQ Host\`。 / Windows: install `QQ Host Bridge.vst3` in `C:\Program Files\Common Files\VST3\` and `QQ Host.exe` in `%LOCALAPPDATA%\Qing Audio\QQ Host\`.
+4. macOS：按安装说明将 VST3 / AU Bridge 与 `QQ Host.app` 安装到对应系统目录。 / macOS: follow the installation guide to place the VST3 / AU Bridge and `QQ Host.app` in their documented locations.
+5. Bridge 与后台 Host 必须使用同一个版本；升级或回退时成对更新。 / Bridge and background Host must use the same version; always upgrade or roll back them as a pair.
+6. 重新打开 DAW 并扫描插件；确认 Bridge / Agent 均为 **1.1.0**、Protocol **131**、状态 **HOST READY**。 / Reopen the DAW and rescan plug-ins; confirm Bridge / Agent **1.1.0**, Protocol **131**, and **HOST READY**.
+7. 在轨道 Insert 中加载 QQ Host Bridge，再在 Rack 中加载第三方效果器。 / Insert QQ Host Bridge on the track, then load third-party effects in the Rack.
+8. FL Studio 用户必须在 Wrapper Troubleshooting 中启用 **Use fixed size buffers**，并同时启用两个 maximum-buffer 选项。 / FL Studio users must enable **Use fixed size buffers** and both maximum-buffer options in Wrapper Troubleshooting.
 
 ## 主要功能 / Main features
 
@@ -118,6 +121,36 @@ Download the ZIP matching your platform, architecture and format, and read the i
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
 ## 逐版本变化 / Changes by version
+
+### 1.1.0 — 可变实时 callback 修复 / Variable realtime callback repair
+
+1.1.0 为当前 Stable，并将 Bridge / Agent 升级到 Protocol 131。本版修复实际实时 callback 长度小于预先准备的 block size 时的处理路径，使按采样对齐的 OFFLOAD packet 继续保持正确的自动化偏移和处理顺序。串行与分段处理使用 packet 自带的状态快照；LIVE 保留准备阶段的最大 block size。
+
+1.1.0 is the current Stable release and advances Bridge / Agent to Protocol 131. It repairs realtime processing when the actual callback is smaller than the prepared block size, allowing sample-aligned OFFLOAD packets to preserve correct automation offsets and processing order. Serial and staged processing use packet-owned state snapshots while LIVE retains the prepared maximum block size.
+
+原生 Apple Silicon 验证覆盖 1、17、64、96、141、257、512 与 1024 samples 的可变 callback，处理结果与直接参考音频一致。macOS 版同时提供 VST3 与 AU Bridge，并支持托管 AUv2 / AUv3 音频效果器；中英文用户手册均更新到 1.1.0。
+
+Native Apple Silicon validation covered variable callbacks of 1, 17, 64, 96, 141, 257, 512 and 1024 samples with processed audio matching the direct reference. The macOS edition provides both VST3 and AU Bridge formats and supports hosted AUv2 / AUv3 audio effects; both user manuals are updated to 1.1.0.
+
+### 1.0.17 — Logic 自动化诊断版 / Logic automation diagnostic build
+
+1.0.17 是诊断版本，不是 Stable。它加入有限范围的自动化追踪，用于定位 Logic 长自动化斜坡中的参数更新丢失。真实现场测试仍能复现问题，因此没有提升为 Stable；后续诊断将问题缩小到实时 callback 与预先准备 block size 不一致的处理路径，最终修复进入 1.1.0。
+
+1.0.17 was a diagnostic build rather than a Stable release. It added bounded automation tracing to investigate dropped updates during long Logic automation ramps. Field testing still reproduced the symptom, so it was not promoted to Stable. Later diagnosis narrowed the problem to realtime callback sizes differing from the prepared block size, leading to the production repair in 1.1.0.
+
+### 1.0.16 — 稳定回滚基线 / Stable rollback baseline
+
+1.0.16 是 1.1.0 之前的正式 Stable，使用 Protocol 130。该版本修复 editor / instance 目标选择及相关 UI 行为，并成为后续 AU 自动化工作的稳定基础。1.1.0 发布后，1.0.16 继续作为上一 Stable 回滚版本。
+
+1.0.16 was the formal Stable immediately preceding 1.1.0 and used Protocol 130. It corrected editor / instance targeting and related UI behavior and became the stable base for subsequent AU automation work. It remains the previous Stable rollback version after 1.1.0.
+
+### 1.0.15 — AU 与生命周期候选 / AU and lifetime candidate
+
+1.0.15 / Protocol 129 是候选版本，不是 Stable。开发重点包括 AUv2 / AUv3 支持、DAW busy 状态下的生命周期处理，以及参数发布 / 反馈路径。该阶段已经验证的并发参数发布修正被选择性带入后续版本。
+
+1.0.15 / Protocol 129 was a candidate rather than a Stable release. Development focused on AUv2 / AUv3 support, lifecycle handling while the DAW was busy, and parameter publication / feedback. The validated concurrent parameter-publication repair was selectively carried forward.
+
+> **版本说明 / Version note:** 1.0.18 曾在诊断过程中被提出作为下一版本号，但没有形成真实交付版本；实际下一版本直接定为 1.1.0。因此不建立 1.0.18 版本条目。 / 1.0.18 was proposed during diagnosis but never became a delivered version; the next actual version was 1.1.0, so no 1.0.18 history entry is created.
 
 ### 1.0.14 — 两段 OFFLOAD 处理 / Two-stage OFFLOAD processing
 
