@@ -62,51 +62,49 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 ## 当前公开版本 / Current public release
 
-- 产品 / Product: **QQ Host**
-- 厂商 / Vendor: **Qing Audio**
-- 版本 / Version: **1.1.0 · Stable**
-- 发布日期 / Release date: **2026-10-07**
+- 产品 / Product: **QQ Host — Qing Audio**
+- 版本 / Version: **1.1.3 Stable**, 2026-10-10
 - 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
 
-[QQ Host 1.1.0 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.0)
+[QQ Host 1.1.3 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.3)
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
-- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Installation.Guide.English.txt)
 
-请只下载与你的平台、架构和格式对应的 ZIP，并阅读安装说明。1.1.0 中英文用户手册均已更新到当前版本。[上一公开版 1.0.14](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.14) 保留供回退。
+既有 1.1.0 手册继续适用于基本操作，保留原始版本标识；本次只修复兼容性与提示文字，没有新增操作。
+The existing 1.1.0 manuals remain applicable to basic operation and retain their original version labels. This release repairs compatibility and feedback without adding a new workflow.
 
-Download the ZIP matching your platform, architecture and format, and read the installation guide. Both 1.1.0 user manuals are updated for this release. [Previous public release 1.0.14](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.0.14) remains available for rollback.
+- [中文 1.1.0 用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
+- [English 1.1.0 user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
+- [上一 Stable 1.1.0 / Previous Stable for rollback](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.0)
 
 > GitHub 自动生成的 Source code ZIP/TAR 只是本下载页仓库的资料快照，不是插件安装包。
->
-> GitHub's automatic Source code ZIP/TAR files are snapshots of this download-page repository, not plug-in installers.
+> GitHub's automatic Source code ZIP/TAR archives contain this download-page repository, not the product source or installers.
 
 ## 支持范围 / Compatibility
 
-- Windows 10/11 x64：VST3 Bridge + 后台 QQ Host.exe。 / VST3 Bridge + background QQ Host.exe.
-- macOS 12 或更新版本：Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。 / macOS 12 or later: Apple Silicon VST3, Intel x86_64 VST3, and Universal 2 AU.
-- 可托管已获授权的原生 64-bit VST2 / VST3 音频效果器；macOS 版同时支持 AUv2 / AUv3 音频效果器。浏览器标记格式并排除乐器，不支持 32-bit 插件。 / Hosts licensed native 64-bit VST2 / VST3 audio effects; the macOS edition also supports AUv2 / AUv3 audio effects. The browser labels formats and excludes instruments; 32-bit plug-ins are unsupported.
-- Cubase `.fxchainpreset` 可包含混合 VST2/VST3 机架；如果未被 MediaBay 立即收录，可按现有说明尝试覆盖保存并执行 **Quick Rescan Disk**。 / Cubase `.fxchainpreset` supports mixed VST2/VST3 racks. If MediaBay does not immediately discover a new file, follow the existing overwrite-save and **Quick Rescan Disk** guidance.
-- macOS 包未经 Apple Developer ID 公证；可信来源与安全操作说明见安装指南。 / macOS packages are not Apple Developer ID notarized; see the installation guide for trusted-source and safe-installation guidance.
+- Windows 10/11 x64: VST3 Bridge + QQ Host.exe.
+- macOS 12+: Apple Silicon arm64 VST3, Intel/Rosetta x86_64 VST3, Universal 2 AU (arm64 + x86_64).
+- 托管原生 64-bit VST2/VST3 音频效果器，Mac 同时支持 AUv2/AUv3；不支持 32-bit 或乐器。 / Hosts native 64-bit VST2/VST3 audio effects, plus AUv2/AUv3 on Mac; 32-bit plug-ins and instruments are unsupported.
+- Cubase 原生 VST3 预置应在匹配的 VST3 实例中使用；同名 VST2 不保证状态兼容。 / Use native Cubase VST3 presets with the matching VST3 instance; the VST2 edition is not necessarily state-compatible.
+- Mac 成品经过 ad-hoc 签名，未经过 Apple Developer ID 公证。 / Mac bundles are ad-hoc signed, not Apple Developer ID notarized.
 
 ## 安装与基本使用 / Installation and basic use
 
-1. 完全退出 DAW、插件扫描器和正在运行的 QQ Host。 / Fully quit the DAW, plug-in scanners and any running QQ Host process.
-2. 下载并解压与你的平台、架构和格式对应的 1.1.0 ZIP。 / Download and extract the 1.1.0 ZIP matching your platform, architecture and format.
-3. Windows：将 `QQ Host Bridge.vst3` 放入 `C:\Program Files\Common Files\VST3\`，将 `QQ Host.exe` 放入 `%LOCALAPPDATA%\Qing Audio\QQ Host\`。 / Windows: install `QQ Host Bridge.vst3` in `C:\Program Files\Common Files\VST3\` and `QQ Host.exe` in `%LOCALAPPDATA%\Qing Audio\QQ Host\`.
-4. macOS：按安装说明将 VST3 / AU Bridge 与 `QQ Host.app` 安装到对应系统目录。 / macOS: follow the installation guide to place the VST3 / AU Bridge and `QQ Host.app` in their documented locations.
-5. Bridge 与后台 Host 必须使用同一个版本；升级或回退时成对更新。 / Bridge and background Host must use the same version; always upgrade or roll back them as a pair.
-6. 重新打开 DAW 并扫描插件；确认 Bridge / Agent 均为 **1.1.0**、Protocol **131**、状态 **HOST READY**。 / Reopen the DAW and rescan plug-ins; confirm Bridge / Agent **1.1.0**, Protocol **131**, and **HOST READY**.
-7. 在轨道 Insert 中加载 QQ Host Bridge，再在 Rack 中加载第三方效果器。 / Insert QQ Host Bridge on the track, then load third-party effects in the Rack.
-8. FL Studio 用户必须在 Wrapper Troubleshooting 中启用 **Use fixed size buffers**，并同时启用两个 maximum-buffer 选项。 / FL Studio users must enable **Use fixed size buffers** and both maximum-buffer options in Wrapper Troubleshooting.
+1. 保存工程并完全退出 DAW、扫描器及 QQ Host。 / Save the session and fully quit DAWs, scanners and QQ Host.
+2. 选择匹配的 1.1.3 ZIP，解压完整的 Bridge 和后台程序。 / Choose the matching 1.1.3 ZIP and extract the complete Bridge/background-app pair.
+3. Windows：将 QQ Host Bridge.vst3 和 QQ Host.exe 相邻放入 `C:\Program Files\Common Files\VST3\QQ Host\`，替换旧版并清理其他扫描目录中的重复副本。 / Place QQ Host Bridge.vst3 and QQ Host.exe together in that directory; replace the old pair and remove duplicate scannable copies from other paths.
+4. macOS：按对应说明将 Bridge 与 QQ Host.app 相邻放入 `~/Library/Audio/Plug-Ins/VST3/QQ Host/` 或 `~/Library/Audio/Plug-Ins/Components/QQ Host/`；也可选系统 `/Library/...` 目录，不能重复安装。 / Install the Bridge/app pair together in the corresponding user folder or optional system `/Library/...` folder; do not duplicate installations.
+5. 重新打开宿主并 rescan，确认 **1.1.3 / Protocol 134 / HOST READY**。 / Reopen and rescan, then confirm **1.1.3 / Protocol 134 / HOST READY**.
+6. 在轨道 Insert 插入 QQ Host Bridge，并在 Rack 加载第三方效果器。 / Insert QQ Host Bridge on a track and load third-party effects in its Rack.
+7. FL Studio：启用 Use fixed size buffers 及两个 maximum-buffer 选项。 / Enable Use fixed size buffers and both maximum-buffer options in FL Studio.
+8. 只选一套匹配宿主架构的 VST3；AU 与 VST3 为独立格式。升级或回退时必须成对更换 Bridge 与后台程序。 / Choose one VST3 architecture matching the host; AU and VST3 are independent formats. Always upgrade or roll back the Bridge and background app together.
 
 ## 主要功能 / Main features
 
@@ -121,6 +119,26 @@ Download the ZIP matching your platform, architecture and format, and read the i
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
 ## 逐版本变化 / Changes by version
+
+## 1.1.3 — 提示文字编码 / Preset feedback encoding
+
+中文：修复原生 VST3 预置加载到 VST2 实例时，格式不匹配提示中的中文乱码；同一工具栏的 AU 保存成功提示也显式按 UTF-8 解码。Windows 提示气泡与 macOS 提示气泡/原生警告共用正确的 Unicode 字符串。本次不改变预置内容、匹配规则、音频处理或用户操作。用户已确认 1.1.2 所处理的问题解决，并授权本次设为 Stable。当前稳定版 1.1.3，上一 Stable 回滚版 1.1.0；Bridge 与后台 Host 必须一起升级。
+
+English: Fixes garbled Chinese in the format-mismatch feedback when loading a native VST3 preset into a VST2 instance. AU save-success feedback in the same toolbar also explicitly decodes UTF-8. Windows bubbles and macOS bubbles/native alerts share the correct Unicode strings. Preset contents, matching rules, audio processing and user operations are unchanged. The owner confirmed the issues addressed by 1.1.2 were resolved and authorized Stable promotion. Current Stable is 1.1.3; the previous Stable rollback is 1.1.0. Upgrade the Bridge and background Host together.
+
+## 1.1.2 — Waves 身份与状态恢复 / Waves identity and state restoration
+
+中文：测试版，2026-10-10。VST3 实例按固定 Class ID 创建，避免工厂列表顺序改变后点选与实际打开的插件不一致；Windows WaveShell 加载后核对实际身份。打开机架电源或取消 Bypass 时清除 VST3 标准内部 Bypass 残留，保留独立机架 Bypass 及厂商 Comp Off 参数。增加单插件预置身份诊断及 VST2/VST3 格式提示。可控工厂错配回归、CLA-76 Stereo 音频恢复及真实 Cubase/QQHost 预置加载通过；用户随后反馈问题解决。
+
+English: Test build, 2026-10-10. VST3 components are created by stable Class ID so factory-list reordering cannot substitute another plug-in; Windows WaveShell loads also validate the actual identity. Power-on and un-bypass clear residual standard VST3 native bypass while preserving independent Rack Bypass and vendor Comp Off controls. Added single-preset identity diagnostics and VST2/VST3 format feedback. Controlled factory-reorder, CLA-76 Stereo audio-restoration and real Cubase/QQHost preset checks passed; the owner subsequently reported the issues resolved.
+
+## 1.1.1 — Waves 扫描与 Cubase 电源状态 / Waves scanning and Cubase power state
+
+中文：测试版，2026-10-09。Windows WaveShell VST3 从工厂元数据读取插件目录，避免逐个实例化所有效果器；缓存完整身份并直接加载所选效果器。Cubase FX Chain 的电源与 Bypass 独立导入/导出，不再把关闭电源合并为 Bypass。扫描成功已获用户反馈；后续身份错配和内部 Bypass 残留由 1.1.2 修复。
+
+English: Test build, 2026-10-09. Windows WaveShell VST3 scanning reads factory metadata instead of instantiating every effect, caches complete identities and directly loads the selected effect. Cubase FX Chain power and Bypass are imported/exported independently instead of collapsing power-off into Bypass. The owner confirmed scanning worked; subsequent identity substitution and residual native bypass were addressed by 1.1.2.
+
+
 
 ### 1.1.0 — 可变实时 callback 修复 / Variable realtime callback repair
 
