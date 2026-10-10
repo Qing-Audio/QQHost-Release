@@ -37,6 +37,9 @@ Fully quit the DAW and QQ Host before replacing the Bridge/background-app pair, 
 - [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Installation.Guide.Chinese.txt)
 - [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Installation.Guide.English.txt)
 
-本次六个资产不含源码或内部验证资料；源码保持私有。既有 1.1.0 手册保留原始版本标签，仍可从上一 Release 下载。
+- [中文 1.1.0 用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
+- [English 1.1.0 user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
 
-These six assets contain no source or internal verification material. Source remains private. Existing 1.1.0 manuals retain their original labels and remain downloadable from the previous release.
+本次八个附件包含四个平台安装包、两份安装说明和两份 PDF 用户手册，不含源码或内部验证资料；源码保持私有。手册沿用 1.1.0 并保留真实版本标注，已直接附在本次 Release 中。
+
+These eight assets include four platform packages, two installation guides and two PDF user manuals, with no source or internal verification material. Source remains private. The manuals retain their original 1.1.0 labels and are directly attached to this release.

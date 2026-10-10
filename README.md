@@ -77,11 +77,11 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 - [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Installation.Guide.Chinese.txt)
 - [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Installation.Guide.English.txt)
 
-既有 1.1.0 手册继续适用于基本操作，保留原始版本标识；本次只修复兼容性与提示文字，没有新增操作。
-The existing 1.1.0 manuals remain applicable to basic operation and retain their original version labels. This release repairs compatibility and feedback without adding a new workflow.
+中英文 PDF 用户手册已随本次 1.1.3 Release 附上。沿用 1.1.0 手册并保留真实版本标识；本次只修复兼容性与提示文字，没有新增操作。
+Both PDF user manuals are attached to this 1.1.3 release. The existing 1.1.0 manuals retain their original version labels; this release repairs compatibility and feedback without adding a new workflow.
 
-- [中文 1.1.0 用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
-- [English 1.1.0 user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.0/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
+- [中文 1.1.0 用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
+- [English 1.1.0 user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
 - [上一 Stable 1.1.0 / Previous Stable for rollback](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.0)
 
 > GitHub 自动生成的 Source code ZIP/TAR 只是本下载页仓库的资料快照，不是插件安装包。
