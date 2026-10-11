@@ -62,49 +62,56 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 ## 当前公开版本 / Current public release
 
-- 产品 / Product: **QQ Host — Qing Audio**
-- 版本 / Version: **1.1.3 Stable**, 2026-10-10
-- 授权 / Licensing: **闭源专有软件 / Closed-source proprietary software**
+QQ Host — Qing Audio · **1.1.4 Stable** · 2026-10-12
 
-[QQ Host 1.1.3 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.3)
+闭源专有软件，源码保持私有。/ Closed-source proprietary software; source remains private.
+
+[QQ Host 1.1.4 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.4)
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.3.Installation.Guide.English.txt)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.Installation.Guide.English.txt)
+- [中文基础手册 / Chinese reference manual (1.1.0)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
+- [English reference manual (1.1.0)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
 
-中英文 PDF 用户手册已随本次 1.1.3 Release 附上。沿用 1.1.0 手册并保留真实版本标识；本次只修复兼容性与提示文字，没有新增操作。
-Both PDF user manuals are attached to this 1.1.3 release. The existing 1.1.0 manuals retain their original version labels; this release repairs compatibility and feedback without adding a new workflow.
+两份基础手册随本次 Release 直接提供，保留真实 1.1.0 标识；1.1.4 的变化以本次安装说明和发布说明为准。
+Both reference manuals are attached directly to this Release with their true 1.1.0 labels. The current installation guides and notes describe the new 1.1.4 behaviour.
 
-- [中文 1.1.0 用户手册 / Chinese manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
-- [English 1.1.0 user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.3/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
-- [上一 Stable 1.1.0 / Previous Stable for rollback](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.0)
+[上一 Stable 1.1.3 / Previous Stable for rollback](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.3)
 
 > GitHub 自动生成的 Source code ZIP/TAR 只是本下载页仓库的资料快照，不是插件安装包。
 > GitHub's automatic Source code ZIP/TAR archives contain this download-page repository, not the product source or installers.
 
 ## 支持范围 / Compatibility
 
-- Windows 10/11 x64: VST3 Bridge + QQ Host.exe.
-- macOS 12+: Apple Silicon arm64 VST3, Intel/Rosetta x86_64 VST3, Universal 2 AU (arm64 + x86_64).
-- 托管原生 64-bit VST2/VST3 音频效果器，Mac 同时支持 AUv2/AUv3；不支持 32-bit 或乐器。 / Hosts native 64-bit VST2/VST3 audio effects, plus AUv2/AUv3 on Mac; 32-bit plug-ins and instruments are unsupported.
-- Cubase 原生 VST3 预置应在匹配的 VST3 实例中使用；同名 VST2 不保证状态兼容。 / Use native Cubase VST3 presets with the matching VST3 instance; the VST2 edition is not necessarily state-compatible.
-- Mac 成品经过 ad-hoc 签名，未经过 Apple Developer ID 公证。 / Mac bundles are ad-hoc signed, not Apple Developer ID notarized.
+Windows 10/11 x64 VST3；macOS 12+ Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。Mac 为 ad-hoc 签名，未公证；按宿主架构选择包。原生单插件预置须匹配 VST2/VST3/AU 格式。QQ Host 悬停说明为中文，第三方插件界面语言不变。
+
+Windows 10/11 x64 VST3; macOS 12+ Apple Silicon VST3, Intel x86_64 VST3 and Universal 2 AU. Mac bundles are ad-hoc signed, not notarized; choose the host architecture. Native single-plug-in presets require the matching VST2/VST3/AU format. QQ Host hover descriptions are Chinese; third-party interfaces retain their own language.
+
+托管原生 64-bit VST2/VST3 音频效果器，Mac 同时支持 AUv2/AUv3；不支持 32-bit 或乐器。
+Hosts native 64-bit VST2/VST3 audio effects, plus AUv2/AUv3 on Mac; 32-bit plug-ins and instruments are unsupported.
 
 ## 安装与基本使用 / Installation and basic use
 
 1. 保存工程并完全退出 DAW、扫描器及 QQ Host。 / Save the session and fully quit DAWs, scanners and QQ Host.
-2. 选择匹配的 1.1.3 ZIP，解压完整的 Bridge 和后台程序。 / Choose the matching 1.1.3 ZIP and extract the complete Bridge/background-app pair.
-3. Windows：将 QQ Host Bridge.vst3 和 QQ Host.exe 相邻放入 `C:\Program Files\Common Files\VST3\QQ Host\`，替换旧版并清理其他扫描目录中的重复副本。 / Place QQ Host Bridge.vst3 and QQ Host.exe together in that directory; replace the old pair and remove duplicate scannable copies from other paths.
+2. 选择匹配的 1.1.4 ZIP，解压完整的 Bridge 和后台程序。 / Choose the matching 1.1.4 ZIP and extract the complete Bridge/background-app pair.
+3. Windows：将 QQ Host Bridge.vst3 和 QQ Host.exe 相邻放入 `C:\Program Files\Common Files\VST3\QQ Host\`，替换旧版并移走其他扫描目录中的重复副本。 / Place QQ Host Bridge.vst3 and QQ Host.exe together in that directory; replace the old pair and move duplicate scannable copies out of other paths.
 4. macOS：按对应说明将 Bridge 与 QQ Host.app 相邻放入 `~/Library/Audio/Plug-Ins/VST3/QQ Host/` 或 `~/Library/Audio/Plug-Ins/Components/QQ Host/`；也可选系统 `/Library/...` 目录，不能重复安装。 / Install the Bridge/app pair together in the corresponding user folder or optional system `/Library/...` folder; do not duplicate installations.
-5. 重新打开宿主并 rescan，确认 **1.1.3 / Protocol 134 / HOST READY**。 / Reopen and rescan, then confirm **1.1.3 / Protocol 134 / HOST READY**.
+5. 重新打开宿主并 rescan，确认 **1.1.4 / Protocol 135 / HOST READY**。 / Reopen and rescan, then confirm **1.1.4 / Protocol 135 / HOST READY**.
 6. 在轨道 Insert 插入 QQ Host Bridge，并在 Rack 加载第三方效果器。 / Insert QQ Host Bridge on a track and load third-party effects in its Rack.
 7. FL Studio：启用 Use fixed size buffers 及两个 maximum-buffer 选项。 / Enable Use fixed size buffers and both maximum-buffer options in FL Studio.
 8. 只选一套匹配宿主架构的 VST3；AU 与 VST3 为独立格式。升级或回退时必须成对更换 Bridge 与后台程序。 / Choose one VST3 architecture matching the host; AU and VST3 are independent formats. Always upgrade or roll back the Bridge and background app together.
+
+Mac 安全与隔离处理、扫描故障排查见两份安装说明。 / See both installation guides for Mac security/quarantine handling and scanning troubleshooting.
+
+Windows 编译、隔离恢复回归及安装核验通过。三类 Mac 成品通过架构、版本、签名和编码检查；这不等于所有 Mac DAW 的界面/声音实测。局部 Refresh 不保证修复所有第三方插件无响应情况。
+
+Windows build, isolated recovery regressions and installation checks passed. All three Mac packages passed architecture, version, signature and encoding checks; this is not GUI/audio acceptance in every Mac DAW. Local Refresh cannot repair every unresponsive third-party plug-in.
 
 ## 主要功能 / Main features
 
@@ -119,6 +126,13 @@ Both PDF user manuals are attached to this 1.1.3 release. The existing 1.1.0 man
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
 ## 逐版本变化 / Changes by version
+
+## 1.1.4 — Refresh 恢复与中文悬停提示 / Refresh recovery and Chinese tooltips
+
+中文：2026-10-12 Stable，上一稳定回滚版本为 1.1.3。修复打开/切换工程时首次后台连接失败后的恢复。Refresh 独立重试当前 Host，合并重复点击，并在较长等待时说明原因；局部刷新不会自动重启其他 Host。QQ Host 自身控件、插件浏览器、插件窗口工具栏与动态悬停说明改为中文，显式使用 UTF-8。第三方插件界面、名称和未识别诊断原文保留。请成对升级 Bridge 与后台程序。
+
+English: Stable, 2026-10-12; previous Stable rollback 1.1.3. Repairs recovery after an initial background connection failure when opening/switching projects. Refresh independently retries the current Host, coalesces repeated clicks and explains prolonged waits; local refresh does not automatically restart other Hosts. QQ Host controls, browser, hosted-window toolbar and dynamic hover descriptions are Chinese with explicit UTF-8 decoding. Third-party interfaces, names and unrecognized diagnostics are preserved. Update the Bridge and background app together.
+
 
 ## 1.1.3 — 提示文字编码 / Preset feedback encoding
 
