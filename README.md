@@ -62,56 +62,41 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 ## 当前公开版本 / Current public release
 
-QQ Host — Qing Audio · **1.1.4 Stable** · 2026-10-12
+QQ Host — Qing Audio · **1.1.5 Stable** · 2026-10-12
 
 闭源专有软件，源码保持私有。/ Closed-source proprietary software; source remains private.
 
-[QQ Host 1.1.4 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.4)
+[QQ Host 1.1.5 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.5)
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.4.Installation.Guide.English.txt)
-- [中文基础手册 / Chinese reference manual (1.1.0)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.0.User.Manual.Chinese.pdf)
-- [English reference manual (1.1.0)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.4/QQ.Host.1.1.0.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.Installation.Guide.English.txt)
+- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.User.Manual.Chinese.pdf)
+- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.User.Manual.English.Edition.pdf)
 
-两份基础手册随本次 Release 直接提供，保留真实 1.1.0 标识；1.1.4 的变化以本次安装说明和发布说明为准。
-Both reference manuals are attached directly to this Release with their true 1.1.0 labels. The current installation guides and notes describe the new 1.1.4 behaviour.
-
-[上一 Stable 1.1.3 / Previous Stable for rollback](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.3)
-
-> GitHub 自动生成的 Source code ZIP/TAR 只是本下载页仓库的资料快照，不是插件安装包。
-> GitHub's automatic Source code ZIP/TAR archives contain this download-page repository, not the product source or installers.
+中英文手册均已更新至 1.1.5，包含当前 Power 界面与操作说明。
+Both manuals are updated to 1.1.5, including the current Power interface and instructions.
 
 ## 支持范围 / Compatibility
 
-Windows 10/11 x64 VST3；macOS 12+ Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。Mac 为 ad-hoc 签名，未公证；按宿主架构选择包。原生单插件预置须匹配 VST2/VST3/AU 格式。QQ Host 悬停说明为中文，第三方插件界面语言不变。
+Windows 10/11 x64 VST3；macOS 12+ Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。Mac 为 ad-hoc 签名，未公证；按宿主架构选择包。QQ Host 悬停说明为中文；第三方插件界面语言不变。
 
-Windows 10/11 x64 VST3; macOS 12+ Apple Silicon VST3, Intel x86_64 VST3 and Universal 2 AU. Mac bundles are ad-hoc signed, not notarized; choose the host architecture. Native single-plug-in presets require the matching VST2/VST3/AU format. QQ Host hover descriptions are Chinese; third-party interfaces retain their own language.
-
-托管原生 64-bit VST2/VST3 音频效果器，Mac 同时支持 AUv2/AUv3；不支持 32-bit 或乐器。
-Hosts native 64-bit VST2/VST3 audio effects, plus AUv2/AUv3 on Mac; 32-bit plug-ins and instruments are unsupported.
+Windows 10/11 x64 VST3; macOS 12+ Apple Silicon VST3, Intel x86_64 VST3 and Universal 2 AU. Mac bundles are ad-hoc signed, not notarized; choose the host architecture. QQ Host tooltips are Chinese; third-party interfaces keep their own language.
 
 ## 安装与基本使用 / Installation and basic use
 
-1. 保存工程并完全退出 DAW、扫描器及 QQ Host。 / Save the session and fully quit DAWs, scanners and QQ Host.
-2. 选择匹配的 1.1.4 ZIP，解压完整的 Bridge 和后台程序。 / Choose the matching 1.1.4 ZIP and extract the complete Bridge/background-app pair.
-3. Windows：将 QQ Host Bridge.vst3 和 QQ Host.exe 相邻放入 `C:\Program Files\Common Files\VST3\QQ Host\`，替换旧版并移走其他扫描目录中的重复副本。 / Place QQ Host Bridge.vst3 and QQ Host.exe together in that directory; replace the old pair and move duplicate scannable copies out of other paths.
-4. macOS：按对应说明将 Bridge 与 QQ Host.app 相邻放入 `~/Library/Audio/Plug-Ins/VST3/QQ Host/` 或 `~/Library/Audio/Plug-Ins/Components/QQ Host/`；也可选系统 `/Library/...` 目录，不能重复安装。 / Install the Bridge/app pair together in the corresponding user folder or optional system `/Library/...` folder; do not duplicate installations.
-5. 重新打开宿主并 rescan，确认 **1.1.4 / Protocol 135 / HOST READY**。 / Reopen and rescan, then confirm **1.1.4 / Protocol 135 / HOST READY**.
-6. 在轨道 Insert 插入 QQ Host Bridge，并在 Rack 加载第三方效果器。 / Insert QQ Host Bridge on a track and load third-party effects in its Rack.
-7. FL Studio：启用 Use fixed size buffers 及两个 maximum-buffer 选项。 / Enable Use fixed size buffers and both maximum-buffer options in FL Studio.
-8. 只选一套匹配宿主架构的 VST3；AU 与 VST3 为独立格式。升级或回退时必须成对更换 Bridge 与后台程序。 / Choose one VST3 architecture matching the host; AU and VST3 are independent formats. Always upgrade or roll back the Bridge and background app together.
+退出 DAW 和 QQ Host，成对更新 Bridge 与后台程序，重新扫描并确认 1.1.5。将 Bridge 插入轨道，再在机架内加载效果器。Power 新建默认两星，停播后单击循环五档；LIVE 下不可调节。详细路径与扫描步骤见安装说明。
 
-Mac 安全与隔离处理、扫描故障排查见两份安装说明。 / See both installation guides for Mac security/quarantine handling and scanning troubleshooting.
+Quit the DAW and QQ Host, update the Bridge and background app together, then rescan and confirm 1.1.5. Insert the Bridge on a track and load effects into its rack. Power starts at two stars; stop playback to cycle the five levels. It is disabled in LIVE. See the installation guides for paths and rescan steps.
 
-Windows 编译、隔离恢复回归及安装核验通过。三类 Mac 成品通过架构、版本、签名和编码检查；这不等于所有 Mac DAW 的界面/声音实测。局部 Refresh 不保证修复所有第三方插件无响应情况。
+Windows 构建、音频回归、界面检查和安装校验已通过；三套 Mac 包通过架构、版本、签名与编码检查。这不代表所有 DAW 的界面或听感实测。两阶段优化取决于机架、路由与测量；两星和三星同为 2 buffers。旧 3/4 buffers 串行工程保持原设置并显示短横线。
 
-Windows build, isolated recovery regressions and installation checks passed. All three Mac packages passed architecture, version, signature and encoding checks; this is not GUI/audio acceptance in every Mac DAW. Local Refresh cannot repair every unresponsive third-party plug-in.
+Windows build, audio regression, UI and installation checks passed. All three Mac packages passed architecture, version, signature and encoding checks; this is not GUI/listening acceptance in every DAW. Two-stage optimization depends on the rack, routing and profiling; two and three stars both use 2 buffers. Legacy 3/4-buffer serial projects retain their setting and show a dash.
 
 ## 主要功能 / Main features
 
@@ -126,6 +111,13 @@ Windows build, isolated recovery regressions and installation checks passed. All
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
 ## 逐版本变化 / Changes by version
+
+## 1.1.5 — Power 星级控制 / Power star control
+
+中文：2026-10-12 Stable，上一稳定版 1.1.4。原缓冲和处理菜单合并为 Mode 与 SC 之间的 Power 星级按钮，单击循环五档：1 buffer 串行、2 buffers 串行、2 buffers 两阶段优化、3 buffers 两阶段优化、4 buffers 两阶段优化。新建默认两星，工程保留保存的档位。LIVE 下文字和星级变灰且不可点击；切回 OFFLOAD 保留原选择。中文悬停说明保持简短，星形矢量绘制，中英文 1.1.5 手册已更新。
+
+English: Stable, 2026-10-12; previous Stable 1.1.4. The separate buffer and processing menus become a Power star button between Mode and SC. Click to cycle: 1 buffer serial, 2 buffers serial, 2 buffers with two-stage optimization, 3 buffers with two-stage optimization, and 4 buffers with two-stage optimization. New instances default to two stars and projects retain the saved level. The label and stars turn gray and disable in LIVE, retaining the choice when returning to OFFLOAD. A short Chinese tooltip, vector stars and updated bilingual 1.1.5 manuals are included.
+
 
 ## 1.1.4 — Refresh 恢复与中文悬停提示 / Refresh recovery and Chinese tooltips
 
