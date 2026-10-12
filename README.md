@@ -62,41 +62,41 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 ## 当前公开版本 / Current public release
 
-QQ Host — Qing Audio · **1.1.5 Stable** · 2026-10-12
+QQ Host — Qing Audio · **1.1.6 Stable** · 2026-10-13
 
 闭源专有软件，源码保持私有。/ Closed-source proprietary software; source remains private.
 
-[QQ Host 1.1.5 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.5)
+[QQ Host 1.1.6 Release 页面 / Release page](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.6)
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.User.Manual.Chinese.pdf)
-- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.5/QQ.Host.1.1.5.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6/QQ.Host.1.1.6.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6/QQ.Host.1.1.6.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6/QQ.Host.1.1.6.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6/QQ.Host.1.1.6.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6/QQ.Host.1.1.6.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6/QQ.Host.1.1.6.Installation.Guide.English.txt)
+- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6/QQ.Host.1.1.6.User.Manual.Chinese.pdf)
+- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6/QQ.Host.1.1.6.User.Manual.English.Edition.pdf)
 
-中英文手册均已更新至 1.1.5，包含当前 Power 界面与操作说明。
-Both manuals are updated to 1.1.5, including the current Power interface and instructions.
+中英文手册均更新至 1.1.6，包含格式筛选、扫描目录移除与列表管理。
+Both 1.1.6 manuals cover format filtering, scan-folder removal and catalog management.
 
 ## 支持范围 / Compatibility
 
-Windows 10/11 x64 VST3；macOS 12+ Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。Mac 为 ad-hoc 签名，未公证；按宿主架构选择包。QQ Host 悬停说明为中文；第三方插件界面语言不变。
+Windows 10/11 x64 VST3；macOS 12+ Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。按宿主架构选择 VST3 包；AU 同时包含两种架构。Mac 为 ad-hoc 签名，未公证。托管原生 64-bit 效果器；不含 32-bit 桥接或乐器支持。
 
-Windows 10/11 x64 VST3; macOS 12+ Apple Silicon VST3, Intel x86_64 VST3 and Universal 2 AU. Mac bundles are ad-hoc signed, not notarized; choose the host architecture. QQ Host tooltips are Chinese; third-party interfaces keep their own language.
+Windows 10/11 x64 VST3; macOS 12+ Apple Silicon VST3, Intel x86_64 VST3 and Universal 2 AU. Match VST3 to the host architecture; AU includes both architectures. Mac bundles are ad-hoc signed, not notarized. Native 64-bit effects only; no 32-bit bridge or instrument hosting.
 
 ## 安装与基本使用 / Installation and basic use
 
-退出 DAW 和 QQ Host，成对更新 Bridge 与后台程序，重新扫描并确认 1.1.5。将 Bridge 插入轨道，再在机架内加载效果器。Power 新建默认两星，停播后单击循环五档；LIVE 下不可调节。详细路径与扫描步骤见安装说明。
+退出 DAW 和 QQ Host，成对升级 Bridge 与后台程序，重新扫描并确认 1.1.6。将 Bridge 插入轨道，在机架内打开插件浏览器；搜索框右侧选择格式。“管理”可单插件扫描、按格式扫描或清理列表，Folders 可移除目录。Power 保留两星默认与工程保存行为。
 
-Quit the DAW and QQ Host, update the Bridge and background app together, then rescan and confirm 1.1.5. Insert the Bridge on a track and load effects into its rack. Power starts at two stars; stop playback to cycle the five levels. It is disabled in LIVE. See the installation guides for paths and rescan steps.
+Quit the DAW and QQ Host, upgrade the Bridge and background app together, rescan and confirm 1.1.6. Insert the Bridge on a track and open the rack browser; choose a format next to Search. Manage scans one file or format and maintains the catalog; Folders removes scan paths. Power retains its two-star default and saved project choices.
 
-Windows 构建、音频回归、界面检查和安装校验已通过；三套 Mac 包通过架构、版本、签名与编码检查。这不代表所有 DAW 的界面或听感实测。两阶段优化取决于机架、路由与测量；两星和三星同为 2 buffers。旧 3/4 buffers 串行工程保持原设置并显示短横线。
+Windows 构建、181 项隔离检查和安装核验已通过；三套 Mac 包通过版本、架构、签名及中文编码检查，不代表在所有 DAW 中完成听感实测。移除目录不清除列表项；移除列表项不删除文件或工程实例。扫描取消需等待未返回的系统文件调用结束。详细安装路径、升级、扫描和 Mac 安全处理见双语指南。
 
-Windows build, audio regression, UI and installation checks passed. All three Mac packages passed architecture, version, signature and encoding checks; this is not GUI/listening acceptance in every DAW. Two-stage optimization depends on the rack, routing and profiling; two and three stars both use 2 buffers. Legacy 3/4-buffer serial projects retain their setting and show a dash.
+Windows build, 181 isolated checks and installation verification passed. Three Mac packages passed version, architecture, signature and Chinese encoding checks; listening acceptance in every DAW is not claimed. Removing folders does not clear entries; removing entries does not delete files or project instances. Scan cancellation must wait for outstanding operating-system file calls. See the bilingual guides for paths, upgrades, rescans and Mac security handling.
 
 ## 主要功能 / Main features
 
@@ -111,6 +111,13 @@ Windows build, audio regression, UI and installation checks passed. All three Ma
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
 ## 逐版本变化 / Changes by version
+
+## 1.1.6 — 扫描管理与格式筛选 / Scan management and format filter
+
+中文：2026-10-13 Stable，上一稳定版 1.1.5。扫描目录支持逐项移除，阻止误加整盘、网络共享和 Mac 卷根目录。管理菜单可选择单个插件扫描，或按 VST2/VST3 增量扫描（Mac 另有 AU），支持移除选中项、缺失文件项目、指定格式或全部列表。加载浏览器新增全部/VST2/VST3/AU（Mac）格式筛选并记住选择，可配合搜索、收藏和分类。移除只影响扫描配置或列表，不删除插件文件或工程实例；未来扫描可能重新发现插件。双语 1.1.6 手册更新了扫描、筛选和两种 Refresh 的说明。Power 默认与音频处理不变。
+
+English: Stable, 2026-10-13; previous Stable 1.1.5. Remove individual scan folders and prevent accidental drive, network-share and Mac volume roots. Manage scans one plug-in or incrementally scans VST2/VST3 (plus AU on Mac), and removes selected entries, missing-file entries, a format or the full catalog. The loading browser adds a remembered All/VST2/VST3/AU (Mac) format filter used with search, favorites and categories. Removal affects scan configuration or catalog rows, not files or project instances; later scans may rediscover effects. Updated bilingual 1.1.6 manuals explain scanning, filtering and both Refresh functions. Power defaults and audio processing are unchanged.
+
 
 ## 1.1.5 — Power 星级控制 / Power star control
 
