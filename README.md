@@ -62,28 +62,25 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 ## 当前公开版本 / Current public release
 
-QQ Host — Qing Audio · **1.1.6 Stable · 20261014 恢复与退出修订 / Recovery and Exit Revision** · 2026-10-14
-
-产品显示版本仍为 1.1.6，使用日期修订标签和文件名区分本版；原 v1.1.6 仍可下载。
-The product still reports 1.1.6. The dated tag and filenames identify this revision; the original v1.1.6 remains available.
+QQ Host — Qing Audio · **1.1.7 Stable** · 2026-10-16
 
 闭源专有软件，源码保持私有。/ Closed-source proprietary software; source remains private.
 
-[本次修订 Release / Current revision](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.6-recovery-exit-20261014) · [上一公开版 / Previous release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.6)
+[当前版本 / Current release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.7) · [上一版本 / Previous release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.6-recovery-exit-20261014)
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6-recovery-exit-20261014/QQ.Host.1.1.6.20261014.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6-recovery-exit-20261014/QQ.Host.1.1.6.20261014.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6-recovery-exit-20261014/QQ.Host.1.1.6.20261014.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6-recovery-exit-20261014/QQ.Host.1.1.6.20261014.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6-recovery-exit-20261014/QQ.Host.1.1.6.20261014.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6-recovery-exit-20261014/QQ.Host.1.1.6.20261014.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6-recovery-exit-20261014/QQ.Host.1.1.6.20261014.User.Manual.Chinese.pdf)
-- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.6-recovery-exit-20261014/QQ.Host.1.1.6.20261014.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.7/QQ.Host.1.1.7.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.7/QQ.Host.1.1.7.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.7/QQ.Host.1.1.7.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.7/QQ.Host.1.1.7.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.7/QQ.Host.1.1.7.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.7/QQ.Host.1.1.7.Installation.Guide.English.txt)
+- [中文用户手册 / Chinese user manual (1.1.6, 20261014)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.7/QQ.Host.1.1.6.20261014.User.Manual.Chinese.pdf)
+- [English user manual (1.1.6, 20261014)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.1.7/QQ.Host.1.1.6.20261014.User.Manual.English.Edition.pdf)
 
-中英文手册已更新至 20261014 修订，包含中文恢复提示、全部 Host 重启及 Windows 后台退出保护。
-Both manuals include the 20261014 recovery labels, restart-all guidance and Windows exit protection.
+两份说明书原样沿用 1.1.6 的 20261014 修订版；插件、后台程序和安装包版本均为 1.1.7。
+Both manuals are the unchanged 20261014 editions for 1.1.6. The plug-in, background app and install packages are 1.1.7.
 
 ## 支持范围 / Compatibility
 
@@ -97,9 +94,9 @@ Windows 10/11 x64 VST3; macOS 12+ Apple Silicon VST3, Intel x86_64 VST3 and Univ
 
 Quit the DAW and QQ Host, upgrade the Bridge and background app together, rescan and confirm 1.1.6. Insert the Bridge on a track and open the rack browser; choose a format next to Search. Manage scans one file or format and maintains the catalog; Folders removes scan paths. Power retains its two-star default and saved project choices.
 
-本修订复用通过的 Windows 构建、安装核验、9 项中文编译检查、3 项隔离退出场景及 54 项格式/生命周期检查；Mac 成品通过架构、版本、签名与编译后中文检查。这不代表每个 DAW/第三方插件的界面和声音验收。
+1.1.7 通过 Windows 编译与安装版本/哈希核对；三套 Mac 成品通过架构、版本、签名和编译后的中文提示检查。这不代表每个 DAW/第三方插件的界面与声音验收。
 
-This revision reuses passing Windows build/install verification, nine compiled Chinese-text checks, three isolated exit scenarios and 54 format/lifetime checks. Mac packages pass architecture, version, signature and compiled Chinese checks. These do not establish GUI/audio acceptance in every DAW or third-party plug-in.
+1.1.7 passes Windows build/install version and hash checks. All three Mac packages pass architecture, version, signature and compiled Chinese-tooltip checks. These do not establish GUI/audio acceptance in every DAW or third-party plug-in.
 
 卡在启动或恢复时，先点主界面 REFRESH；仍无效则停止播放，在右上角“…”中选择“重启全部 QQ Host”，确认“重启全部”。共用后台的其他 Host（包括其他 DAW）也会暂时断开并恢复。浏览器 Refresh 用于增量扫描。详细安装、升级与 Mac 安全处理见双语安装说明。
 
@@ -118,6 +115,18 @@ For stuck startup/recovery, try the main REFRESH first. If it still fails, stop 
 - 工程恢复、独立 Hosted Editor 与运行时故障隔离 / Project restore, independent Hosted Editor, and runtime fault isolation
 
 ## 逐版本变化 / Changes by version
+
+### 1.1.7 — Add Plugin 悬停说明 / Add Plugin tooltip — 2026-10-16
+
+中文：Add Plugin 新增“左键添加插件；右键可新增标签（Divider）。”悬停说明。
+侧链添加入口显示“点击添加侧链插件。”。中文使用显式 UTF-8；点击行为、工程状态和音频处理保持原样。
+插件和后台程序统一升级至 1.1.7。双语说明书原样沿用 1.1.6 的 20261014 修订版，保留原版本标识。
+
+English: Add Plugin now explains left-click to add a plug-in and right-click to add
+a Divider label. The sidechain add entry has an add-only hint. Chinese uses explicit UTF-8;
+click behavior, project state and audio processing are unchanged. Both plug-in and background
+app report 1.1.7. The unchanged 20261014 Chinese and English manuals for 1.1.6 retain their original labels.
+
 
 
 ### 1.1.6 中文恢复提示候选 / Chinese recovery feedback candidate — 2026-10-14
