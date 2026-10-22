@@ -65,30 +65,37 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 ## 当前公开版本 / Current public release
 
-QQ Host - Qing Audio · **1.3.6 Stable** · 2026-10-22
+QQ Host - Qing Audio · **1.3.7 Stable** · 2026-10-22
 
 闭源专有软件，源码保持私有。/ Closed-source proprietary software; source remains private.
 
-[当前版本 / Current release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.6) · [上一公开版本 / Previous public release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.1.7)
+[当前版本 / Current release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.7) · [上一公开版本 / Previous public release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.6)
 
-1.3.6 完善同一 Host 内的多线程分段与 ChainScope 对齐。本次公开更新还包含 1.1.8 以来的缺失插件预置链恢复、Cubase 后台释放兼容、Search 和快捷键、测试与增加余量、右键菜单及电平表修正。中英文手册同步为 38 页，保留原配色并按使用顺序整理。
+新建实例默认从 2 buffer / 1 段调整为 1 buffer / 1 段，降低初始附加延迟。已有工程保存的方案继续保留。
 
-1.3.6 improves multi-threaded chain splitting with ChainScope alignment. This public update also includes the changes since 1.1.8 for missing plug-ins in chains, Cubase background-driver release, Search and shortcuts, Test and Add Headroom, popup menus and meters. Both manuals now have 38 matching pages, using the original palette and a task-based chapter order.
+New instances start at 1 buffer / 1 stage instead of 2 buffers / 1 stage, reducing the initial added latency. Existing projects retain their saved plans.
+
+本次按用户要求沿用 1.3.6 中英文手册，PDF 内容和版本标识保持不变。1.3.7 的新建默认值以本页说明为准。
+
+The approved 1.3.6 bilingual manuals are reused without changing their contents or version labels. This page describes the new-instance default introduced in 1.3.7.
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.6/QQ.Host.1.3.6.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.6/QQ.Host.1.3.6.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.6/QQ.Host.1.3.6.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.6/QQ.Host.1.3.6.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.6/QQ.Host.1.3.6.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.6/QQ.Host.1.3.6.Installation.Guide.English.txt)
-- [中文用户手册 / Chinese user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.6/QQ.Host.1.3.6.User.Manual.Chinese.pdf)
-- [English user manual](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.6/QQ.Host.1.3.6.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.7/QQ.Host.1.3.7.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.7/QQ.Host.1.3.7.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.7/QQ.Host.1.3.7.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.7/QQ.Host.1.3.7.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.7/QQ.Host.1.3.7.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.7/QQ.Host.1.3.7.Installation.Guide.English.txt)
+- [中文用户手册（沿用 1.3.6）/ Chinese manual (1.3.6)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.7/QQ.Host.1.3.6.User.Manual.Chinese.pdf)
+- [English user manual (unchanged 1.3.6 edition)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.7/QQ.Host.1.3.6.User.Manual.English.Edition.pdf)
 
-共 8 个附件：四套平台包、双语安装说明和双语 1.3.6 用户手册。GitHub 自动提供的 Source code ZIP/TAR 只含本下载仓库页面资料，安装请使用上面的平台包。
+共 8 个附件：四套 1.3.7 平台包、两份 1.3.7 安装说明、沿用的两份 1.3.6 手册。
 
-Eight assets: four platform packages, bilingual installation guides and matching 1.3.6 manuals. GitHub's automatic Source code ZIP/TAR contains this download repository's public pages; install using the platform packages above.
+Eight assets: four 1.3.7 platform packages, two 1.3.7 installation guides, and two unchanged 1.3.6 manuals.
+
+GitHub 自动提供的 Source code ZIP/TAR 仅含本下载仓库的页面资料。安装请使用平台包。
+GitHub's automatic Source code ZIP/TAR contains only this download repository's pages. Use a platform package for installation.
 
 ## 支持范围与已知限制 / Compatibility and known limitations
 
@@ -106,9 +113,9 @@ Mac bundles are ad-hoc signed and not notarized. Windows build, regression and i
 
 ## 安装、升级与基本使用 / Installation, upgrades and basic use
 
-退出 DAW、扫描器和 QQ Host，**同时升级 Bridge 和后台程序为 1.3.6**，避免混用旧后台。Windows 将 `QQ Host Bridge.vst3` 与 `QQ Host.exe` 相邻安装到 `C:\Program Files\Common Files\VST3\QQ Host\`。Mac VST3 将 Bridge 与配套 app 一起放到 `~/Library/Audio/Plug-Ins/VST3/QQ Host/`；AU 放到 `~/Library/Audio/Plug-Ins/Components/QQ Host/`。重开 DAW 并扫描；完整安装和 Mac 安全处理步骤见双语安装说明。
+退出 DAW、扫描器和 QQ Host，**同时升级 Bridge 和后台程序为 1.3.7**，避免混用旧后台。Windows 将 `QQ Host Bridge.vst3` 与 `QQ Host.exe` 相邻安装到 `C:\Program Files\Common Files\VST3\QQ Host\`。Mac VST3 将 Bridge 与配套 app 一起放到 `~/Library/Audio/Plug-Ins/VST3/QQ Host/`；AU 放到 `~/Library/Audio/Plug-Ins/Components/QQ Host/`。重开 DAW 并扫描；完整安装和 Mac 安全处理步骤见双语安装说明。
 
-Quit the DAW, scanners and QQ Host. **Upgrade both the Bridge and background app to 1.3.6**. On Windows, keep `QQ Host Bridge.vst3` beside `QQ Host.exe` in `C:\Program Files\Common Files\VST3\QQ Host\`. On Mac, place the Bridge and companion app together in `~/Library/Audio/Plug-Ins/VST3/QQ Host/` for VST3 or `~/Library/Audio/Plug-Ins/Components/QQ Host/` for AU. Reopen and rescan in the DAW. The bilingual installation guides include complete steps and Mac security handling.
+Quit the DAW, scanners and QQ Host. **Upgrade both the Bridge and background app to 1.3.7**. On Windows, keep `QQ Host Bridge.vst3` beside `QQ Host.exe` in `C:\Program Files\Common Files\VST3\QQ Host\`. On Mac, place the Bridge and companion app together in `~/Library/Audio/Plug-Ins/VST3/QQ Host/` for VST3 or `~/Library/Audio/Plug-Ins/Components/QQ Host/` for AU. Reopen and rescan in the DAW. The bilingual installation guides include complete steps and Mac security handling.
 
 混音时让 LIVE 保持关闭，加载插件后播放有声、负载较重的片段，点击“测试”；测量结束后停止播放，应用方案。标题下方显示 buffer、处理段数和延迟。出现瓶颈、“增加余量”亮起时，点击一次并停止播放以应用；按钮会变灰，遇到新的瓶颈后可再次使用。换插件后重新测试。DAW 工程及 DAW 保存的 Bridge 预置保留应用后的方案；LOAD CHAIN / SAVE CHAIN 继续加载、保存插件链。
 
@@ -138,6 +145,13 @@ For stuck startup or recovery, try the main REFRESH. If needed, stop playback an
 - Fader、Pan、Polarity、电平表及主链/单槽试听 / Fader, Pan, Polarity, meters and whole-chain or per-slot bypass auditioning.
 
 ## 逐版本变化 / Changes by version
+
+### 1.3.7
+
+中文：新建 QQ Host 默认使用 1 buffer / 1 段，LIVE 保持关闭。已有工程和 DAW 保存的 Bridge 预置继续恢复原有的缓冲、分段和余量；“测试”仍按实际负载选择方案。本次沿用已发布的 1.3.6 中文、英文手册。
+
+English: New QQ Host instances default to 1 buffer / 1 stage, with LIVE off. Existing projects and DAW-saved Bridge presets retain their saved buffers, stages and headroom. Test continues to choose a plan from the measured load. The published 1.3.6 Chinese and English manuals are reused unchanged.
+
 
 ### 1.3.6
 
