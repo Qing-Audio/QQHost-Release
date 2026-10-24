@@ -65,34 +65,34 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 ## 当前公开版本 / Current public release
 
-QQ Host - Qing Audio · **1.3.8 Stable** · 2026-10-24
+QQ Host - Qing Audio · **1.3.9 Stable** · 2026-10-24
 
 闭源专有软件，源码保持私有。/ Closed-source proprietary software; source remains private.
 
-[当前版本 / Current release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.8) · [上一公开版本 / Previous public release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.7)
+[当前版本 / Current release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.9) · [上一公开版本 / Previous public release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.8)
 
-修复 Windows 下 TH-U 右键菜单闪一下就消失的问题，方便在插件中选择移除单块等菜单操作。已有工程和音频处理方案继续保留。
+修复插槽 B 恢复效果时的声音衔接问题。B 旁通期间保持插件运算，前瞻缓冲和侧链持续跟随播放；需要停止运算时使用电源按钮。已有工程和音频处理方案继续保留。
 
-Fixes TH-U context menus flashing and disappearing on Windows, allowing menu operations such as removing an effect. Existing projects and audio-processing plans remain supported.
+Fixes slot B restore discontinuity by keeping plug-in DSP, lookahead and sidechain history running through bypass. Use the power button to suspend processing. Existing projects and audio-processing plans remain supported.
 
-本次按用户要求沿用 1.3.6 中英文手册，PDF 内容和版本标识保持不变。1.3.8 的菜单兼容修复见本页更新说明。
+本次按用户要求沿用 1.3.6 中英文手册，PDF 内容和版本标识保持不变。1.3.9 的旁通连续性修复及 B 的运算开销说明见本页。
 
-The approved 1.3.6 bilingual manuals are reused without changing their contents or version labels. The 1.3.8 menu compatibility fix is described on this page.
+The approved 1.3.6 bilingual manuals are reused without changing their contents or version labels. The 1.3.9 bypass continuity fix and its DSP-load behavior are described on this page.
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.8/QQ.Host.1.3.8.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.8/QQ.Host.1.3.8.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.8/QQ.Host.1.3.8.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.8/QQ.Host.1.3.8.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.8/QQ.Host.1.3.8.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.8/QQ.Host.1.3.8.Installation.Guide.English.txt)
-- [中文用户手册（沿用 1.3.6）/ Chinese manual (1.3.6)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.8/QQ.Host.1.3.6.User.Manual.Chinese.pdf)
-- [English user manual (unchanged 1.3.6 edition)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.8/QQ.Host.1.3.6.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.Installation.Guide.English.txt)
+- [中文用户手册（沿用 1.3.6）/ Chinese manual (1.3.6)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.6.User.Manual.Chinese.pdf)
+- [English user manual (unchanged 1.3.6 edition)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.6.User.Manual.English.Edition.pdf)
 
-共 8 个附件：四套 1.3.8 平台包、两份 1.3.8 安装说明、沿用的两份 1.3.6 手册。
+共 8 个附件：四套 1.3.9 平台包、两份 1.3.9 安装说明、沿用的两份 1.3.6 手册。
 
-Eight assets: four 1.3.8 platform packages, two 1.3.8 installation guides, and two unchanged 1.3.6 manuals.
+Eight assets: four 1.3.9 platform packages, two 1.3.9 installation guides, and two unchanged 1.3.6 manuals.
 
 GitHub 自动提供的 Source code ZIP/TAR 仅含本下载仓库的页面资料。安装请使用平台包。
 GitHub's automatic Source code ZIP/TAR contains only this download repository's pages. Use a platform package for installation.
@@ -107,15 +107,15 @@ ChainScope 跨段对齐需要另行安装配套的 ChainScope 1.8.1，四个模�
 
 Cross-stage ChainScope alignment requires the separate matching ChainScope 1.8.1 installation; upgrade all four modules together. Complete A/B/C groups within one QQ Host can be split. Older, incomplete, cross-Host or D-containing groups retain protection. ChainScope is not included in this release.
 
-Mac 成品为 ad-hoc 签名，未公证。Windows 已完成构建与安装核对，Search 通过 16 项检查；完整原生窗口回归尚未完成。三套 Mac 成品已核对架构、版本、可执行权限、签名和 UTF-8 中文文字，尚未完成原生 Mac DAW 界面及声音实测。性能改善仍取决于插件负载、路由、缓冲和电脑配置。
+Mac 成品为 ad-hoc 签名，未公证。Windows 已完成构建、成对安装、30 组旁通连续性和 24 组分段侧链对比，以及保存方案回归；完整原生窗口回归仍保留此前未完成记录。三套 Mac 成品已核对架构、版本、可执行权限、签名和 UTF-8 中文文字，尚未完成原生 Mac DAW 界面及声音实测。性能改善仍取决于插件负载、路由、缓冲和电脑配置。
 
-Mac bundles are ad-hoc signed and not notarized. Windows build and installation checks are complete; Search passed 16 checks. Full native-window regression remains unfinished. The three Mac packages have passed architecture, version, executable-permission, signature and UTF-8 text checks; native Mac DAW GUI/audio acceptance has not been performed. Performance benefits depend on the plug-ins, routing, buffering and computer.
+Mac bundles are ad-hoc signed and not notarized. Windows build, paired installation, 30 bypass continuity cases, 24 staged sidechain comparisons and saved-plan regressions passed. The inherited full native-window regression remains incomplete. The three Mac packages have passed architecture, version, executable-permission, signature and UTF-8 text checks; native Mac DAW GUI/audio acceptance has not been performed. Performance benefits depend on the plug-ins, routing, buffering and computer.
 
 ## 安装、升级与基本使用 / Installation, upgrades and basic use
 
-退出 DAW、扫描器和 QQ Host，**同时升级 Bridge 和后台程序为 1.3.8**，避免混用旧后台。Windows 将 `QQ Host Bridge.vst3` 与 `QQ Host.exe` 相邻安装到 `C:\Program Files\Common Files\VST3\QQ Host\`。Mac VST3 将 Bridge 与配套 app 一起放到 `~/Library/Audio/Plug-Ins/VST3/QQ Host/`；AU 放到 `~/Library/Audio/Plug-Ins/Components/QQ Host/`。重开 DAW 并扫描；完整安装和 Mac 安全处理步骤见双语安装说明。
+退出 DAW、扫描器和 QQ Host，**同时升级 Bridge 和后台程序为 1.3.9**，避免混用旧后台。Windows 将 `QQ Host Bridge.vst3` 与 `QQ Host.exe` 相邻安装到 `C:\Program Files\Common Files\VST3\QQ Host\`。Mac VST3 将 Bridge 与配套 app 一起放到 `~/Library/Audio/Plug-Ins/VST3/QQ Host/`；AU 放到 `~/Library/Audio/Plug-Ins/Components/QQ Host/`。重开 DAW 并扫描；完整安装和 Mac 安全处理步骤见双语安装说明。
 
-Quit the DAW, scanners and QQ Host. **Upgrade both the Bridge and background app to 1.3.8**. On Windows, keep `QQ Host Bridge.vst3` beside `QQ Host.exe` in `C:\Program Files\Common Files\VST3\QQ Host\`. On Mac, place the Bridge and companion app together in `~/Library/Audio/Plug-Ins/VST3/QQ Host/` for VST3 or `~/Library/Audio/Plug-Ins/Components/QQ Host/` for AU. Reopen and rescan in the DAW. The bilingual installation guides include complete steps and Mac security handling.
+Quit the DAW, scanners and QQ Host. **Upgrade both the Bridge and background app to 1.3.9**. On Windows, keep `QQ Host Bridge.vst3` beside `QQ Host.exe` in `C:\Program Files\Common Files\VST3\QQ Host\`. On Mac, place the Bridge and companion app together in `~/Library/Audio/Plug-Ins/VST3/QQ Host/` for VST3 or `~/Library/Audio/Plug-Ins/Components/QQ Host/` for AU. Reopen and rescan in the DAW. The bilingual installation guides include complete steps and Mac security handling.
 
 混音时让 LIVE 保持关闭，加载插件后播放有声、负载较重的片段，点击“测试”；测量结束后停止播放，应用方案。标题下方显示 buffer、处理段数和延迟。出现瓶颈、“增加余量”亮起时，点击一次并停止播放以应用；按钮会变灰，遇到新的瓶颈后可再次使用。换插件后重新测试。DAW 工程及 DAW 保存的 Bridge 预置保留应用后的方案；LOAD CHAIN / SAVE CHAIN 继续加载、保存插件链。
 
@@ -145,6 +145,13 @@ For stuck startup or recovery, try the main REFRESH. If needed, stop playback an
 - Fader、Pan、Polarity、电平表及主链/单槽试听 / Fader, Pan, Polarity, meters and whole-chain or per-slot bypass auditioning.
 
 ## 逐版本变化 / Changes by version
+
+### 1.3.9
+
+中文：修复 QQ Host 插槽 B 旁通后恢复效果时，插件从旧音频缓冲继续处理而产生声音衔接异常的问题。旁通期间，开启电源的插件持续处理主输入和侧链，保持前瞻缓冲与内部包络连续；普通处理和分段处理均保留延迟对齐与淡化。B 仍保留插件运算开销，需要停止运算时使用电源按钮。中文悬停提示已补充，1.3.6 中英文手册原样沿用。
+
+English: Fixes audio discontinuity when restoring a slot with B after its internal audio history had stopped during bypass. Powered-on plug-ins now continue processing main and sidechain audio during B bypass, keeping lookahead buffers and envelopes current. Serial and staged paths retain latency alignment and the existing dry/wet fade. B retains DSP load; use the power button to suspend processing. Chinese tooltips describe this behavior. The 1.3.6 bilingual manuals are reused unchanged.
+
 
 ### 1.3.8
 
