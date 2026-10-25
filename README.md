@@ -65,34 +65,34 @@ QQ Host changes how plug-ins are hosted and scheduled so the session can use a m
 
 ## 当前公开版本 / Current public release
 
-QQ Host - Qing Audio · **1.3.9 Stable** · 2026-10-24
+QQ Host - Qing Audio · **1.3.13 Stable** · 2026-10-25
 
 闭源专有软件，源码保持私有。/ Closed-source proprietary software; source remains private.
 
-[当前版本 / Current release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.9) · [上一公开版本 / Previous public release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.8)
+[当前版本 / Current release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.13) · [上一公开版本 / Previous public release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.9)
 
-修复插槽 B 恢复效果时的声音衔接问题。B 旁通期间保持插件运算，前瞻缓冲和侧链持续跟随播放；需要停止运算时使用电源按钮。已有工程和音频处理方案继续保留。
+QQ Host 内的插件插入和移除可进入 Cubase 历史并撤销、重做。恢复 C Mixboard 时保留 Group 链接，修正恢复后 Group 名称出现副本后缀的问题。
 
-Fixes slot B restore discontinuity by keeping plug-in DSP, lookahead and sidechain history running through bypass. Use the power button to suspend processing. Existing projects and audio-processing plans remain supported.
+Plug-in insertion and removal within QQ Host can be recorded, undone and redone through Cubase history. Restoring C Mixboard retains its Group connection, and structural undo preserves Group names without an unwanted copy suffix.
 
-本次按用户要求沿用 1.3.6 中英文手册，PDF 内容和版本标识保持不变。1.3.9 的旁通连续性修复及 B 的运算开销说明见本页。
+本次沿用已批准的 1.3.6 中英文手册，PDF 内容与版本标识保持不变。
 
-The approved 1.3.6 bilingual manuals are reused without changing their contents or version labels. The 1.3.9 bypass continuity fix and its DSP-load behavior are described on this page.
+The approved 1.3.6 Chinese and English manuals are reused unchanged with their original version labels.
 
 ## 下载附件 / Download assets
 
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.9.Installation.Guide.English.txt)
-- [中文用户手册（沿用 1.3.6）/ Chinese manual (1.3.6)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.6.User.Manual.Chinese.pdf)
-- [English user manual (unchanged 1.3.6 edition)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.9/QQ.Host.1.3.6.User.Manual.English.Edition.pdf)
+- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.Windows.x64.VST3.zip)
+- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.macOS.Apple.Silicon.VST3.zip)
+- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.macOS.Intel.x86_64.VST3.zip)
+- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.macOS.Universal.2.AU.zip)
+- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.Installation.Guide.Chinese.txt)
+- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.Installation.Guide.English.txt)
+- [中文用户手册（沿用 1.3.6）/ Chinese manual (1.3.6)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.6.User.Manual.Chinese.pdf)
+- [English user manual (unchanged 1.3.6 edition)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.6.User.Manual.English.Edition.pdf)
 
-共 8 个附件：四套 1.3.9 平台包、两份 1.3.9 安装说明、沿用的两份 1.3.6 手册。
+共 8 个附件：四套 1.3.13 平台包、两份 1.3.13 安装说明、沿用的两份 1.3.6 手册。
 
-Eight assets: four 1.3.9 platform packages, two 1.3.9 installation guides, and two unchanged 1.3.6 manuals.
+Eight assets: four 1.3.13 platform packages, two 1.3.13 installation guides, and two unchanged 1.3.6 manuals.
 
 GitHub 自动提供的 Source code ZIP/TAR 仅含本下载仓库的页面资料。安装请使用平台包。
 GitHub's automatic Source code ZIP/TAR contains only this download repository's pages. Use a platform package for installation.
@@ -111,11 +111,15 @@ Mac 成品为 ad-hoc 签名，未公证。Windows 已完成构建、成对安装
 
 Mac bundles are ad-hoc signed and not notarized. Windows build, paired installation, 30 bypass continuity cases, 24 staged sidechain comparisons and saved-plan regressions passed. The inherited full native-window regression remains incomplete. The three Mac packages have passed architecture, version, executable-permission, signature and UTF-8 text checks; native Mac DAW GUI/audio acceptance has not been performed. Performance benefits depend on the plug-ins, routing, buffering and computer.
 
+1.3.13 的六项 Windows 回归通过，覆盖真实 VST3 历史通知、实际 ChainScope A/B/C 恢复、机架上下文、已保存方案及旁通连续性；用户已确认 Cubase 中的 Group 恢复问题解决。本轮未重跑 Windows 原生窗口回归，未进行原生 Mac DAW 界面和声音验收。
+
+Six focused Windows regressions passed for 1.3.13, including native VST3 history notifications, actual ChainScope A/B/C restoration, rack context, saved plans and bypass continuity. The user confirmed the Cubase Group-restoration fix. Native Windows window tests were not rerun in this task; native Mac DAW GUI/audio acceptance was not performed.
+
 ## 安装、升级与基本使用 / Installation, upgrades and basic use
 
-退出 DAW、扫描器和 QQ Host，**同时升级 Bridge 和后台程序为 1.3.9**，避免混用旧后台。Windows 将 `QQ Host Bridge.vst3` 与 `QQ Host.exe` 相邻安装到 `C:\Program Files\Common Files\VST3\QQ Host\`。Mac VST3 将 Bridge 与配套 app 一起放到 `~/Library/Audio/Plug-Ins/VST3/QQ Host/`；AU 放到 `~/Library/Audio/Plug-Ins/Components/QQ Host/`。重开 DAW 并扫描；完整安装和 Mac 安全处理步骤见双语安装说明。
+退出 DAW、扫描器和 QQ Host，**同时升级 Bridge 和后台程序为 1.3.13**，避免混用旧后台。Windows 将 `QQ Host Bridge.vst3` 与 `QQ Host.exe` 相邻安装到 `C:\Program Files\Common Files\VST3\QQ Host\`。Mac VST3 将 Bridge 与配套 app 一起放到 `~/Library/Audio/Plug-Ins/VST3/QQ Host/`；AU 放到 `~/Library/Audio/Plug-Ins/Components/QQ Host/`。重开 DAW 并扫描；完整安装和 Mac 安全处理步骤见双语安装说明。
 
-Quit the DAW, scanners and QQ Host. **Upgrade both the Bridge and background app to 1.3.9**. On Windows, keep `QQ Host Bridge.vst3` beside `QQ Host.exe` in `C:\Program Files\Common Files\VST3\QQ Host\`. On Mac, place the Bridge and companion app together in `~/Library/Audio/Plug-Ins/VST3/QQ Host/` for VST3 or `~/Library/Audio/Plug-Ins/Components/QQ Host/` for AU. Reopen and rescan in the DAW. The bilingual installation guides include complete steps and Mac security handling.
+Quit the DAW, scanners and QQ Host. **Upgrade both the Bridge and background app to 1.3.13**. On Windows, keep `QQ Host Bridge.vst3` beside `QQ Host.exe` in `C:\Program Files\Common Files\VST3\QQ Host\`. On Mac, place the Bridge and companion app together in `~/Library/Audio/Plug-Ins/VST3/QQ Host/` for VST3 or `~/Library/Audio/Plug-Ins/Components/QQ Host/` for AU. Reopen and rescan in the DAW. The bilingual installation guides include complete steps and Mac security handling.
 
 混音时让 LIVE 保持关闭，加载插件后播放有声、负载较重的片段，点击“测试”；测量结束后停止播放，应用方案。标题下方显示 buffer、处理段数和延迟。出现瓶颈、“增加余量”亮起时，点击一次并停止播放以应用；按钮会变灰，遇到新的瓶颈后可再次使用。换插件后重新测试。DAW 工程及 DAW 保存的 Bridge 预置保留应用后的方案；LOAD CHAIN / SAVE CHAIN 继续加载、保存插件链。
 
@@ -145,6 +149,32 @@ For stuck startup or recovery, try the main REFRESH. If needed, stop playback an
 - Fader、Pan、Polarity、电平表及主链/单槽试听 / Fader, Pan, Polarity, meters and whole-chain or per-slot bypass auditioning.
 
 ## 逐版本变化 / Changes by version
+
+### 1.3.13
+
+中文：修复从 Cubase 历史撤销插件移除后，ChainScope Group 名称出现“(副本)”的问题。恢复插入、移除或排序操作时保留仍在机架中的插件及其当前状态，恢复缺失的插件。多步撤销和重做也保留正确的链接关系。用户已确认本次修复有效。
+
+English: Fixes the unwanted copy suffix on a ChainScope Group after restoring a removed plug-in through Cubase history. Structural undo and redo preserve surviving plug-ins and their current state while restoring missing slots, including across multiple history steps. The user confirmed the fix.
+
+### 1.3.12
+
+中文：修复恢复 C Mixboard 后与原 Group 断开、变成 Standalone 的问题。恢复已有机架时保留匹配的插件实例和链接关系。QQ Host 内部撤销已能保留 Group 名称；Cubase 撤销仍出现的副本名称由 1.3.13 继续修复。
+
+English: Fixes C Mixboard losing its original Group and appearing as Standalone after restoration. Matching plug-in instances and rack links are retained. Internal undo preserves Group names; the remaining Cubase-undo copy-suffix issue is addressed in 1.3.13.
+
+### 1.3.11
+
+中文：修正机架编辑通知，使 Cubase 历史能够记录并撤销 QQ Host 内的插件插入、移除。保留旧工程和参数映射兼容性。
+
+English: Corrects rack edit notifications so Cubase history can record and undo plug-in insertion and removal within QQ Host, while retaining existing project and parameter-mapping compatibility.
+
+### 1.3.10
+
+中文：加入向 DAW 报告机架插入、移除、复制、排序和加载插件链操作的历史支持。QQ Host 内部撤销可用；此版仍未在 Cubase 历史中出现记录，后续由 1.3.11 修正。
+
+English: Introduces DAW history support for rack insertion, removal, duplication, reordering and chain loading. Internal undo worked, but Cubase did not yet show history entries in this version; 1.3.11 corrects that issue.
+
+
 
 ### 1.3.9
 
