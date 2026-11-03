@@ -1,154 +1,87 @@
-# QQ Host
+# QQ Host 1.3.14
 
-**中文 | English**
+Qing Audio · **1.3.14 Stable** · 2026-11-04
 
-**QQ Host｜性能桥接机架，一个可以将 DAW 内的单核处理分散成多核处理的效果器。**
+## 1. 产品介绍 / About the product
 
-**QQ Host | A performance bridge rack that moves CPU-heavy processing away from the DAW's single real-time thread so the work can be spread across more CPU cores.**
+QQ Host 是面向 DAW 混音的效果器托管机架。当一条轨道的插件链先于整机 CPU 达到实时处理极限时，可以在轨道 Insert 中放入 QQ Host Bridge，让配套后台 QQ Host 承载效果器。工程、路由及自动化仍由 DAW 管理，不需要另开一个混音系统。
 
-> QQ Host 是闭源软件。本公开仓库只提供经过确认的二进制 Release、安装信息与公开版本记录；源码仓库保持私有。
->
-> QQ Host is closed-source software. This public repository provides only approved binary releases, installation information, and public version history; the source repository remains private.
+QQ Host is an effect rack for DAW mixing. When one track's plug-in chain reaches its real-time processing limit before the computer's overall CPU is fully used, insert QQ Host Bridge and let its companion background app host the effects. The DAW continues to manage the session, routing and automation; no separate mixer is required.
 
-## QQ Host 是做什么的 / What QQ Host does
+混音时可测量负载、应用缓冲和分段方案，也可用 ▲ / ▼ 调整 buffer；录音监听可切换 LIVE。每个 Bridge 提供最多 16 个主插件槽和 2 个侧链效果器槽，并支持 Divider、预置、自动化、DAW 工程恢复、Classic / Light / Dark 界面及电平、声像和极性控制。Windows 托管原生 64 位 VST2/VST3 效果器，macOS 另支持 AUv2/AUv3 效果器。
 
-工程总 CPU 占用并不高，但只要某条轨道插件多、处理链 CPU 占用高，DAW 的实时性能就可能先到极限，出现 ASIO 峰值、卡顿或爆音。QQ Host 就是为这种情况设计的。
+For mixing, measure the workload and apply a buffering/stage plan, or adjust buffering with ▲ / ▼. Switch to LIVE for immediate monitoring. Each Bridge offers up to 16 main slots and two sidechain-effect slots, plus Dividers, presets, automation, project recall, Classic / Light / Dark themes, and level, pan and polarity controls. Windows hosts native 64-bit VST2/VST3 effects; macOS also hosts AUv2/AUv3 effects.
 
-QQ Host 专门针对 DAW 混音插件链设计。使用方法仍然像普通 Insert：在 DAW 轨道上插入 QQ Host Bridge，在 Bridge 的 Rack 里加载 VST2/VST3 效果器，后台 QQ Host 自动接管处理。你不需要把音频送进另一个独立 Mixer，也不用离开熟悉的 DAW 工作流。
+![QQ Host Bridge — historical 0.9.2 interface](https://raw.githubusercontent.com/Qing-Audio/QQHost-Release/main/assets/qq-host-0.9.2-bridge-rack.png)
 
-A session may still show moderate total CPU use, yet one track with many plug-ins and a CPU-intensive processing chain can reach the DAW's real-time limit first, causing ASIO peaks, glitches, or dropouts. QQ Host is designed for exactly this situation.
+图示保留真实的 0.9.2 历史界面标识；当前界面及操作请看下方 1.3.14 手册。
+The image retains its original 0.9.2 identity; see the 1.3.14 manuals below for the current interface and operation.
 
-QQ Host is designed specifically for DAW mixing plug-in chains. The workflow still feels like a normal Insert: add QQ Host Bridge to a track, load VST2/VST3 effects in its Rack, and let the background QQ Host handle the processing. There is no separate mixer and no need to leave the DAW workflow you already know.
+QQ Host 改变托管和调度方式，但不会改写第三方插件内部的算法。性能改善取决于插件、音频缓冲、路由和电脑配置；增加 buffer 会增加延迟，不能消除持续的处理超负荷。QQ ChainScope 是另行安装的产品，不包含在本包中。
 
-## 工作方式一眼看懂 / See how it works
+QQ Host changes hosting and scheduling, not the DSP algorithms inside third-party effects. Benefits depend on plug-ins, audio buffering, routing and hardware. More buffering adds latency and cannot remove sustained overload. QQ ChainScope is a separate installation and is not included.
 
-| DAW 内的高占用处理链 / CPU-heavy chain in the DAW | 转移到 QQ Host 后台 / Offloaded through QQ Host |
+## 2. 许可证 / License
+
+QQ Host 为 Qing Audio 的闭源专有软件，产品源码不公开。本仓库仅提供公开说明、界面图片及发布成品；下载本页文件不授予源码或额外许可权利。第三方组件的许可独立适用。
+
+QQ Host is closed-source proprietary software from Qing Audio; its product source is not public. This repository contains public documentation, screenshots and release downloads only. Downloading these files does not grant source-code or additional license rights. Third-party component licenses apply independently.
+
+## 3. 最新版本下载与说明书 / Latest downloads and manuals
+
+版本 / Version: **1.3.14 Stable** · 发布日期 / Released: **2026-11-04**
+
+[本版发布页 / This release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.14)
+
+| 文件 / File | 版本 / Version |
 |---|---|
-| ![CPU-heavy plug-in chain running in the DAW](assets/qq-host-performance-daw-chain.jpg) | ![The same workflow offloaded through QQ Host](assets/qq-host-performance-offload.jpg) |
+| [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.Windows.x64.VST3.zip) | 1.3.14 |
+| [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.macOS.Apple.Silicon.VST3.zip) | 1.3.14 |
+| [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.macOS.Intel.x86_64.VST3.zip) | 1.3.14 |
+| [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.macOS.Universal.2.AU.zip) | 1.3.14 |
+| [中文安装说明](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.Installation.Guide.Chinese.txt) | 1.3.14 |
+| [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.Installation.Guide.English.txt) | 1.3.14 |
+| [中文用户手册（38 页）](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.User.Manual.Chinese.pdf) | 1.3.14 |
+| [English User Manual (38 pages)](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.User.Manual.English.Edition.pdf) | 1.3.14 |
 
-QQ Host Bridge 留在轨道 Insert 中，第三方插件由后台 Host 承载。你仍然在 DAW 工程里工作，但高占用插件链不再全部挤在同一个实时处理线程上。
+共 8 个附件：4 个平台包、2 份安装说明和 2 份 38 页手册，均为 1.3.14。GitHub 自动生成的 Source code ZIP/TAR 只是公开页面仓库快照，不包含私有产品源码，也不是插件安装包。
 
-QQ Host Bridge stays in the track Insert while third-party plug-ins are hosted by the background app. You keep working inside the DAW, while CPU-heavy chains no longer have to remain on the same real-time processing thread.
+Eight assets: four platform packages, two installation guides and two 38-page manuals, all for 1.3.14. GitHub's automatic Source code ZIP/TAR is only a snapshot of this public documentation repository; it contains neither private product source nor an installable plug-in package.
 
-### Bridge、浏览器与插件窗口 / Bridge, browser, and hosted editor
+### 安装与升级 / Installation and upgrades
 
-以下界面图保留 0.9.2 的历史标识；当前界面和操作见本页下载区的 1.3.6 双语手册。
-The interface images below retain their historical 0.9.2 identity. The 1.3.6 bilingual manuals linked in the download section document the current interface and workflow.
+Windows 包用于 Windows 10/11 x64。Mac 包要求 macOS 12 或更高版本：原生 Apple Silicon 宿主选择 arm64 VST3；Intel 或 Rosetta 宿主选择 x86_64 VST3；Logic 使用包含两种架构的 Universal 2 AU。不要同时安装两套 VST3 架构副本。
 
-![QQ Host 0.9.2 Bridge rack](assets/qq-host-0.9.2-bridge-rack.png)
+The Windows package targets Windows 10/11 x64. Mac packages require macOS 12 or later: choose arm64 VST3 for a native Apple Silicon host, x86_64 VST3 for Intel or Rosetta, and the dual-architecture Universal 2 AU for Logic. Do not install duplicate VST3 architecture packages.
 
-插件浏览器会明确标记 VST2 与 VST3，并只收录音频效果器，不把乐器扫进效果器列表。
+升级前保存工程，完全退出 DAW、扫描程序和 QQ Host；Bridge 与后台程序必须一起替换。Windows 将完整的 QQ Host Bridge.vst3 和 QQ Host.exe 放在 C:\Program Files\Common Files\VST3\QQ Host\。Mac 将 Bridge 和 QQ Host.app 放在同一个 QQ Host 子目录：VST3 位于 ~/Library/Audio/Plug-Ins/VST3/QQ Host/，AU 位于 ~/Library/Audio/Plug-Ins/Components/QQ Host/。详细系统目录、管理员权限和重新扫描步骤见双语安装说明。
 
-The plug-in browser clearly labels VST2 and VST3 entries and keeps instruments out of the audio-effects list.
+Save the session and fully quit the DAW, scanners and QQ Host before upgrading. Replace the Bridge and companion together. On Windows, place the intact QQ Host Bridge.vst3 and QQ Host.exe in C:\Program Files\Common Files\VST3\QQ Host\. On Mac, keep the Bridge and QQ Host.app together under ~/Library/Audio/Plug-Ins/VST3/QQ Host/ for VST3, or ~/Library/Audio/Plug-Ins/Components/QQ Host/ for AU. The bilingual guides cover system-wide locations, administrator permissions and rescanning.
 
-![QQ Host plug-in browser with VST2 and VST3 labels](assets/qq-host-0.9.2-plugin-browser.jpg)
+Mac 成品使用 ad-hoc 签名，未经过 Apple Developer ID 公证。仅在确认下载来源可信后，按安装说明处理隔离提示。既有工程和预置继续保留保存的方案；新实例默认 1 buffer / 1 段。LIVE 不增加整块缓冲等待，但内部插件本身的延迟仍在。
 
-第三方插件编辑器独立打开；操作插件时 Bridge 继续留在 DAW 中，只有用户主动关闭 Bridge 时才会隐藏。
+Mac bundles are ad-hoc signed, not Apple Developer ID notarized. Follow the quarantine guidance only after verifying the download's trusted origin. Existing projects and presets retain their saved plans; new instances default to 1 buffer / 1 stage. LIVE adds no whole-block buffering wait, but hosted plug-in latency remains.
 
-Hosted plug-in editors open independently. The Bridge remains visible in the DAW while you operate a plug-in unless you explicitly close it.
+### 兼容性与验证范围 / Compatibility and verification scope
 
-![A third-party plug-in hosted by QQ Host while the Bridge remains visible](assets/qq-host-0.9.2-hosted-plugin.jpg)
+不支持 32 位插件或乐器。固定单声道／立体声的效果器会进行适配，但不会获得其原生不支持的布局。FL Studio Wrapper 的 Troubleshooting 中需启用 Use fixed size buffers 和两个 maximum-buffer 选项。完整的本地 ChainScope A/B/C 组分段需要兼容的 ChainScope 1.8.1 或后续兼容版本；旧版、不完整、跨 Host 或含 D 的组保留保护。
 
-### 0.9.2 侧链效果器 / Sidechain FX in 0.9.2
+32-bit plug-ins and instruments are unsupported. Fixed mono/stereo effects are adapted without gaining unsupported native layouts. In FL Studio Wrapper Troubleshooting, enable Use fixed size buffers and both maximum-buffer options. Splitting a complete local ChainScope A/B/C group requires compatible ChainScope 1.8.1 or a later compatible version; older, incomplete, cross-Host or D-containing groups retain protection.
 
-侧链端最多可插入两个效果器。SC 按钮可折叠整个模块，耳机按钮用于单独监听处理后的侧链信号；主链各 Slot 按已声明延迟取得时间对齐的侧链输入。
+本版复用已完成的 Windows 构建、安装核验和 16 项隔离回归；Mac 成品核对版本、架构、可执行权限及签名。原生 Mac DAW 的界面与声音验收未进行，不代表所有第三方插件与宿主组合都已经验证。
 
-The sidechain path can host up to two effects. Use SC to collapse the entire module and the headphone button to monitor the processed sidechain signal. Each Main Rack slot receives a sidechain input aligned from declared plug-in latency.
+This release reuses the completed Windows build, installation checks and 16 isolated test runs. Mac packages are checked for version, architecture, executable permissions and signature. Native Mac DAW GUI/audio acceptance has not been performed; this is not certification of every third-party plug-in and host combination.
 
-![QQ Host 0.9.2 Sidechain FX rack](assets/qq-host-0.9.2-sidechain-fx.png)
+## 4. 逐版本更新记录 / Version history
 
-### 能力边界 / What it does not claim
+### 1.3.14 — 缓冲调节与声道切换 / Buffer adjustment and channel switching
 
-QQ Host 的作用是改变插件托管和处理调度方式，帮助工程更充分地利用多核 CPU；它不会把某个第三方插件内部的单线程 DSP 自动改写成多线程算法。实际效果取决于插件、Buffer Size、DAW 路由、Bridge 数量、IPC 开销和电脑配置。
+2026-11-03：用户指定 Stable；2026-11-04：发布。
+User-selected Stable on 3 November 2026; released on 4 November 2026.
 
-QQ Host changes how plug-ins are hosted and scheduled so the session can use a multi-core CPU more effectively. It does not rewrite a third-party plug-in's internally single-threaded DSP as a parallel algorithm. Results depend on the plug-ins, buffer size, DAW routing, Bridge count, IPC overhead, and the computer.
+中文：用 ▲ / ▼ 直接增加或减少一个 buffer，最低为 1；无需先测试或等到出现 MISS。保持当前处理段数，播放中请求的调整在停止后应用。LIVE、离线渲染及正在恢复或应用方案时仍保留保护。修复 DAW 在单声道与立体声之间切换后，内部效果器没有同步声道布局的问题；保留插件实例与参数，固定声道插件通过适配处理。中英文说明书已在原有章节更新，均为 38 页。既有工程、预置及已保存处理方案保持兼容；Bridge 与后台必须一起升级。16 项 Windows 隔离回归已通过；实际效果取决于插件和系统，增加缓冲不能消除持续超负荷。原生 Mac DAW 界面及声音验收未进行。
 
-## 当前公开版本 / Current public release
-
-QQ Host - Qing Audio · **1.3.13 Stable** · 2026-10-25
-
-闭源专有软件，源码保持私有。/ Closed-source proprietary software; source remains private.
-
-[当前版本 / Current release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.13) · [上一公开版本 / Previous public release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.9)
-
-QQ Host 内的插件插入和移除可进入 Cubase 历史并撤销、重做。恢复 C Mixboard 时保留 Group 链接，修正恢复后 Group 名称出现副本后缀的问题。
-
-Plug-in insertion and removal within QQ Host can be recorded, undone and redone through Cubase history. Restoring C Mixboard retains its Group connection, and structural undo preserves Group names without an unwanted copy suffix.
-
-本次沿用已批准的 1.3.6 中英文手册，PDF 内容与版本标识保持不变。
-
-The approved 1.3.6 Chinese and English manuals are reused unchanged with their original version labels.
-
-## 下载附件 / Download assets
-
-- [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.Windows.x64.VST3.zip)
-- [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.macOS.Apple.Silicon.VST3.zip)
-- [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.macOS.Intel.x86_64.VST3.zip)
-- [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.macOS.Universal.2.AU.zip)
-- [中文安装说明 / Chinese installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.Installation.Guide.Chinese.txt)
-- [English installation guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.13.Installation.Guide.English.txt)
-- [中文用户手册（沿用 1.3.6）/ Chinese manual (1.3.6)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.6.User.Manual.Chinese.pdf)
-- [English user manual (unchanged 1.3.6 edition)](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.13/QQ.Host.1.3.6.User.Manual.English.Edition.pdf)
-
-共 8 个附件：四套 1.3.13 平台包、两份 1.3.13 安装说明、沿用的两份 1.3.6 手册。
-
-Eight assets: four 1.3.13 platform packages, two 1.3.13 installation guides, and two unchanged 1.3.6 manuals.
-
-GitHub 自动提供的 Source code ZIP/TAR 仅含本下载仓库的页面资料。安装请使用平台包。
-GitHub's automatic Source code ZIP/TAR contains only this download repository's pages. Use a platform package for installation.
-
-## 支持范围与已知限制 / Compatibility and known limitations
-
-Windows 10/11 x64 VST3；macOS 12+ Apple Silicon VST3、Intel x86_64 VST3、Universal 2 AU。VST3 按宿主架构选择；AU 包包含 arm64 与 x86_64。托管原生 64-bit VST2/VST3 效果器，macOS 另支持 AUv2/AUv3；不支持 32-bit 插件或乐器。
-
-Windows 10/11 x64 VST3; macOS 12+ Apple Silicon VST3, Intel x86_64 VST3 and Universal 2 AU. Match VST3 to the host architecture; AU includes arm64 and x86_64. Hosts native 64-bit VST2/VST3 effects, plus AUv2/AUv3 on macOS; 32-bit plug-ins and instruments are unsupported.
-
-ChainScope 跨段对齐需要另行安装配套的 ChainScope 1.8.1，四个模块须一起升级。完整且位于同一 QQ Host 内的 A/B/C 组可以分段；旧版、不完整、跨 Host 或包含 D 的组保留保护。本 Release 不包含 ChainScope。
-
-Cross-stage ChainScope alignment requires the separate matching ChainScope 1.8.1 installation; upgrade all four modules together. Complete A/B/C groups within one QQ Host can be split. Older, incomplete, cross-Host or D-containing groups retain protection. ChainScope is not included in this release.
-
-Mac 成品为 ad-hoc 签名，未公证。Windows 已完成构建、成对安装、30 组旁通连续性和 24 组分段侧链对比，以及保存方案回归；完整原生窗口回归仍保留此前未完成记录。三套 Mac 成品已核对架构、版本、可执行权限、签名和 UTF-8 中文文字，尚未完成原生 Mac DAW 界面及声音实测。性能改善仍取决于插件负载、路由、缓冲和电脑配置。
-
-Mac bundles are ad-hoc signed and not notarized. Windows build, paired installation, 30 bypass continuity cases, 24 staged sidechain comparisons and saved-plan regressions passed. The inherited full native-window regression remains incomplete. The three Mac packages have passed architecture, version, executable-permission, signature and UTF-8 text checks; native Mac DAW GUI/audio acceptance has not been performed. Performance benefits depend on the plug-ins, routing, buffering and computer.
-
-1.3.13 的六项 Windows 回归通过，覆盖真实 VST3 历史通知、实际 ChainScope A/B/C 恢复、机架上下文、已保存方案及旁通连续性；用户已确认 Cubase 中的 Group 恢复问题解决。本轮未重跑 Windows 原生窗口回归，未进行原生 Mac DAW 界面和声音验收。
-
-Six focused Windows regressions passed for 1.3.13, including native VST3 history notifications, actual ChainScope A/B/C restoration, rack context, saved plans and bypass continuity. The user confirmed the Cubase Group-restoration fix. Native Windows window tests were not rerun in this task; native Mac DAW GUI/audio acceptance was not performed.
-
-## 安装、升级与基本使用 / Installation, upgrades and basic use
-
-退出 DAW、扫描器和 QQ Host，**同时升级 Bridge 和后台程序为 1.3.13**，避免混用旧后台。Windows 将 `QQ Host Bridge.vst3` 与 `QQ Host.exe` 相邻安装到 `C:\Program Files\Common Files\VST3\QQ Host\`。Mac VST3 将 Bridge 与配套 app 一起放到 `~/Library/Audio/Plug-Ins/VST3/QQ Host/`；AU 放到 `~/Library/Audio/Plug-Ins/Components/QQ Host/`。重开 DAW 并扫描；完整安装和 Mac 安全处理步骤见双语安装说明。
-
-Quit the DAW, scanners and QQ Host. **Upgrade both the Bridge and background app to 1.3.13**. On Windows, keep `QQ Host Bridge.vst3` beside `QQ Host.exe` in `C:\Program Files\Common Files\VST3\QQ Host\`. On Mac, place the Bridge and companion app together in `~/Library/Audio/Plug-Ins/VST3/QQ Host/` for VST3 or `~/Library/Audio/Plug-Ins/Components/QQ Host/` for AU. Reopen and rescan in the DAW. The bilingual installation guides include complete steps and Mac security handling.
-
-混音时让 LIVE 保持关闭，加载插件后播放有声、负载较重的片段，点击“测试”；测量结束后停止播放，应用方案。标题下方显示 buffer、处理段数和延迟。出现瓶颈、“增加余量”亮起时，点击一次并停止播放以应用；按钮会变灰，遇到新的瓶颈后可再次使用。换插件后重新测试。DAW 工程及 DAW 保存的 Bridge 预置保留应用后的方案；LOAD CHAIN / SAVE CHAIN 继续加载、保存插件链。
-
-For mixing, leave LIVE off, load effects and play an audible, demanding passage. Click Test and stop after measurement finishes to apply the plan. The header shows buffers, processing stages and latency. When a bottleneck enables Add Headroom, click once and stop to apply. It dims until another bottleneck occurs. Retest after changing plug-ins. DAW projects and DAW-saved Bridge presets retain the applied plan; LOAD CHAIN / SAVE CHAIN exchange plug-in chains.
-
-LIVE 用于录音和实时监听，QQ Host 不再额外等待整块缓冲。1 buffer / 1 段则由一个后台线程运行插件链，并在 DAW 原有缓冲基础上增加一个音频块的时间余量。buffer 越高，通常越容易稳定运行，同时延迟也更高。旧工程可以继续打开；升级后先试听，再根据当前插件链重新测试。
-
-Use LIVE for recording or immediate monitoring, with no added whole-block buffering delay. With 1 buffer / 1 stage, one background thread runs the chain with one extra audio block of timing headroom beyond the DAW's existing buffering. Higher buffer counts usually improve stability while adding latency. Existing projects remain loadable; audition after upgrading, then retest for the current chain.
-
-左键点击 + Add Plugin 添加插件；右键选择 Insert Divider 创建标签，双击命名。Search 旁边可筛选格式；Manage 可扫描单个文件或按格式增量扫描，Folders 可移除扫描目录。
-
-Left-click + Add Plugin to load an effect; right-click and choose Insert Divider to add a label, then double-click to name it. Filter formats beside Search. Manage scans a file or incrementally scans a format; Folders removes scan paths.
-
-卡在启动或恢复时，先点主界面 REFRESH；仍无效则停止播放，在右上角“...”中选择“重启全部 QQ Host”，确认“重启全部”。共用后台的其他 Host（包括其他 DAW）也会暂时断开并恢复。浏览器 Refresh 用于增量扫描。
-
-For stuck startup or recovery, try the main REFRESH. If needed, stop playback and use “重启全部 QQ Host” (Restart All QQ Hosts) in the top-right “...” menu, then confirm. Other instances sharing the background app, including other DAWs, also disconnect temporarily and restore. Browser Refresh scans incrementally.
-
-## 主要功能 / Main features
-
-- 测试后自动选择缓冲与链内分段，出现新瓶颈时增加余量 / Measured buffer and multi-stage plans, with extra headroom after new bottlenecks.
-- LIVE 低延迟录音监听 / LIVE for recording and immediate monitoring.
-- 每个 Bridge 最多 16 个主插件槽、2 个侧链效果器槽 / Up to 16 main plug-in slots and two Sidechain FX slots per Bridge.
-- Divider、格式筛选、收藏及扫描目录管理 / Dividers, format filters, favorites and scan-path management.
-- 自动 PDC、侧链对齐与 Latency Rescue / Automatic PDC, sidechain alignment and Latency Rescue.
-- 插件预置、Cubase 预置链、DAW 工程恢复与自动化 / Plug-in presets, Cubase chain presets, project recall and automation.
-- 插件内部撤销重做、DAW 保存及空格转发 / Plug-in Undo/Redo with DAW Save and Space forwarding.
-- Fader、Pan、Polarity、电平表及主链/单槽试听 / Fader, Pan, Polarity, meters and whole-chain or per-slot bypass auditioning.
-
-## 逐版本变化 / Changes by version
+English: Use ▲ / ▼ to add or remove one buffer, down to a minimum of 1, without first measuring or waiting for a MISS. The current stage grouping is retained; adjustments requested during playback apply after stopping. Safety gates remain during LIVE, offline rendering, restoration and plan application. Fixes hosted effects not following DAW mono/stereo layout changes, preserving plug-in instances and parameters and adapting fixed-channel effects. Both manuals have been updated in their existing chapters and contain 38 pages. Existing projects, presets and saved processing plans remain compatible; upgrade the Bridge and background app together. Sixteen isolated Windows test runs passed. Results depend on the plug-ins and system; buffering cannot remove sustained overload. Native Mac DAW GUI/audio acceptance has not been performed.
 
 ### 1.3.13
 
@@ -314,40 +247,40 @@ English: Hardens Windows Agent exit after the last host closes and ends the proc
 English: Promotes both changes to Stable. The revised Chinese and English manuals explain current recovery labels, local Refresh versus restarting all Hosts, and Windows exit protection. Scan management, format filtering, Power and audio processing retain their behavior. Additional in-DAW GUI/audio acceptance has not been reported.
 
 
-## 1.1.6 — 扫描管理与格式筛选 / Scan management and format filter
+### 1.1.6 — 扫描管理与格式筛选 / Scan management and format filter
 
 中文：2026-10-13 Stable，上一稳定版 1.1.5。扫描目录支持逐项移除，阻止误加整盘、网络共享和 Mac 卷根目录。管理菜单可选择单个插件扫描，或按 VST2/VST3 增量扫描（Mac 另有 AU），支持移除选中项、缺失文件项目、指定格式或全部列表。加载浏览器新增全部/VST2/VST3/AU（Mac）格式筛选并记住选择，可配合搜索、收藏和分类。移除只影响扫描配置或列表，不删除插件文件或工程实例；未来扫描可能重新发现插件。双语 1.1.6 手册更新了扫描、筛选和两种 Refresh 的说明。Power 默认与音频处理不变。
 
 English: Stable, 2026-10-13; previous Stable 1.1.5. Remove individual scan folders and prevent accidental drive, network-share and Mac volume roots. Manage scans one plug-in or incrementally scans VST2/VST3 (plus AU on Mac), and removes selected entries, missing-file entries, a format or the full catalog. The loading browser adds a remembered All/VST2/VST3/AU (Mac) format filter used with search, favorites and categories. Removal affects scan configuration or catalog rows, not files or project instances; later scans may rediscover effects. Updated bilingual 1.1.6 manuals explain scanning, filtering and both Refresh functions. Power defaults and audio processing are unchanged.
 
 
-## 1.1.5 — Power 星级控制 / Power star control
+### 1.1.5 — Power 星级控制 / Power star control
 
 中文：2026-10-12 Stable，上一稳定版 1.1.4。原缓冲和处理菜单合并为 Mode 与 SC 之间的 Power 星级按钮，单击循环五档：1 buffer 串行、2 buffers 串行、2 buffers 两阶段优化、3 buffers 两阶段优化、4 buffers 两阶段优化。新建默认两星，工程保留保存的档位。LIVE 下文字和星级变灰且不可点击；切回 OFFLOAD 保留原选择。中文悬停说明保持简短，星形矢量绘制，中英文 1.1.5 手册已更新。
 
 English: Stable, 2026-10-12; previous Stable 1.1.4. The separate buffer and processing menus become a Power star button between Mode and SC. Click to cycle: 1 buffer serial, 2 buffers serial, 2 buffers with two-stage optimization, 3 buffers with two-stage optimization, and 4 buffers with two-stage optimization. New instances default to two stars and projects retain the saved level. The label and stars turn gray and disable in LIVE, retaining the choice when returning to OFFLOAD. A short Chinese tooltip, vector stars and updated bilingual 1.1.5 manuals are included.
 
 
-## 1.1.4 — Refresh 恢复与中文悬停提示 / Refresh recovery and Chinese tooltips
+### 1.1.4 — Refresh 恢复与中文悬停提示 / Refresh recovery and Chinese tooltips
 
 中文：2026-10-12 Stable，上一稳定回滚版本为 1.1.3。修复打开/切换工程时首次后台连接失败后的恢复。Refresh 独立重试当前 Host，合并重复点击，并在较长等待时说明原因；局部刷新不会自动重启其他 Host。QQ Host 自身控件、插件浏览器、插件窗口工具栏与动态悬停说明改为中文，显式使用 UTF-8。第三方插件界面、名称和未识别诊断原文保留。请成对升级 Bridge 与后台程序。
 
 English: Stable, 2026-10-12; previous Stable rollback 1.1.3. Repairs recovery after an initial background connection failure when opening/switching projects. Refresh independently retries the current Host, coalesces repeated clicks and explains prolonged waits; local refresh does not automatically restart other Hosts. QQ Host controls, browser, hosted-window toolbar and dynamic hover descriptions are Chinese with explicit UTF-8 decoding. Third-party interfaces, names and unrecognized diagnostics are preserved. Update the Bridge and background app together.
 
 
-## 1.1.3 — 提示文字编码 / Preset feedback encoding
+### 1.1.3 — 提示文字编码 / Preset feedback encoding
 
 中文：修复原生 VST3 预置加载到 VST2 实例时，格式不匹配提示中的中文乱码；同一工具栏的 AU 保存成功提示也显式按 UTF-8 解码。Windows 提示气泡与 macOS 提示气泡/原生警告共用正确的 Unicode 字符串。本次不改变预置内容、匹配规则、音频处理或用户操作。用户已确认 1.1.2 所处理的问题解决，并授权本次设为 Stable。当前稳定版 1.1.3，上一 Stable 回滚版 1.1.0；Bridge 与后台 Host 必须一起升级。
 
 English: Fixes garbled Chinese in the format-mismatch feedback when loading a native VST3 preset into a VST2 instance. AU save-success feedback in the same toolbar also explicitly decodes UTF-8. Windows bubbles and macOS bubbles/native alerts share the correct Unicode strings. Preset contents, matching rules, audio processing and user operations are unchanged. The owner confirmed the issues addressed by 1.1.2 were resolved and authorized Stable promotion. Current Stable is 1.1.3; the previous Stable rollback is 1.1.0. Upgrade the Bridge and background Host together.
 
-## 1.1.2 — Waves 身份与状态恢复 / Waves identity and state restoration
+### 1.1.2 — Waves 身份与状态恢复 / Waves identity and state restoration
 
 中文：测试版，2026-10-10。VST3 实例按固定 Class ID 创建，避免工厂列表顺序改变后点选与实际打开的插件不一致；Windows WaveShell 加载后核对实际身份。打开机架电源或取消 Bypass 时清除 VST3 标准内部 Bypass 残留，保留独立机架 Bypass 及厂商 Comp Off 参数。增加单插件预置身份诊断及 VST2/VST3 格式提示。可控工厂错配回归、CLA-76 Stereo 音频恢复及真实 Cubase/QQHost 预置加载通过；用户随后反馈问题解决。
 
 English: Test build, 2026-10-10. VST3 components are created by stable Class ID so factory-list reordering cannot substitute another plug-in; Windows WaveShell loads also validate the actual identity. Power-on and un-bypass clear residual standard VST3 native bypass while preserving independent Rack Bypass and vendor Comp Off controls. Added single-preset identity diagnostics and VST2/VST3 format feedback. Controlled factory-reorder, CLA-76 Stereo audio-restoration and real Cubase/QQHost preset checks passed; the owner subsequently reported the issues resolved.
 
-## 1.1.1 — Waves 扫描与 Cubase 电源状态 / Waves scanning and Cubase power state
+### 1.1.1 — Waves 扫描与 Cubase 电源状态 / Waves scanning and Cubase power state
 
 中文：测试版，2026-10-09。Windows WaveShell VST3 从工厂元数据读取插件目录，避免逐个实例化所有效果器；缓存完整身份并直接加载所选效果器。Cubase FX Chain 的电源与 Bypass 独立导入/导出，不再把关闭电源合并为 Bypass。扫描成功已获用户反馈；后续身份错配和内部 Bypass 残留由 1.1.2 修复。
 
@@ -461,14 +394,14 @@ Fixes preparation lock ordering behind the reproduced standalone Ozone 9/11 Imag
 
 Fixes stale process records being mistaken for a running Agent and preventing startup, including the reported Plugin Doctor case. An absent Agent no longer remains mislabeled HOST RESTORING; explicit restarts verify process identity. The 1.0.10 manual-recovery policy remains unchanged, with no added automatic refresh.
 
-## 使用变化 / How to use the changes
+### 使用变化 / How to use the changes
 
 - UI：点击 Bridge 顶部 UI，循环切换 Classic / Light / Dark。/ Click UI in the Bridge to cycle Classic / Light / Dark.
 - 恢复：先保存工程，点击故障 Bridge 的 REFRESH。如果第三方插件完全卡住共享后台，局部刷新可能无法完成；必要时在“...”中选择 Restart Agent (All Hosts)，停止播放并保存后再确认，因为这会影响所有 Bridge。/ Save your project and use REFRESH on the affected Bridge. A plug-in that completely hangs the shared Agent may also prevent local refresh. If needed, stop playback, save, and explicitly confirm Restart Agent (All Hosts) in “...”; it affects every Bridge.
 - 预置：覆盖保存两次指相同文件名并确认覆盖，不是另存两个名字；若仍未出现，在 MediaBay 对相应目录 Quick Rescan Disk。/ Saving twice means the same filename with overwrite confirmation, not two different names. If still missing, use MediaBay's Quick Rescan Disk on that folder.
 
 
-## 1.0.4 更新摘要 / 1.0.4 release summary
+### 1.0.4 更新摘要 / 1.0.4 release summary
 
 **1.0.4 · 正式稳定版 / Stable · 2026-09-09**
 
@@ -484,7 +417,7 @@ Fixes stale process records being mistaken for a running Agent and preventing st
 
 本版包含 1.0.3 发布后的悬停提示修复，旧版仍可下载。This release includes the hover-tooltip fix made after 1.0.3; the previous release remains available.
 
-## 1.0.3 更新摘要 / 1.0.3 release summary
+### 1.0.3 更新摘要 / 1.0.3 release summary
 
 **1.0.3 · 正式稳定版 / Stable · 2026-09-09**
 
@@ -526,7 +459,7 @@ This update focuses on saving and selecting presets for individual hosted effect
 - In the latest Cubase test, new VST3 and VST2 presets could both be read directly. The conditions behind earlier intermittent discovery delays remain unconfirmed, so **MediaBay > Quick Rescan Disk** remains a documented fallback; immediate discovery is not guaranteed in every environment.
 - Retains the validated audio processing, OFFLOAD/LIVE, sidechain, latency compensation, automation, and startup/restore behavior.
 
-## 1.0.0 历史更新摘要 / Historical 1.0.0 summary
+### 1.0.0 历史更新摘要 / Historical 1.0.0 summary
 
 - 首个正式稳定版，由用户实测通过的候选版直接提升而来。
 - 修复连续快速操作覆盖尚未被 Bridge 读取的命令结果。
@@ -542,7 +475,7 @@ This update focuses on saving and selecting presets for individual hosted effect
 - Updates both manuals with complete Automation / MIDI Remote workflows and clear VST2 `.fxp/.fxb` versus whole-rack `.fxchainpreset` instructions.
 - Retains the validated VST2/VST3, sidechain, PDC, project restore, fault isolation, and Cubase FX Chain capabilities from 0.9.22.
 
-## 已知问题与升级注意 / Known issues and upgrade notes
+### 已知问题与升级注意 / Known issues and upgrade notes
 
 - QQ Host 是实验性外部宿主；性能收益与延迟依赖 DAW、插件、缓冲区、IPC 开销与系统配置。
 - 侧链和 PDC 对齐依赖第三方插件正确上报延迟与输入布局；误报或未通知宿主的动态变化无法被完全补偿。
@@ -564,13 +497,13 @@ This update focuses on saving and selecting presets for individual hosted effect
 - Upgrade order: quit DAW -> move old files out -> install the matching 1.0.10 pair -> rescan.
 - Follow the 1.0.10 installation guides and retained 1.0.6 manuals; the previous public release is 1.0.4. A plug-in hanging the shared Agent may still require global restart; RENDER DEGRADED is not a successful processed export.
 
-## 灵感与独立性声明 / Inspiration and independence
+### 灵感与独立性声明 / Inspiration and independence
 
 项目概念灵感来自 Vienna Ensemble Pro 8 的外部宿主与处理卸载工作流。QQ Host 为独立开发项目，与 Vienna Symphonic Library 无关联、授权或背书关系；灵感仅限于工作流方向，不涉及其代码或实现。
 
 The concept was inspired by the external-host and processing-offload workflow of Vienna Ensemble Pro 8. QQ Host is independently developed and is not affiliated with, authorized by, or endorsed by Vienna Symphonic Library. The inspiration is limited to workflow direction, not code or implementation.
 
-## 完整版本记录 / Complete version history
+### 完整版本记录 / Complete version history
 
 本 README 保留从 0.0.1 到 1.0.10 的完整历史；本次补齐 1.0.5—1.0.10 的逐版双语摘要。0.9.23 候选版直接更名并提升为 1.0.0，没有作为独立版本发布。遗漏版本：无。
 
@@ -670,8 +603,6 @@ This README preserves history from 0.0.1 through 1.0.10, adding bilingual summar
 | 1.0.3 | 按插件身份隔离预置列表、明确格式标签、修复中文乱码；保留必要时 Quick Rescan Disk 的提示。 | Isolates preset lists by plug-in identity, adds clear format labels, and fixes Chinese text; retains Quick Rescan Disk guidance when needed. | 2026-09-09 · 正式稳定版 / Stable |
 | 1.0.4 | 修复底部耗时悬停提示与频繁刷新抑制，显示可刷新的快照；不改变音频处理或宣称修复 MISS。 | Restores timing hover diagnostics with a refreshable snapshot; leaves audio processing unchanged and does not claim to fix MISS. | 2026-09-09 · 正式稳定版 / Stable |
 
-## 源码与公开边界 / Source and publication boundary
+## 5. 历史版本下载 / Previous release downloads
 
-QQ Host 为闭源软件，源码仓库保持私有。本仓库不包含源码、构建缓存、内部日志、私有路径或开发凭据，只提供公开说明、产品界面图片与用户批准的二进制 Release。
-
-QQ Host is closed-source software and its source repository remains private. This repository contains no source code, build cache, internal logs, private paths, or development credentials; it provides only public documentation, product screenshots, and user-approved binary releases.
+[历史版本、插件与对应资料 / Earlier versions, plug-ins and matching documents](https://github.com/Qing-Audio/QQHost-Release/releases)
