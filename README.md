@@ -1,6 +1,6 @@
-# QQ Host 1.3.14
+# QQ Host 1.3.15
 
-Qing Audio · **1.3.14 Stable** · 2026-11-04
+Qing Audio · **1.3.15 Stable** · 2026-11-04
 
 ## 1. 产品介绍 / About the product
 
@@ -14,8 +14,8 @@ For mixing, measure the workload and apply a buffering/stage plan, or adjust buf
 
 ![QQ Host Bridge — historical 0.9.2 interface](https://raw.githubusercontent.com/Qing-Audio/QQHost-Release/main/assets/qq-host-0.9.2-bridge-rack.png)
 
-图示保留真实的 0.9.2 历史界面标识；当前界面及操作请看下方 1.3.14 手册。
-The image retains its original 0.9.2 identity; see the 1.3.14 manuals below for the current interface and operation.
+图示保留真实的 0.9.2 历史界面标识；当前界面及操作请看下方沿用的 1.3.14 手册。
+The image retains its original 0.9.2 identity; see the reused 1.3.14 manuals below for the current interface and operation.
 
 QQ Host 改变托管和调度方式，但不会改写第三方插件内部的算法。性能改善取决于插件、音频缓冲、路由和电脑配置；增加 buffer 会增加延迟，不能消除持续的处理超负荷。QQ ChainScope 是另行安装的产品，不包含在本包中。
 
@@ -29,24 +29,24 @@ QQ Host is closed-source proprietary software from Qing Audio; its product sourc
 
 ## 3. 最新版本下载与说明书 / Latest downloads and manuals
 
-版本 / Version: **1.3.14 Stable** · 发布日期 / Released: **2026-11-04**
+版本 / Version: **1.3.15 Stable** · 发布日期 / Released: **2026-11-04**
 
-[本版发布页 / This release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.14)
+[本版发布页 / This release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.3.15)
 
-| 文件 / File | 版本 / Version |
+| 文件 / Package | 下载 / Download |
 |---|---|
-| [Windows x64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.Windows.x64.VST3.zip) | 1.3.14 |
-| [macOS Apple Silicon VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.macOS.Apple.Silicon.VST3.zip) | 1.3.14 |
-| [macOS Intel x86_64 VST3](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.macOS.Intel.x86_64.VST3.zip) | 1.3.14 |
-| [macOS Universal 2 AU](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.macOS.Universal.2.AU.zip) | 1.3.14 |
-| [中文安装说明](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.Installation.Guide.Chinese.txt) | 1.3.14 |
-| [English Installation Guide](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.Installation.Guide.English.txt) | 1.3.14 |
-| [中文用户手册（38 页）](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.User.Manual.Chinese.pdf) | 1.3.14 |
-| [English User Manual (38 pages)](https://github.com/Qing-Audio/QQHost-Release/releases/download/untagged-537b868881cc7ae882dd/QQ.Host.1.3.14.User.Manual.English.Edition.pdf) | 1.3.14 |
+| Windows x64 VST3 | [QQ.Host.1.3.15.Windows.x64.VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.15/QQ.Host.1.3.15.Windows.x64.VST3.zip) |
+| macOS Apple Silicon VST3 | [QQ.Host.1.3.15.macOS.Apple.Silicon.VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.15/QQ.Host.1.3.15.macOS.Apple.Silicon.VST3.zip) |
+| macOS Intel x86_64 VST3 | [QQ.Host.1.3.15.macOS.Intel.x86_64.VST3.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.15/QQ.Host.1.3.15.macOS.Intel.x86_64.VST3.zip) |
+| macOS Universal 2 AU | [QQ.Host.1.3.15.macOS.Universal.2.AU.zip](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.15/QQ.Host.1.3.15.macOS.Universal.2.AU.zip) |
+| 中文安装说明 | [QQ.Host.1.3.15.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.15/QQ.Host.1.3.15.Installation.Guide.Chinese.txt) |
+| English Installation Guide | [QQ.Host.1.3.15.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.15/QQ.Host.1.3.15.Installation.Guide.English.txt) |
+| 中文手册（沿用 1.3.14，38 页） | [QQ.Host.1.3.14.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.15/QQ.Host.1.3.14.User.Manual.Chinese.pdf) |
+| English manual (unchanged 1.3.14, 38 pages) | [QQ.Host.1.3.14.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.3.15/QQ.Host.1.3.14.User.Manual.English.Edition.pdf) |
 
-共 8 个附件：4 个平台包、2 份安装说明和 2 份 38 页手册，均为 1.3.14。GitHub 自动生成的 Source code ZIP/TAR 只是公开页面仓库快照，不包含私有产品源码，也不是插件安装包。
+共 8 个附件：4 个 1.3.15 平台包、2 份安装说明和 2 份原样沿用的 1.3.14 手册（各 38 页，保留原版本标识）。GitHub 自动生成的 Source code ZIP/TAR 只是公开页面仓库快照，不包含私有产品源码，也不是插件安装包。
 
-Eight assets: four platform packages, two installation guides and two 38-page manuals, all for 1.3.14. GitHub's automatic Source code ZIP/TAR is only a snapshot of this public documentation repository; it contains neither private product source nor an installable plug-in package.
+Eight assets: four 1.3.15 platform packages, two installation guides, and the two unchanged 1.3.14 manuals (38 pages each, with original version labels). GitHub's automatic Source code ZIP/TAR is only a snapshot of this public documentation repository; it contains neither private product source nor an installable plug-in package.
 
 ### 安装与升级 / Installation and upgrades
 
@@ -68,11 +68,20 @@ Mac bundles are ad-hoc signed, not Apple Developer ID notarized. Follow the quar
 
 32-bit plug-ins and instruments are unsupported. Fixed mono/stereo effects are adapted without gaining unsupported native layouts. In FL Studio Wrapper Troubleshooting, enable Use fixed size buffers and both maximum-buffer options. Splitting a complete local ChainScope A/B/C group requires compatible ChainScope 1.8.1 or a later compatible version; older, incomplete, cross-Host or D-containing groups retain protection.
 
-本版复用已完成的 Windows 构建、安装核验和 16 项隔离回归；Mac 成品核对版本、架构、可执行权限及签名。原生 Mac DAW 的界面与声音验收未进行，不代表所有第三方插件与宿主组合都已经验证。
+本版完成 Windows 构建与 17 项隔离回归，包括插件缓慢准备期间持续音频回调的声道切换测试；Mac 成品核对版本、架构、可执行权限及签名。原生 Mac DAW 的界面与声音验收未进行，不代表所有第三方插件与宿主组合都已经验证。
 
-This release reuses the completed Windows build, installation checks and 16 isolated test runs. Mac packages are checked for version, architecture, executable permissions and signature. Native Mac DAW GUI/audio acceptance has not been performed; this is not certification of every third-party plug-in and host combination.
+This release includes a Windows build and 17 isolated test runs, including channel switches with continuous audio callbacks during slow plug-in preparation. Mac packages are checked for version, architecture, executable permissions and signature. Native Mac DAW GUI/audio acceptance has not been performed; this is not certification of every third-party plug-in and host combination.
 
 ## 4. 逐版本更新记录 / Version history
+
+### 1.3.15 — 声道切换保护 / Protected channel transitions
+
+2026-11-04：按用户明确授权设为 Stable；17 项 Windows 隔离回归通过，已成对覆盖安装。原生 DAW 试听未执行。
+Designated Stable under the user's explicit authorization on 4 November 2026; 17 isolated Windows test runs passed and paired installation was verified. Native DAW listening acceptance was not performed.
+
+中文：单声道与立体声切换时，只暂停当前 Bridge 的音频提交，待内部插件完成准备后恢复。短淡出、静音等待和淡入保护切换过程，避免配置期间堆积音频或反复回退。保留插件参数、当前缓冲和分段方案，旧测量标记为失效，可重新测试；不刷新其他 Bridge。切换仍可能有短暂静音，具体时间取决于插件的准备速度。尚未证明此前持续 Missing 与这一问题同源。Bridge 和后台需一起升级；原样沿用 1.3.14 双语说明书。
+
+English: Mono/stereo changes pause audio submission only in the affected Bridge until its hosted effects finish preparation. A short fade-out, silent hold and fade-in protect the transition without queueing new audio during reconfiguration. Plug-in state and the current buffer/stage plan are retained; previous measurements are marked stale and can be repeated. Other Bridges are not refreshed. A brief interruption remains possible, depending on plug-in preparation time. The earlier sustained-MISS episode has not been proven to have this same cause. Upgrade Bridge and companion together. The 1.3.14 bilingual manuals are reused unchanged.
 
 ### 1.3.14 — 缓冲调节与声道切换 / Buffer adjustment and channel switching
 
