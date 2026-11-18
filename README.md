@@ -1,4 +1,4 @@
-# QQ Host Suite 1.2.4 Stable
+# QQ Host Suite 1.4.6 Stable
 
 ## 1. 产品介绍 / About the product
 
@@ -12,8 +12,8 @@ For mixing, measure the workload and apply a buffering/stage plan, or adjust buf
 
 ![QQ Host Bridge — historical 0.9.2 interface](https://raw.githubusercontent.com/Qing-Audio/QQHost-Release/main/assets/qq-host-0.9.2-bridge-rack.png)
 
-图示保留真实的 0.9.2 历史界面标识；当前界面及操作请看下方沿用的 1.3.14 手册。
-The image retains its original 0.9.2 identity; see the reused 1.3.14 manuals below for the current interface and operation.
+图示保留真实的 0.9.2 历史界面标识；当前界面与操作见下方 1.4.6 手册。
+The image retains its original 0.9.2 identity; see the 1.4.6 manuals below for the current interface and operation.
 
 QQ Host 改变托管和调度方式，但不会改写第三方插件内部的算法。性能改善取决于插件、音频缓冲、路由和电脑配置；增加 buffer 会增加延迟，不能消除持续的处理超负荷。QQ ChainScope 是另行安装的产品，不包含在本包中。
 
@@ -31,24 +31,30 @@ QQ Host is closed-source proprietary software from Qing Audio; its product sourc
 
 ## 3. 安装包与手册 / Installers and manuals
 
-[1.2.4 整合版 / Suite release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.2.4)
+[QQ Host 1.4.6 Stable](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.4.6)
 
 | 文件 / File | 下载 / Download |
 |---|---|
-| Windows x64：Host、VST3、Live / Host, VST3 and Live | [QQ.Host.Suite.1.2.4.Windows.x64.Setup.exe](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.2.4/QQ.Host.Suite.1.2.4.Windows.x64.Setup.exe) |
-| macOS Universal：Host、VST3、AU / Host, VST3 and AU | [QQ.Host.Suite.1.2.4.macOS.Universal.Setup.pkg](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.2.4/QQ.Host.Suite.1.2.4.macOS.Universal.Setup.pkg) |
-| 中文安装说明 | [QQ.Host.Suite.1.2.4.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.2.4/QQ.Host.Suite.1.2.4.Installation.Guide.Chinese.txt) |
-| English installation guide | [QQ.Host.Suite.1.2.4.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.2.4/QQ.Host.Suite.1.2.4.Installation.Guide.English.txt) |
-| Host/Bridge 中文手册（沿用 1.3.14） | [QQ.Host.1.3.14.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.2.4/QQ.Host.1.3.14.User.Manual.Chinese.pdf) |
-| Host/Bridge English manual (1.3.14) | [QQ.Host.1.3.14.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.2.4/QQ.Host.1.3.14.User.Manual.English.Edition.pdf) |
+| Windows x64（Host、VST3、Live） | [QQ.Host.Suite.1.4.6.Windows.x64.Setup.exe](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Suite.1.4.6.Windows.x64.Setup.exe) |
+| macOS Intel / Apple Silicon（Host、VST3、AU） | [QQ.Host.Suite.1.4.6.macOS.Universal.Setup.pkg](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Suite.1.4.6.macOS.Universal.Setup.pkg) |
+| 中文安装说明 | [QQ.Host.Suite.1.4.6.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Suite.1.4.6.Installation.Guide.Chinese.txt) |
+| English installation guide | [QQ.Host.Suite.1.4.6.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Suite.1.4.6.Installation.Guide.English.txt) |
+| Host / Bridge 中文手册 | [QQ.Host.1.4.6.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.1.4.6.User.Manual.Chinese.pdf) |
+| Host / Bridge English manual | [QQ.Host.1.4.6.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.1.4.6.User.Manual.English.Edition.pdf) |
+| Live 独立机架中文手册 | [QQ.Host.Live.1.4.6.Standalone.Rack.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Live.1.4.6.Standalone.Rack.User.Manual.Chinese.pdf) |
+| Live standalone rack English manual | [QQ.Host.Live.1.4.6.Standalone.Rack.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Live.1.4.6.Standalone.Rack.User.Manual.English.Edition.pdf) |
 
-整合版编号为 1.2.4；Live 显示 1.2.4，Host 和 Bridge 显示 1.2.2。这是合并后的编号，不是退回旧的单体 Host 1.2.4。关闭音频软件再安装。在 Windows 可指定 Live 目录；Bridge 和配套程序装到系统 VST3 位置。在 macOS 安装器会将 Host 装入“应用程序”，AU/VST3 装到系统插件目录。QQSpeaker 测试驱动不分发，不要为此关闭系统安全功能。手册沿用 Host 1.3.14，不包含 Live 教程。
+先关闭音频软件再安装。Windows 安装包包含 Host、Bridge 和 Live，可选择 Live 目录。Mac 通用安装包包含 Host.app、VST3 和 AU，支持 Intel 和 Apple Silicon，不含独立 Live。两端均不安装 QQSpeaker 驱动。GitHub 自动显示的 “Source code” 压缩包只含本下载仓库的公开资料，不是安装包。
 
-The suite version is 1.2.4: Live reports 1.2.4 and Host/Bridge report 1.2.2. This numbering identifies the combined product, not a rollback to the older standalone Host 1.2.4. Quit audio apps before installing. Windows allows a custom Live directory; the Bridge and companion go in the system VST3 location. The Mac installer places Host in Applications and AU/VST3 in the system plug-in directories. The test QQSpeaker driver is not distributed. Do not disable system security. The reused Host 1.3.14 manuals do not cover Live.
+Quit audio applications before installation. Windows Setup installs Host, Bridge and Live and lets you choose the Live folder. The Universal Mac installer includes Host.app, VST3 and AU for Intel and Apple Silicon; it does not include Live. Neither installer includes a QQSpeaker driver. GitHub’s automatic “Source code” archives contain only the public download repository, not the product or installers.
 
-验证范围 / Verification: Windows 安装器的文件和自定义路径经过核验；Mac 成品核对了架构、组件版本和载荷。未进行本次 Logic/Cubase 实机听测或全新 Mac 上的交互安装。Windows 安装包没有 Authenticode 签名；Mac 组件采用 ad-hoc 签名，安装包没有 Developer ID 签名或 Apple 公证；如被系统策略阻止请联系发布者。The Windows payload and custom installation path were verified. Mac architectures, component versions and package payloads were checked; this release did not undergo a new Logic/Cubase listening test or an interactive install on a clean Mac. The Windows installer is not Authenticode-signed. The Mac bundles are ad-hoc signed; the installer has no Developer ID signature or Apple notarization. Contact the publisher if system policy blocks installation.
+Windows 安装包未作 Authenticode 签名；Mac 组件为 ad-hoc 签名，安装包未获 Apple 公证。如被系统策略阻止，请联系发布者，不需要关闭系统安全保护。The Windows installer has no Authenticode signature. Mac bundles are ad-hoc signed and the installer is not notarized; if blocked, contact the publisher rather than disabling system security.
 
 ## 4. 逐版本更新 / Version history
+
+- **1.4.6 · Stable**：Windows Live 将刷新、扫描管理和自定义扫描目录放进「加载插件」窗口。插件库为空时也可扫描；关掉浏览器不会中断扫描。In Live, scan, manage folders and load plug-ins in one window. You can start with an empty library and close the browser without cancelling a scan.
+- **1.4.5**：Windows Live 新增自定义扫描目录列表和移除功能。移除只改变以后的扫描范围，不卸载插件，不会改动工程。Live gained a list of custom scan folders; removing an entry does not uninstall plug-ins or change projects.
+- **1.4.4**：整合版、Host、Bridge、Live 改用同一版本号；新增 Live 独立机架双语手册。之前整合版的 1.2.0–1.2.4 对应新编号口径 1.4.0–1.4.4。历史发布仍保留原编号，并未额外发布 1.4.0–1.4.3。Unified numbering for the suite and its components, plus separate bilingual Live manuals. The former suite numbers 1.2.0–1.2.4 correspond to 1.4.0–1.4.4; previous releases retain their original tags and no separate 1.4.0–1.4.3 releases were issued.
 
 **整合版 / Suite numbering**
 
