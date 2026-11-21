@@ -1,4 +1,4 @@
-# QQ Host Suite 1.4.6 Stable
+# QQ Host Suite 1.4.21 Stable
 
 ## 1. 产品介绍 / About the product
 
@@ -12,8 +12,8 @@ For mixing, measure the workload and apply a buffering/stage plan, or adjust buf
 
 ![QQ Host Bridge — historical 0.9.2 interface](https://raw.githubusercontent.com/Qing-Audio/QQHost-Release/main/assets/qq-host-0.9.2-bridge-rack.png)
 
-图示保留真实的 0.9.2 历史界面标识；当前界面与操作见下方 1.4.6 手册。
-The image retains its original 0.9.2 identity; see the 1.4.6 manuals below for the current interface and operation.
+图示为 0.9.2 历史界面。Bridge 手册沿用旧版；Live 手册更新至 1.4.21。
+The image shows the historical 0.9.2 UI. The Bridge guides are carried forward unchanged; the Live guides are updated for 1.4.21.
 
 QQ Host 改变托管和调度方式，但不会改写第三方插件内部的算法。性能改善取决于插件、音频缓冲、路由和电脑配置；增加 buffer 会增加延迟，不能消除持续的处理超负荷。QQ ChainScope 是另行安装的产品，不包含在本包中。
 
@@ -23,6 +23,10 @@ Windows 还提供 Live 独立机架，可对麦克风和电脑输入插入效果
 
 Windows also includes the standalone Live rack for mic and computer inputs, effects, bus routing and monitoring. Live is not part of the macOS package.
 
+Live 和 Bridge 内置可选真峰值限幅器；Windows 本机的 Agent 可在用户授权后辅助操作机架。与第三方软件联用不会自动赋予其权限。
+
+Live and Bridge include optional true-peak limiting. On Windows, a local Agent can assist with mixing after the user pairs it; using third-party software does not grant access automatically.
+
 ## 2. 许可证 / License
 
 QQ Host 为 Qing Audio 的闭源专有软件，产品源码不公开。本仓库仅提供公开说明、界面图片及发布成品；下载本页文件不授予源码或额外许可权利。第三方组件的许可独立适用。
@@ -31,18 +35,20 @@ QQ Host is closed-source proprietary software from Qing Audio; its product sourc
 
 ## 3. 安装包与手册 / Installers and manuals
 
-[QQ Host 1.4.6 Stable](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.4.6)
+[QQ Host 1.4.21 Stable](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.4.21)
+
+发布时间 / Release date: 2026-11-21. 更新前保存工程并退出使用本产品的程序。macOS 12+；Live 仅限 Windows。Save your work and close apps using the suite before upgrading. macOS 12+; Live is Windows-only.
 
 | 文件 / File | 下载 / Download |
 |---|---|
-| Windows x64（Host、VST3、Live） | [QQ.Host.Suite.1.4.6.Windows.x64.Setup.exe](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Suite.1.4.6.Windows.x64.Setup.exe) |
-| macOS Intel / Apple Silicon（Host、VST3、AU） | [QQ.Host.Suite.1.4.6.macOS.Universal.Setup.pkg](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Suite.1.4.6.macOS.Universal.Setup.pkg) |
-| 中文安装说明 | [QQ.Host.Suite.1.4.6.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Suite.1.4.6.Installation.Guide.Chinese.txt) |
-| English installation guide | [QQ.Host.Suite.1.4.6.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Suite.1.4.6.Installation.Guide.English.txt) |
-| Host / Bridge 中文手册 | [QQ.Host.1.4.6.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.1.4.6.User.Manual.Chinese.pdf) |
-| Host / Bridge English manual | [QQ.Host.1.4.6.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.1.4.6.User.Manual.English.Edition.pdf) |
-| Live 独立机架中文手册 | [QQ.Host.Live.1.4.6.Standalone.Rack.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Live.1.4.6.Standalone.Rack.User.Manual.Chinese.pdf) |
-| Live standalone rack English manual | [QQ.Host.Live.1.4.6.Standalone.Rack.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.6/QQ.Host.Live.1.4.6.Standalone.Rack.User.Manual.English.Edition.pdf) |
+| Windows x64（Host、VST3、Live） | [QQ.Host.Suite.1.4.21.Windows.x64.Setup.exe](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Suite.1.4.21.Windows.x64.Setup.exe) |
+| macOS Intel / Apple Silicon（Host、VST3、AU） | [QQ.Host.Suite.1.4.21.macOS.Universal.Setup.pkg](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Suite.1.4.21.macOS.Universal.Setup.pkg) |
+| 中文安装说明 | [QQ.Host.Suite.1.4.21.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Suite.1.4.21.Installation.Guide.Chinese.txt) |
+| English installation guide | [QQ.Host.Suite.1.4.21.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Suite.1.4.21.Installation.Guide.English.txt) |
+| Host / Bridge 中文手册 | [QQ.Host.1.4.18.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.1.4.18.User.Manual.Chinese.pdf) |
+| Host / Bridge English manual | [QQ.Host.1.4.18.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.1.4.18.User.Manual.English.Edition.pdf) |
+| Live 独立机架中文手册 | [QQ.Host.Live.1.4.21.Standalone.Rack.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Live.1.4.21.Standalone.Rack.User.Manual.Chinese.pdf) |
+| Live standalone rack English manual | [QQ.Host.Live.1.4.21.Standalone.Rack.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Live.1.4.21.Standalone.Rack.User.Manual.English.Edition.pdf) |
 
 先关闭音频软件再安装。Windows 安装包包含 Host、Bridge 和 Live，可选择 Live 目录。Mac 通用安装包包含 Host.app、VST3 和 AU，支持 Intel 和 Apple Silicon，不含独立 Live。两端均不安装 QQSpeaker 驱动。GitHub 自动显示的 “Source code” 压缩包只含本下载仓库的公开资料，不是安装包。
 
@@ -51,6 +57,98 @@ Quit audio applications before installation. Windows Setup installs Host, Bridge
 Windows 安装包未作 Authenticode 签名；Mac 组件为 ad-hoc 签名，安装包未获 Apple 公证。如被系统策略阻止，请联系发布者，不需要关闭系统安全保护。The Windows installer has no Authenticode signature. Mac bundles are ad-hoc signed and the installer is not notarized; if blocked, contact the publisher rather than disabling system security.
 
 ## 4. 逐版本更新 / Version history
+
+### 1.4.21 — Stable
+
+Live：在设置中点击「复制 Agent 连接说明」即可取得可直接交给 Agent 的文字，不含长期令牌。授权后，Agent 可在音频运行时向轨道末尾追加效果器；新插件准备好后才接入，加载失败不改变原来的插件链。
+
+Live: Copy ready-to-use agent connection instructions from Settings without exposing your long-term token. An authorized agent can append an effect without stopping rack audio. The new effect joins when it is ready; a failed load leaves the existing chain unchanged.
+
+### 1.4.20
+
+Live、Bridge：改进内置 LIM 的增益控制，减轻持续深压时的失真；不增加监听延迟。保留真峰值保护及原有预置、GR 表与 5 秒 TP HOLD。
+
+Live and Bridge: The built-in limiter reduces distortion under sustained gain reduction without adding monitoring latency. True-peak protection, presets, the gain-reduction meter and the five-second TP hold are retained.
+
+### 1.4.19
+
+Live：通道峰值超过 0 dBFS 后显示并保持实测数值，不再只显示 CLIP。点击读数可清零；这是通道的采样峰值，与限幅器的真峰值保持分开。
+
+Live: When a channel exceeds 0 dBFS, its meter holds the measured value instead of displaying CLIP. Click the readout to reset it. This sample-peak reading is separate from the limiter’s true-peak hold.
+
+### 1.4.18
+
+Live：顶栏「收起／展开」只切换主链、电脑和 FX 的轨道可见性；不会改动 I/O、Inserts、Sends 的展开状态。 Live 和 Bridge：LIM 面板新增「Always on Top」勾选框，记住该窗口的置顶选择。 本次 Host、Bridge 和 Live 一起设为 Stable。
+
+The toolbar collapses only main, computer and FX strips; I/O, Inserts and Sends keep their layout. Live and Bridge limiter windows have a remembered per-window Always on Top setting. Host, Bridge and Live are now Stable together.
+
+### 1.4.17
+
+Windows：自动启动的 Host 在最后一个 Live 和 DAW Bridge 关闭后自行退出。MCP 配对保留，下次启动无需重新复制令牌。
+
+On Windows an automatically launched Host exits after the last Live or DAW Bridge closes. Local MCP pairing survives restarts.
+
+### 1.4.16
+
+Live / Bridge：内置 LIM 可在自身面板保存、加载命名预置。同一用户共享内部库，加载不改变限幅器开关。
+
+Save and load named presets in the built-in limiter. Live and Bridge share a local library; loading preserves the current power switch.
+
+### 1.4.15
+
+Live：从外部切换 ASIO 采样率或缓冲后，音频回调若未恢复，机架会有限次重新打开原设备；收到音频块才显示运行。正常时不轮询驱动，不改声卡时钟和已有路由。 Live / Bridge：修正深度限幅时整段增益可能降为零的断音。增益按采样平滑变化，保留真峰值防护，不增加监听延迟。
+
+Windows Live makes bounded recovery attempts if ASIO callbacks do not return after an external rate or buffer change. Heavy gain reduction in the Live/Bridge limiter no longer drops a section of the output to silence; no lookahead delay was added.
+
+### 1.4.14
+
+Live 设置可切换 Classic / Dark / Light（默认 Dark）。Live 和 Bridge 内置 LIM 采用 8 倍插值限制输出真峰值；面板跟随宿主皮肤，显示增益衰减与 5 秒输出 TP Hold。
+
+Live adds Classic, Dark and Light themes. Both built-in limiters use eightfold interpolation for true-peak limiting; their panels follow the host theme and show gain reduction and a five-second output true-peak hold.
+
+### 1.4.13
+
+Live 和 Bridge 新增可独立开关的零前瞻峰值保护，点 LIM 调整；默认关闭，输入增益为 0 dB。
+
+Live tracks and Bridge instances gain an optional zero-lookahead limiter for peak protection. It starts off with 0 dB input gain.
+
+### 1.4.12
+
+Live 音频时序由设备决定。音频设置只显示采样率和缓冲大小；可从这里打开驱动控制面板，设备选择、输入输出勾选及每轨路由保留。
+
+Live follows the audio device for sample rate and buffer size. Settings display the active values; supported devices provide a control-panel button. Channel selections and routing are kept.
+
+### 1.4.11
+
+Live：插槽右键可清空本轨的插件并一次撤销；修正 Windows 插件窗口置顶。切换声卡采样率时按通道名保留路由和勾选，不将缺失端口改送其他通道。安装程序沿用上次的 Live 目录，仍可手动选择。
+
+In Live, clear all inserts on one track and undo it as one action. Fixed pinned Windows plug-in windows and preserved port routing across device-rate changes without redirecting missing ports. The installer recalls the previous editable Live location.
+
+### 1.4.10
+
+Live 会在原位置保留缺失插件和参数，其余插件继续恢复。Live 与 Bridge 主链支持插入、移动、填入及保存空插槽。
+
+Live retains a missing plug-in’s slot and settings while restoring its neighbours. Live and the Bridge main rack can insert, move, fill and save intentionally empty inserts.
+
+### 1.4.9
+
+Windows：打开 DAW 工程时提前在后台启动 Host；较慢的首次插件链恢复显示进度。Live 显示启动/关闭阶段，保存后让插件子进程同时收尾；机架控件支持鼠标悬停中文说明。
+
+On Windows, Bridge requests the Host earlier during project open. Long restores show progress. Live shows startup/shutdown stages, winds down its plug-in workers and adds Chinese hover help.
+
+### 1.4.8
+
+Live 在推子上方增加 Ø 极性反转。Ctrl+单击 S 只独听当前轨，Alt+单击切换独听保护 D。四个 Master 也支持 M/S/Ø。Windows 的 Host 本体统一提供 MCP，Live 设置和 Bridge 的 … 菜单可复制相同的长期令牌，重启无需重新配对，可随时撤销。
+
+Live adds fader polarity inversion, Ctrl-click exclusive Solo and Alt-click Solo Defeat, including M/S/polarity on all four masters. The Windows Host provides a loopback MCP gateway; Live and Bridge share user-authorized, persistent and revocable pairing.
+
+### 1.4.7
+
+Live 支持通过本机 MCP 查询已扫描效果器、读取输入输出电平、插入效果器、查询和调整插件开放的参数。只读连接不自动取得写权限；写入须在设置中授权本次会话。播放时可调整已有参数，增加插件前需手动停止机架音频。
+
+Live adds local Agent-assisted mixing via MCP. Agents can read meters, search the installed effect catalog, append an effect while rack audio is stopped and adjust exposed parameters during playback. Session write authorization is separate from read-only diagnostics.
+
+### 1.4.6 及之前 / Previously published history
 
 - **1.4.6 · Stable**：Windows Live 将刷新、扫描管理和自定义扫描目录放进「加载插件」窗口。插件库为空时也可扫描；关掉浏览器不会中断扫描。In Live, scan, manage folders and load plug-ins in one window. You can start with an empty library and close the browser without cancelling a scan.
 - **1.4.5**：Windows Live 新增自定义扫描目录列表和移除功能。移除只改变以后的扫描范围，不卸载插件，不会改动工程。Live gained a list of custom scan folders; removing an entry does not uninstall plug-ins or change projects.
@@ -607,4 +705,4 @@ This README preserves history from 0.0.1 through 1.0.10, adding bilingual summar
 
 ## 5. 历史版本下载 / Previous releases
 
-[历史版本及对应资料 / All previous releases](https://github.com/Qing-Audio/QQHost-Release/releases)
+[历史版本与下载 / Previous releases](https://github.com/Qing-Audio/QQHost-Release/releases)
