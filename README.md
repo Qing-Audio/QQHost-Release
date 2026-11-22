@@ -1,4 +1,4 @@
-# QQ Host Suite 1.4.21 Stable
+# QQ Host Suite 1.4.28 Stable
 
 ## 1. 产品介绍 / About the product
 
@@ -12,8 +12,8 @@ For mixing, measure the workload and apply a buffering/stage plan, or adjust buf
 
 ![QQ Host Bridge — historical 0.9.2 interface](https://raw.githubusercontent.com/Qing-Audio/QQHost-Release/main/assets/qq-host-0.9.2-bridge-rack.png)
 
-图示为 0.9.2 历史界面。Bridge 手册沿用旧版；Live 手册更新至 1.4.21。
-The image shows the historical 0.9.2 UI. The Bridge guides are carried forward unchanged; the Live guides are updated for 1.4.21.
+图示为 0.9.2 历史界面。本版仅修订 Bridge 和 Live 手册中的预置链保存与加载。
+The image shows the historical 0.9.2 UI. Only the preset-chain Save and Load instructions changed in the Bridge and Live manuals.
 
 QQ Host 改变托管和调度方式，但不会改写第三方插件内部的算法。性能改善取决于插件、音频缓冲、路由和电脑配置；增加 buffer 会增加延迟，不能消除持续的处理超负荷。QQ ChainScope 是另行安装的产品，不包含在本包中。
 
@@ -35,20 +35,20 @@ QQ Host is closed-source proprietary software from Qing Audio; its product sourc
 
 ## 3. 安装包与手册 / Installers and manuals
 
-[QQ Host 1.4.21 Stable](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.4.21)
+[QQ Host 1.4.28 Stable](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.4.28)
 
-发布时间 / Release date: 2026-11-21. 更新前保存工程并退出使用本产品的程序。macOS 12+；Live 仅限 Windows。Save your work and close apps using the suite before upgrading. macOS 12+; Live is Windows-only.
+发布时间 / Release date: 2026-11-23. 更新前保存工程并退出使用本产品的程序。macOS 12+；Live 仅限 Windows。Save your work and close apps using the suite before upgrading. macOS 12+; Live is Windows-only.
 
 | 文件 / File | 下载 / Download |
 |---|---|
-| Windows x64（Host、VST3、Live） | [QQ.Host.Suite.1.4.21.Windows.x64.Setup.exe](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Suite.1.4.21.Windows.x64.Setup.exe) |
-| macOS Intel / Apple Silicon（Host、VST3、AU） | [QQ.Host.Suite.1.4.21.macOS.Universal.Setup.pkg](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Suite.1.4.21.macOS.Universal.Setup.pkg) |
-| 中文安装说明 | [QQ.Host.Suite.1.4.21.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Suite.1.4.21.Installation.Guide.Chinese.txt) |
-| English installation guide | [QQ.Host.Suite.1.4.21.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Suite.1.4.21.Installation.Guide.English.txt) |
-| Host / Bridge 中文手册 | [QQ.Host.1.4.18.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.1.4.18.User.Manual.Chinese.pdf) |
-| Host / Bridge English manual | [QQ.Host.1.4.18.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.1.4.18.User.Manual.English.Edition.pdf) |
-| Live 独立机架中文手册 | [QQ.Host.Live.1.4.21.Standalone.Rack.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Live.1.4.21.Standalone.Rack.User.Manual.Chinese.pdf) |
-| Live standalone rack English manual | [QQ.Host.Live.1.4.21.Standalone.Rack.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.21/QQ.Host.Live.1.4.21.Standalone.Rack.User.Manual.English.Edition.pdf) |
+| Windows x64（Host、VST3、Live） | [QQ.Host.Suite.1.4.28.Windows.x64.Setup.exe](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Suite.1.4.28.Windows.x64.Setup.exe) |
+| macOS Intel / Apple Silicon（Host、VST3、AU） | [QQ.Host.Suite.1.4.28.macOS.Universal.Setup.pkg](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Suite.1.4.28.macOS.Universal.Setup.pkg) |
+| 中文安装说明 | [QQ.Host.Suite.1.4.28.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Suite.1.4.28.Installation.Guide.Chinese.txt) |
+| English installation guide | [QQ.Host.Suite.1.4.28.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Suite.1.4.28.Installation.Guide.English.txt) |
+| Host / Bridge 中文手册 | [QQ.Host.1.4.28.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.1.4.28.User.Manual.Chinese.pdf) |
+| Host / Bridge English manual | [QQ.Host.1.4.28.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.1.4.28.User.Manual.English.Edition.pdf) |
+| Live 独立机架中文手册 | [QQ.Host.Live.1.4.28.Standalone.Rack.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Live.1.4.28.Standalone.Rack.User.Manual.Chinese.pdf) |
+| Live standalone rack English manual | [QQ.Host.Live.1.4.28.Standalone.Rack.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Live.1.4.28.Standalone.Rack.User.Manual.English.Edition.pdf) |
 
 先关闭音频软件再安装。Windows 安装包包含 Host、Bridge 和 Live，可选择 Live 目录。Mac 通用安装包包含 Host.app、VST3 和 AU，支持 Intel 和 Apple Silicon，不含独立 Live。两端均不安装 QQSpeaker 驱动。GitHub 自动显示的 “Source code” 压缩包只含本下载仓库的公开资料，不是安装包。
 
@@ -57,6 +57,48 @@ Quit audio applications before installation. Windows Setup installs Host, Bridge
 Windows 安装包未作 Authenticode 签名；Mac 组件为 ad-hoc 签名，安装包未获 Apple 公证。如被系统策略阻止，请联系发布者，不需要关闭系统安全保护。The Windows installer has no Authenticode signature. Mac bundles are ad-hoc signed and the installer is not notarized; if blocked, contact the publisher rather than disabling system security.
 
 ## 4. 逐版本更新 / Version history
+
+### 1.4.28 — Stable
+
+在 Live 目标轨的 INSERTS 右键，或在 Bridge 点 SAVE CHAIN / LOAD CHAIN，先选保存或加载，再选「1. Cubase 预置链」或「2. QQ Host 原生链」。Live 的 Studio One 是单独的导入命令。四本中英文手册仅修订了这些操作。
+
+Right-click the target track’s INSERTS in Live, or click SAVE CHAIN / LOAD CHAIN in Bridge. Both menus list Cubase first and QQ Host native second. Studio One import is separate in Live. Only these chain instructions changed in the Chinese and English manuals.
+
+### 1.4.27
+
+两种格式默认使用各自的库。Cubase 用户链和 QQ Host 原生链不混放；原生链可以在 Live 与 Bridge 之间保留 Divider 和顺序，旧原生链仍可打开。
+
+Each format opens its own library. Native chains retain Dividers and their positions between Live and Bridge. Existing native chains remain readable.
+
+### 1.4.26
+
+Windows Live 可在未安装 Cubase 的电脑上，把插入链保存为 .fxchainpreset；这不会迁移或转换已有的 .qqchain。
+
+Windows Live can save an insert chain as .fxchainpreset without Cubase installed. Existing .qqchain files are not moved or converted.
+
+### 1.4.25
+
+Windows Live：Studio One 效果链里有外部侧链时，不再整条拒载。Live 按原顺序导入串联插件，保留可恢复的参数和旁通状态，并指出哪些外部侧链未连接。外部发送不会自动接到本机麦克风或其他轨道；需要原来的触发效果时请手动重接。
+
+Windows Live now imports serial Studio One chains that reference an external sidechain. It keeps the insert order, recoverable settings and bypass states, and identifies the disconnected sidechain slots. External sends are never connected to a local input automatically; reconnect the source if the effect needs it.
+
+### 1.4.24
+
+Live 改善了对旧扫描目录中 Pro-Q 3 等 VST3 的匹配，并支持带 FXB 状态的 Studio One VST2 链，例如 Ozone 9。找不到对应格式的插件时，保留缺失槽及已读取的状态，不拿其他插件代替。
+
+Live better identifies VST3 effects such as Pro-Q 3 in older scan catalogs and imports Studio One VST2 chains with FXB state, including Ozone 9. If the matching format is unavailable, Live retains the missing slot and its saved state instead of substituting another plug-in.
+
+### 1.4.23
+
+Live 增加对 Fender Studio Pro 8 所保存 FX Chain 容器的识别，可导入其中的串联第三方 VST3 效果器。
+
+Live recognizes the FX Chain container written by Fender Studio Pro 8 and can import its serial third-party VST3 inserts.
+
+### 1.4.22
+
+Live 的轨道 INSERTS 菜单可直接读写 QQ Host 原生 .qqchain 或 Cubase 串联 .fxchainpreset，也可导入 Studio One 的串联 .multipreset。只替换目标轨的插槽，不改推子和声卡路由。要在 Cubase 原生插槽中打开，请在第一次保存时选「Cubase 插入链」；要在 QQ Host 中保留分隔线，选原生格式。
+
+Use a track’s INSERTS menu to load or save a native QQ Host .qqchain or a serial Cubase .fxchainpreset, or import a serial Studio One .multipreset. Only that track’s inserts are replaced. Choose the Cubase format when saving for Cubase; choose the native format to retain Live’s dividers.
 
 ### 1.4.21 — Stable
 
