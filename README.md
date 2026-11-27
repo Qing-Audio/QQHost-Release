@@ -1,4 +1,4 @@
-# QQ Host Suite 1.4.28 Stable
+# QQ Host Suite 1.4.44 Stable
 
 ## 1. 产品介绍 / About the product
 
@@ -12,8 +12,8 @@ For mixing, measure the workload and apply a buffering/stage plan, or adjust buf
 
 ![QQ Host Bridge — historical 0.9.2 interface](https://raw.githubusercontent.com/Qing-Audio/QQHost-Release/main/assets/qq-host-0.9.2-bridge-rack.png)
 
-图示为 0.9.2 历史界面。本版仅修订 Bridge 和 Live 手册中的预置链保存与加载。
-The image shows the historical 0.9.2 UI. Only the preset-chain Save and Load instructions changed in the Bridge and Live manuals.
+图示为 0.9.2 历史界面。外部硬件详见新版 Bridge 手册 14A–14G 页和 Live 手册 4A–4G 页。
+The image shows the historical 0.9.2 UI. For external hardware, see pages 14A–14G in the Bridge manual and 4A–4G in the Live manual.
 
 QQ Host 改变托管和调度方式，但不会改写第三方插件内部的算法。性能改善取决于插件、音频缓冲、路由和电脑配置；增加 buffer 会增加延迟，不能消除持续的处理超负荷。QQ ChainScope 是另行安装的产品，不包含在本包中。
 
@@ -27,6 +27,10 @@ Live 和 Bridge 内置可选真峰值限幅器；Windows 本机的 Agent 可在�
 
 Live and Bridge include optional true-peak limiting. On Windows, a local Agent can assist with mixing after the user pairs it; using third-party software does not grant access automatically.
 
+在 Live 中可以直接给硬件槽分配声卡发送／返回。Bridge 由 DAW 管理物理端口，请将 QQ Hardware I-O 直接放在 DAW 的专用路由轨，再与 Bridge 内的硬件槽配对。
+
+In Live, assign interface ports to the hardware insert. In Bridge, pair the insert with QQ Hardware I-O on a dedicated DAW routing track; the DAW owns the physical ports.
+
 ## 2. 许可证 / License
 
 QQ Host 为 Qing Audio 的闭源专有软件，产品源码不公开。本仓库仅提供公开说明、界面图片及发布成品；下载本页文件不授予源码或额外许可权利。第三方组件的许可独立适用。
@@ -35,28 +39,124 @@ QQ Host is closed-source proprietary software from Qing Audio; its product sourc
 
 ## 3. 安装包与手册 / Installers and manuals
 
-[QQ Host 1.4.28 Stable](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.4.28)
+[QQ Host 1.4.44 Stable](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.4.44)
 
-发布时间 / Release date: 2026-11-23. 更新前保存工程并退出使用本产品的程序。macOS 12+；Live 仅限 Windows。Save your work and close apps using the suite before upgrading. macOS 12+; Live is Windows-only.
+发布时间 / Release date: 2026-11-27. 更新前保存工程并退出使用本产品的程序。macOS 12+；Live 仅限 Windows。Save your work and close apps using the suite before upgrading. macOS 12+; Live is Windows-only.
 
 | 文件 / File | 下载 / Download |
 |---|---|
-| Windows x64（Host、VST3、Live） | [QQ.Host.Suite.1.4.28.Windows.x64.Setup.exe](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Suite.1.4.28.Windows.x64.Setup.exe) |
-| macOS Intel / Apple Silicon（Host、VST3、AU） | [QQ.Host.Suite.1.4.28.macOS.Universal.Setup.pkg](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Suite.1.4.28.macOS.Universal.Setup.pkg) |
-| 中文安装说明 | [QQ.Host.Suite.1.4.28.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Suite.1.4.28.Installation.Guide.Chinese.txt) |
-| English installation guide | [QQ.Host.Suite.1.4.28.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Suite.1.4.28.Installation.Guide.English.txt) |
-| Host / Bridge 中文手册 | [QQ.Host.1.4.28.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.1.4.28.User.Manual.Chinese.pdf) |
-| Host / Bridge English manual | [QQ.Host.1.4.28.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.1.4.28.User.Manual.English.Edition.pdf) |
-| Live 独立机架中文手册 | [QQ.Host.Live.1.4.28.Standalone.Rack.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Live.1.4.28.Standalone.Rack.User.Manual.Chinese.pdf) |
-| Live standalone rack English manual | [QQ.Host.Live.1.4.28.Standalone.Rack.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.28/QQ.Host.Live.1.4.28.Standalone.Rack.User.Manual.English.Edition.pdf) |
+| Windows x64（Host、Live、Bridge 与 Hardware I-O VST3） | [QQ.Host.Suite.1.4.44.Windows.x64.Setup.exe](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.44/QQ.Host.Suite.1.4.44.Windows.x64.Setup.exe) |
+| macOS Intel / Apple Silicon（Host、Bridge 与 Hardware I-O AU/VST3） | [QQ.Host.Suite.1.4.44.macOS.Universal.Setup.pkg](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.44/QQ.Host.Suite.1.4.44.macOS.Universal.Setup.pkg) |
+| 中文安装说明 | [QQ.Host.Suite.1.4.44.Installation.Guide.Chinese.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.44/QQ.Host.Suite.1.4.44.Installation.Guide.Chinese.txt) |
+| English installation guide | [QQ.Host.Suite.1.4.44.Installation.Guide.English.txt](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.44/QQ.Host.Suite.1.4.44.Installation.Guide.English.txt) |
+| Host / Bridge 中文手册 | [QQ.Host.1.4.44.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.44/QQ.Host.1.4.44.User.Manual.Chinese.pdf) |
+| Host / Bridge English manual | [QQ.Host.1.4.44.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.44/QQ.Host.1.4.44.User.Manual.English.Edition.pdf) |
+| Live 独立机架中文手册 | [QQ.Host.Live.1.4.44.Standalone.Rack.User.Manual.Chinese.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.44/QQ.Host.Live.1.4.44.Standalone.Rack.User.Manual.Chinese.pdf) |
+| Live standalone rack English manual | [QQ.Host.Live.1.4.44.Standalone.Rack.User.Manual.English.Edition.pdf](https://github.com/Qing-Audio/QQHost-Release/releases/download/v1.4.44/QQ.Host.Live.1.4.44.Standalone.Rack.User.Manual.English.Edition.pdf) |
 
-先关闭音频软件再安装。Windows 安装包包含 Host、Bridge 和 Live，可选择 Live 目录。Mac 通用安装包包含 Host.app、VST3 和 AU，支持 Intel 和 Apple Silicon，不含独立 Live。两端均不安装 QQSpeaker 驱动。GitHub 自动显示的 “Source code” 压缩包只含本下载仓库的公开资料，不是安装包。
+先关闭音频软件再安装。Windows 安装包包含 Live、Host 以及 Bridge 和 Hardware I-O 两个 VST3，可选择 Live 目录。Mac 通用安装包包含 Host.app，以及 Bridge 和 Hardware I-O 的 VST3 和 AU，支持 Intel 和 Apple Silicon，不含独立 Live。两端均不安装 QQSpeaker 驱动。GitHub 自动显示的 “Source code” 压缩包只含本下载仓库的公开资料，不是安装包。
 
-Quit audio applications before installation. Windows Setup installs Host, Bridge and Live and lets you choose the Live folder. The Universal Mac installer includes Host.app, VST3 and AU for Intel and Apple Silicon; it does not include Live. Neither installer includes a QQSpeaker driver. GitHub’s automatic “Source code” archives contain only the public download repository, not the product or installers.
+Quit audio applications before installation. Windows Setup installs Host, Live, and both the Bridge and Hardware I-O VST3 and lets you choose the Live folder. The Universal Mac installer includes Host.app plus Bridge and Hardware I-O in VST3 and AU formats for Intel and Apple Silicon; it does not include Live. Neither installer includes a QQSpeaker driver. GitHub’s automatic “Source code” archives contain only the public download repository, not the product or installers.
 
 Windows 安装包未作 Authenticode 签名；Mac 组件为 ad-hoc 签名，安装包未获 Apple 公证。如被系统策略阻止，请联系发布者，不需要关闭系统安全保护。The Windows installer has no Authenticode signature. Mac bundles are ad-hoc signed and the installer is not notarized; if blocked, contact the publisher rather than disabling system security.
 
 ## 4. 逐版本更新 / Version history
+
+### 1.4.44 — Stable
+
+新建硬件槽：Live 的 PHASE 和两路 EQ Match 默认 10 ms；Bridge 默认 40 ms。已保存的设置不变。
+
+New hardware inserts start at 10 ms in Live and 40 ms in Bridge for PHASE and both EQ Match targets. Saved settings are unchanged.
+
+### 1.4.43
+
+更换校正精度会清除旧模型并复位开关，不清除硬件往返或手动极性。保留冻结波形和手动放大，移除自动细节小窗。
+
+Changing correction quality clears learned models and resets their switches, not the measured round trip or manual polarity. Frozen waveforms keep manual zoom without an automatic detail inset.
+
+### 1.4.42
+
+PHASE 联动匹配 EQ 的最小相位／线性相位方式；Wet、Main 各保留自己的匹配曲线和 Amount、Smooth。
+
+PHASE controls whether matching EQ uses minimum or linear phase; Wet and Main retain separate curves, Amount and Smooth.
+
+### 1.4.41
+
+ECO 关窗时停止观察；收起图表时停止频谱、波形和 EQ 学习。已启用的校正仍处理声音。
+
+ECO stops observing when the editor is closed and stops spectrum, waveform and EQ analysis when the graphs are collapsed. Applied corrections still process audio.
+
+### 1.4.40
+
+冻结后调 Wet 或 Main，可观察同一片段的输出频谱、波形、响度、峰值和 RMS 如何改变。
+
+With analysis frozen, edit Wet or Main to compare its spectrum, waveform, loudness, peaks and RMS on the same passage.
+
+### 1.4.39
+
+统一硬件分析的刷新与冻结。全局 ECO/FULL 在 Live 内覆盖同一机架，在 Bridge 内覆盖同一 DAW 的已有硬件槽。
+
+Hardware analysis shares Refresh and Freeze. Global ECO/FULL affects existing inserts across one Live rack or across Bridges in the same DAW.
+
+### 1.4.38
+
+轨道按实测完整往返报告硬件延迟，不扣除声卡缓冲；更新 ChainScope 对齐所用的时间信息，不再给湿声重复加延迟。
+
+Track latency includes the measured hardware round trip, without subtracting interface buffers. ChainScope receives the corresponding timing without delaying the wet signal again.
+
+### 1.4.37
+
+Live 的逐轨延迟纳入已校准的硬件；同轨 ChainScope A、B、C 可以发现并连接到正确的组。
+
+Live track latency accounts for calibrated hardware. ChainScope A, B and C can discover and reconnect to their group on the same rack track.
+
+### 1.4.36
+
+Live 新增全部旁通，包含内置 LIM；关闭全部旁通会恢复各槽原状态。硬件窗口可在冻结波形上比较 Ø 和 PHASE。
+
+Live’s Bypass All includes built-in limiters and preserves individual bypass states. The hardware window previews polarity and PHASE changes on a frozen waveform.
+
+### 1.4.35
+
+硬件分析新增冻结；改进 Live 路由延迟统计、Bridge 性能测试的取消操作和插槽菜单。
+
+Added hardware analysis freeze, revised Live routed delay handling, and improved Bridge test cancellation and rack menus.
+
+### 1.4.34
+
+Live 在每轨总延迟旁显示处理负荷；调整硬件校准和设置布局。
+
+Live displays track processing load beside total latency. Hardware calibration and settings were revised.
+
+### 1.4.33
+
+Live 的物理硬件发送与监听输出在当前设备回调内提交，减少额外排队。
+
+Live submits physical sends and monitor outputs in the device callback that produces them, reducing unnecessary queuing.
+
+### 1.4.32
+
+硬件槽改用颜色标记；新增全局与单槽分析模式，以及相位和匹配 EQ 的质量选择。
+
+Hardware inserts use a color accent, with global and per-insert analysis modes and quality controls for phase and matching EQ.
+
+### 1.4.31
+
+Live 和 Bridge 共用 B Return 风格的硬件面板：对齐 Before/Wet，对照频谱、波形、读表与 EQ Match。
+
+Live and Bridge share a B Return-style hardware panel with aligned Before/Wet signals, spectra, waveforms, meters and EQ Match.
+
+### 1.4.30
+
+修正单声道轨送往立体声硬件；加入往返测量、手动补偿、响度匹配与相位校准。
+
+Fixed sending a mono track to stereo hardware and added round-trip measurement, manual alignment, loudness matching and phase calibration.
+
+### 1.4.29
+
+Live 和 Bridge 加入外部硬件插入、命名硬件库及临时接线。Bridge 通过 DAW 的 QQ Hardware I-O 收发。
+
+Added external hardware inserts, named hardware and temporary routing. In Bridge, QQ Hardware I-O sends and receives through the DAW.
 
 ### 1.4.28 — Stable
 
@@ -746,5 +846,7 @@ This README preserves history from 0.0.1 through 1.0.10, adding bilingual summar
 | 1.0.4 | 修复底部耗时悬停提示与频繁刷新抑制，显示可刷新的快照；不改变音频处理或宣称修复 MISS。 | Restores timing hover diagnostics with a refreshable snapshot; leaves audio processing unchanged and does not claim to fix MISS. | 2026-09-09 · 正式稳定版 / Stable |
 
 ## 5. 历史版本下载 / Previous releases
+
+[1.4.28 · 上一公开版 / Previous public release](https://github.com/Qing-Audio/QQHost-Release/releases/tag/v1.4.28)
 
 [历史版本与下载 / Previous releases](https://github.com/Qing-Audio/QQHost-Release/releases)
